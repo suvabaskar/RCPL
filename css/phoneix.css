@@ -1,0 +1,93 @@
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #949494;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    border-color: gray;
+}
+.accordian-wrapper h2 {
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(2, 2, 80);
+    text-align: center;
+}
+.accordian-wrapper p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+@media(max-width:728px) {
+    .banner-wrapper {
+        flex-direction: column;
+    }
+
+    .banner-description {
+        width: 320px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .banner-info-container {
+        width: 320px;
+        margin: auto;
+    }
+
+    .property-content {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .property-info {
+        width: 100%;
+    }
+
+    .card-img {
+        width: 350px;
+    }
+
+    .border-divider {
+        display: none;
+    }
+
+    #filter-buttons button.active {
+        font-size: 12px;
+    }
+
+    #filter-buttons button {
+        font-size: 12px;
+    }
+
+    .property-details {
+        height: auto;
+    }
+
+    .unique-property-section {
+        flex-direction: column;
+    }
+
+    .unique-property-info-container {
+        max-width: 100%;
+    }
+
+    .unique-contact-form {
+        width: 100%;
+    }
+    .highlights{
+        grid-template-columns: 1fr;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+    }
+    .project-card {
+        width: 100%;
+        max-width: 380px;
+    }
+    .projects-container1{
+        flex-direction: column;
+    }
+
+}

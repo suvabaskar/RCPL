@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"> <!-- Add 'dark' class to preview dark mode -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagonal Pattern Background</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  
+</head>
+<body class="relative min-h-screen bg-white dark:bg-black">
+
+  <!-- Pattern Background Layer -->
+  <div class="col-start-1 row-span-full row-start-1 hidden border-x border-x-[--pattern-fg] 
+              bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)]
+              bg-[size:10px_10px] bg-fixed 
+              [--pattern-fg:var(--color-black)]/5 
+              dark:[--pattern-fg:var(--color-white)]/10 
+              md:block 
+              absolute inset-0 z-0">
+  </div>
+
+  <!-- Content (placed above the background) -->
+  <div class="relative z-10 p-10 text-center text-gray-800 dark:text-gray-200">
+    <h1 class="text-4xl font-bold mb-4">Diagonal Pattern Background</h1>
+    <p class="text-lg">
+      This background is visible only on medium screens and above.
+    </p>
+    <p class="mt-4">
+      Try toggling your system's dark mode to see the pattern color change!
+    </p>
+  </div>
+
+</body>
+</html>

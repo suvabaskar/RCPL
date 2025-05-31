@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rohaan Construction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/ashoka.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/apartments-madipakkam.css">
+
+    <link rel="icon" href="img/rcpl-icon.png" type="image/png">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".count");
+
+        counters.forEach((counter) => {
+            counter.innerText = "0"; // Initialize each counter
+
+            const updateCount = () => {
+                const target = +counter.getAttribute("data-target"); // Target number
+                let current = +counter.innerText.replace(/\D/g, ""); // Remove any non-numeric characters
+                const increment = Math.ceil(target / 100); // Adjust speed by dividing target
+
+                if (current < target) {
+                    counter.innerText = `${Math.min(current + increment, target)}+`; // Increment smoothly
+                    setTimeout(updateCount, 20); // Recursive call for smooth animation
+                } else {
+                    // Format the final number appropriately
+                    if (target >= 1000) {
+                        counter.innerText = `${(target / 1000).toFixed(1)}K+`; // Display "K+" for 1000+
+                    } else {
+                        counter.innerText = `${target}+`; // Normal number with "+"
+                    }
+                }
+            };
+
+            updateCount(); // Start counting
+        });
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".scroll-link");
+
+        links.forEach((link) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the page from refreshing
+                const targetId = this.getAttribute("href").substring(1); // Get the ID without the #
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Scroll smoothly to the target element
+                    targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+
+            fetch("../Rohaanconstr/send_mail.php", {
+                method: "POST",
+                body: formData,
+            })
+                .then(response => response.text())
+                .then(result => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: green;">${result}</p>`;
+                    form.reset(); // Clear the form
+                })
+                .catch(error => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: red;">Error: Could not send your message.</p>`;
+                });
+        });
+    });
+
+
+
+
+</script>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
+            <div class="container">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                            <a href="tel:+01234567890" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                            <a href="mailto:example@gmail.com" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+        <div class="contact-icons">
+            <a href="tel:9003198331" class="phone-icon">
+                <span class="rotated-text"> 9003198331</span> <i class="ph-icon fas fa-phone-alt"></i>
+            </a>
+            <a href="https://wa.me/9003198331" target="_blank" class="whatsapp-icon">
+                <img src="img/what-icom.png" alt="WhatsApp Icon">
+            </a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i>Cental</h1> -->
+                    <img src="img/Rohaancon-logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbarleft navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="commercial-property.html" class="nav-link dropdown-toggle">Commercial
+                                Property</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="crest.html" class="dropdown-item">Rohaan Crest</a>
+                                <a href="walnut.html" class="dropdown-item">Rohaan Walnut</a>
+                                <a href="redwood.html" class="dropdown-item">Rohaan Redwood</a>
+                                <a href="acacia.html" class="dropdown-item">Rohaan Acacia</a>
+                            </div>
+                        </div>
+                        <a href="service.html1" class="nav-item nav-link">Joint Venture</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle "data-bs-toggle="dropdown" >Residential
+                                Property</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="Phoneix.html" class="dropdown-item">Rohaan Phoenix</a>
+                                <a href="Ashoka.html" class="dropdown-item">Rohaan Ashoka</a>
+                                <a href="Cypress.html" class="dropdown-item">Rohaan Cypress</a>
+                                <a href="villa.html" class="dropdown-item">Villa</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="about.html" class="nav-link dropdown-toggle" >About</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="channelpartner.html" class="dropdown-item">Channel Partners</a>
+                                <a href="careers.html" class="dropdown-item">Careers</a>
+                                <a href="blog.html" class="dropdown-item">Blogs</a>
+                                <a href="contact.html" class="dropdown-item">Contact</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Book a Site Visit </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+<!-- new banner with responsive starts here -->
+<section class="banner-wrapper">
+    <div class="banner-info-container">
+        <h1 class="banner-title"><span class="rohaan">Rohaan</span> <span class="text-primary">Cypress </span></h1>
+        <p class="banner-description"> Rohan Cypress is a residential apartment complex located in Perumbakkam, Chennai. It is a well-designed
+            complex. The apartments are spacious and well-ventilated, and the complex is located in a quiet and
+            peaceful area. Rohan Ashoka is a great choice for families and professionals looking for a comfortable
+            and convenient place to live.</p>
+    </div>
+    <div class="banner-info-form">
+        <h3>Grab your Residential Space Now
+        </h3>
+        <form class="banner-inner-form">
+            <input type="text" placeholder="Name" required>
+            <input type="tel" placeholder="Phone no" required>
+            <input type="email" placeholder="Email" required>
+            <select class="banner-form-select" aria-label="Default select example">
+                <option selected>Select the Property</option>
+                <option value="1">Commerical</option>
+                <option value="2">Residential</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+<!-- new banner with responsive ends here -->
+
+
+    <section class="property-details">
+        <div class="property-content">
+            <div class="image-container">
+                <img src="img/Front-View-min.jpg" alt="Rohan Ashoka" class="property-image">
+            </div>
+            <div class="property-info">
+                <div class="property-details-info">
+                    <p><i class="fas fa-building"></i> <strong>23 Units</strong></p>
+                    <p><i class="fas fa-ruler-combined"></i> <strong>887-1208 Sq.ft</strong></p>
+                    <p><i class="fas fa-bed"></i> <strong>2/3 BHK</strong></p>
+                    <p><i class="fas fa-dumbbell"></i> <strong>7 Amenities</strong></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Madipakkam</strong></p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="download-brochure">Download E-brochure</button>
+                </div>
+                <div class="contact-info">
+                    <p>Approved By:</p>
+                    <p>RERA NO: <span>TN/29/BUILDING/0102/2023</span></p>
+                </div>
+                <div class="progress-bar-container">
+                    <p class="progress-title">Construction Update</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;">
+                            <span class="progress-percentage">100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p>Project Completion Date: <span>January 2025</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="unique-property-section">
+        <!-- <div class="unique-property-image-container">
+            <img src="img/ashoka_night_vide.jpg" alt="Property Image" class="unique-property-image" />
+        </div> -->
+
+        <section class="unique-container">
+
+            <p class="unique-content">
+                Rohaan Cypress is a new residential project by Rohaan Constructions Pvt. Ltd. located in Madipakkam,
+                Chennai. The project offers 1, 2, and 3 BHK apartments with a built-up area ranging from 598 to 1208
+                sq.ft. Rohaan Cypress is a well-connected location with easy access to major roads and highways. The
+                project is also close to schools, hospitals, and other amenities.
+            </p>
+            <ul class="unique-features">
+                <li>Spacious & Elegant Homes</li>
+                <li>Prime Location—Near Medavakkam Junction</li>
+                <li>Premium Amenities</li>
+                <li>High-Quality Construction</li>
+                <li>24/7 Security</li>
+            </ul>
+            <!-- <a href="tel:+919597088298" class="unique-cta">📞 Call Us Today</a> -->
+        </section>
+        <div class="unique-property-info-container">
+            <h2>Price Starting From</h2>
+            <h3>₹ 67,00,000</h3>
+            <form class="unique-contact-form">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="tel" name="phone" placeholder="Phone no" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+  
+    <!-- filtering images -->
+    <div class="container fliter-container py-10">
+        <!-- Images Filter Buttons Section -->
+        <div class="row mt-5" id="filter-buttons">
+            <div class="filter-buttons-wrapper col-12  d-flex justify-content-center">
+                <button class="filter-btn btn mb-2 me-1  active" data-filter="elevation">Elevation</button>
+                <span class="border-divider"></span>
+                <button class="filter-btn btn mb-2 mx-1" data-filter="Floorplan">Floor Plan</button>
+                <span class="border-divider"></span>
+                <button class="filter-btn btn mb-2 mx-1" data-filter="Walkthrough">Walkthrough</button>
+                <span class="border-divider"></span>
+                <button class="filter-btn btn mb-2 mx-1" data-filter="amenities">Amenities</button>
+            </div>
+        </div>
+        <!-- Filterable Images / Cards Section -->
+        <div class="row px-2 mt-4 gap-3 filter-width" id="filterable-cards">
+            <div class="card p-0" data-name="elevation">
+                <img class="card-img" src="img/elevation.jpeg" alt="img">
+            </div>
+            <div class="card p-0" data-name="elevation">
+                <img class="card-img" src="img/elevation.jpeg" alt="img">
+
+            </div>
+            <div class="card p-0" data-name="elevation">
+                <img class="card-img" src="img/elevation.jpeg" alt="img">
+
+            </div>
+            <div class="card p-0 " data-name="Floorplan">
+                <img class="card-img" src="img/18 rev.jpg" alt="img">
+
+            </div>
+            <div class="card p-0" data-name="Floorplan">
+                <img class="card-img" src="img/22 rev.jpg" alt="img">
+
+            </div>
+            <div class="card p-0" data-name="Floorplan">
+                <img class="card-img" src="img/23 rev.jpg" alt="img">
+
+            </div>
+            <div class="card p-0" data-name="Floorplan">
+                <img class="card-img" src="img/24 rev.jpg" alt="img">
+
+            </div>
+
+            <div class="card p-0" data-name="Walkthrough">
+                <img class="card-img" src="img/walkthroughs.png" alt="img">
+
+            </div>
+            <div class="card p-0" data-name="amenities">
+                <img class="card-img" src="img/amentities.jpeg" alt="img">
+
+            </div>
+        </div>
+    </div>
+
+ <!-- accordian -->
+    <section class="accordian-wrapper">
+        <h2>Find the answers you need </h2>
+        <p>Frequently Asked Questions </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong> What is a residential apartment in Chennai's real estate market?</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        A residential apartment in Chennai involves developing, buying, or leasing income-generating housing spaces like flats, condominiums, and gated communities.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>How do residential apartments work in Chennai's real estate?
+                        </strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Residential apartments involve owning, leasing, or investing in housing units to generate rental income, provide living spaces, or resell for profit.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>What are the roles and responsibilities of partners in a residential apartment investment?
+                        </strong> </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        In Chennai's residential property market, developers handle construction, investors provide funding, and agreements define profit-sharing, ownership, and management roles.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>What is the expected return on investment in Chennai's residential apartments?
+                        </strong> </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        ROI in residential apartments depends on location, type, demand, and rental yield, with returns coming from rental income, resale profits, or capital appreciation.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <strong>What are the benefits of investing in residential apartments in Chennai?
+                        </strong> </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Residential apartments offer stable rental income, capital appreciation, diversification, tax benefits, and lower vacancy risks, making them a lucrative investment.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <strong>Who are residential apartment developers, and what role do they play in Chennai's real estate market?
+                        </strong> </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Residential apartment developers design, build, and manage housing projects, facilitating investments and helping homebuyers find suitable living spaces.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <strong>How do I choose the right residential apartment developer in Chennai?
+                        </strong> </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Choosing a residential apartment developer requires assessing reputation, track record, financial stability, and transparency to align with investment goals. </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <strong>What are the advantages of investing in residential apartments?
+                        </strong> </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Residential apartments offer high rental demand, steady appreciation, long-term tenants, and consistent rental income from families and professionals.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <strong>What are the disadvantages of residential apartment investments?
+                        </strong> </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Residential apartments require maintenance costs, face market fluctuations, involve tenant management challenges, and can be affected by economic downturns.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <strong>What tips can ensure the success of residential apartment investments in perumbakkam, Chennai?
+                        </strong> </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Success in residential apartment investment requires market research, prime locations, understanding tenant needs, competitive pricing, and expert property management. </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- accordian ends -->
+
+
+
+    <!-- 
+    <section class="map-section">
+        <div id="map" class="map-container"></div>
+    </section> -->
+
+
+    <div class="responsive-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0153231538798!2d80.19024137454556!3d12.906736116298159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d5c8b8be19d%3A0x10123ff53d972668!2sRohaan%20Ashoka!5e0!3m2!1sen!2sin!4v1738218595447!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+
+    <section class="related-projects">
+        <h2>RELATED PROJECTS</h2>
+        <div class="projects-container1">
+            <div class="project-card">
+                <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
+                <div class="project-details">
+                    <h3 class="black">Rohaan Phoneix</h3>
+                    <p>Medavakkam</p>
+                    <ul>
+                        <li>🏠 12 Units</li>
+                        <li>📏 1024-1197 Sq.ft</li>
+                        <li>🛏️ 2BHK & 3BHK</li>
+                        <li>🏊‍♂️ 5 Amenities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
+                <div class="project-details">
+                    <h3 class="black">Rohaan Ashoka</h3>
+                    <p>Madipakkam</p>
+                    <ul>
+                        <li>🏠 25 Units</li>
+                        <li>📏 1008 - 1224 Sq.ft</li>
+                        <li>🛏️ 2/2.5/3 BHK</li>
+                        <li>🏊‍♂️ 5 Amenities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
+                <div class="project-details">
+                    <h3 class="black">Rohaan Rose Garden</h3>
+                    <p>Perumbakkam</p>
+                    <ul>
+                        <li>🏠 4 Blocks - 24 Units</li>
+                        <li>📏 898 Sq.ft & 1098 Sq.ft</li>
+                        <li>🛏️ 2/3 BHK</li>
+                        <li>🏊‍♂️ 5 Amenities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="unique-quote-container">
+        <div class="unique-quote-form-section">
+            <h4 class="unique-quote-appointment-title">APPOINTMENT</h4>
+            <h1 class="unique-quote-main-title">Request a Quote</h1>
+            <form class="unique-quote-form">
+                <label class="unique-quote-label" for="unique-quote-name">Name</label>
+                <input type="text" id="unique-quote-name" class="unique-quote-input" placeholder="Enter your full name"
+                    required>
+
+                <label class="unique-quote-label" for="unique-quote-phone">Phone</label>
+                <input type="tel" id="unique-quote-phone" class="unique-quote-input"
+                    placeholder="Enter your phone number" required>
+
+                <label class="unique-quote-label" for="unique-quote-email">Email</label>
+                <input type="email" id="unique-quote-email" class="unique-quote-input"
+                    placeholder="Enter your email address" required>
+
+                <button type="submit" class="unique-quote-submit-button">Submit</button>
+            </form>
+        </div>
+        <div class="unique-quote-info-section ">
+            <div class="wrapper">
+                <div class="box tab-flex d-flex">
+                    <div class="box-icon">
+                        <div class="image"> <img src="img/Vector-4.png" alt="Safety Icon"
+                                class="unique-quote-info-icon"></div>
+                        <div class="info">
+                            <h3 class="title">Safety and Security</h3>
+                            <p>
+                                Rohaan Constructions takes safety and security very
+                                seriously. All of our projects are designed and built to meet the highest safety
+                                standards.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <div class="image"> <img src="img/Vector-4.png" alt="Safety Icon"
+                                class="unique-quote-info-icon"></div>
+                        <div class="info">
+                            <h3 class="title">Quality Products Used</h3>
+                            <p>
+                                We source our materials from reputable suppliers and we have a strict quality control
+                                process in place.
+                                <br>
+                                <br>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <div class="image"> <img src="img/Vector-4.png" alt="Safety Icon"
+                                class="unique-quote-info-icon"></div>
+                        <div class="info">
+                            <h3 class="title">Build Quality</h3>
+                            <p>
+                                We use the latest construction techniques and we have a team of experienced builders who
+                                are committed to delivering high-quality work.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+
+    <section class="projects-section">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="projects-container">
+            <div class="project-category">
+                <h3>Chennai</h3>
+                <h4>FLATS</h4>
+                <ul>
+                    <li><a href="#">1 BHK Flats in Chennai</a></li>
+                    <li><a href="#">2 BHK Flats in Chennai</a></li>
+                    <li><a href="#">3 BHK Flats in Chennai</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Apartments in Chennai</h3>
+                <h4>PRICE RANGE</h4>
+                <ul>
+                    <li><a href="#">Apartments Between 50L - 60L in Chennai</a></li>
+                    <li><a href="#">Apartments Between 70L - 80L in Chennai</a></li>
+                    <li><a href="#">Apartments Between 80L - 90L in Chennai</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Apartments in Chennai</h3>
+                <h4>FLATS</h4>
+                <ul>
+                    <li><a href="#">2BHK Flats in Madipakkam</a></li>
+                    <li><a href="#">2BHK Flats in Perumbakkam</a></li>
+                    <li><a href="#">2BHK Flats in Medavakkam</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Flats in Chennai</h3>
+                <h4>APARTMENTS</h4>
+                <ul>
+                    <li><a href="#">Apartments in Madipakkam</a></li>
+                    <li><a href="#">Apartments in Perumbakkam</a></li>
+                    <li><a href="#">Apartments in Medavakkam</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <img src="img/Rohaancon-logo.png" alt="Logo">
+                        <div class="footer-item">
+
+
+                            <p class="text-white mb-0">Rohaan Constructions Private LTD is a leading real estate
+                                developer in Chennai, Tamil Nadu. We’re in business for over 15 years and have a
+                                reputation for quality construction and customer service.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Join as Channel Partner</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Projects</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Residential Projects</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Commercial Projects </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Villa</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Joint Venture</a>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i>
+                            Medavakkam, Chennai,Tamil Nadu 600100</a>
+                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i>
+                            sales@rohaanconstructions.com</a>
+                        <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i>
+                            +91 9003198331</a>
+                        <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +91
+                            9597088298</a>
+                        <div class="d-flex">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <!-- <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    </div>
+                 
+                </div>
+            </div>
+        </div> -->
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>    -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

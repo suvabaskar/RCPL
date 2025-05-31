@@ -1,0 +1,17 @@
+.grid-card h4{
+    font-size: clamp(1rem,2vw,1rem);
+}
+.list-container h3{
+    font-size: clamp(1rem,2vw,1.1rem);
+    font-weight: 600;
+    text-align: left;
+}
+.list-container li{
+    font-size: clamp(0.8rem,2vw,1rem);
+    text-align: left;
+}
+.list-container{
+    width: clamp(320px,90%,1400px);
+    padding: min(2vw,20px);
+    margin: auto;
+}

@@ -1,0 +1,239 @@
+.about-main-heading {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.banner-about {
+    background-image: linear-gradient(to right, #242424, #ababab),
+        url('../img/Frame\ 10.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.banner-subheading {
+    color: rgb(117, 191, 240);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.banner-content-about {
+    max-width: 800px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+.banner-about-description {
+    font-size: 17px;
+}
+
+.about-grid {
+    max-width: 1200px;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.about-grid-wrapper>img {
+    width: 50px;
+    height: 50px;
+}
+
+.about-grid-wrapper {
+    max-width: 500px;
+    justify-content: start;
+    background-color: #e3e3e3;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 20px;
+}
+
+.about-grid-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/modern-home-hover.jpg);
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.about-grid-wrapper:hover::after {
+    opacity: 0.2;
+
+}
+
+.about-grid-wrapper:hover {
+    color: rgb(0, 0, 0);
+}
+
+.director-section {
+    max-width: 1600px;
+    margin: auto;
+    padding: 0;
+}
+
+/* image-content-section */
+.image-content-wrapper {
+    max-width: 1600px;
+    margin: auto;
+    height: 640px;
+    justify-content: space-between;
+    margin-top: -1px;
+
+}
+
+.image-content-container {
+    max-width: 800px;
+    align-items: end;
+    max-height: 627px;
+    background-image: url(../img/hand-drawn-mall-drawing-illustration\ 111\ 1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin: auto;
+    padding: 150px 100px 150px 30px;
+}
+
+.image-section-wrapper {
+    max-width: 600px;
+    justify-content: start;
+    margin-left: 100px;
+}
+
+.image-section-left-container {
+    position: relative;
+    height: 500px;
+}
+
+.img2 {
+    margin-top: 10px;
+}
+
+.image-content-container-wrapper {
+    max-width: 750px;
+    height: 327px;
+    margin: auto;
+}
+
+.image-content-container-wrapper h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.image-content-container-wrapper p {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.rohaan-team-wrapper {
+    max-width: 1600px;
+    background-color: #F5F5F5;
+    padding: 50px 0;
+    margin: auto;
+}
+
+.rohaan-team-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.rohaan-team-wrapper h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.rohaan-cont-description {
+    max-width: 800px;
+    padding-right: 50px;
+    text-align: left;
+    color: black;
+}
+
+.rohaan-team-button {
+    /* background-color: #9E9E9E; */
+    background-image: linear-gradient(to right, #1F5D7A, #39AAE0);
+    padding: 20px;
+    border: none;
+    color: white;
+    border-radius: 15px;
+
+}
+
+.rohaan-button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 550px;
+}
+
+
+/* responsive css  */
+
+@media(max-width:570px) {
+    .banner-about {
+        max-width: 500px;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .about-main-heading {
+        font-size: 1.3rem;
+    }
+
+    .banner-subheading {
+        font-size: 1rem;
+    }
+
+    .banner-about-description {
+        font-size: 1rem;
+    }
+
+    .about-grid {
+        margin: 20px 10px;
+        flex-direction: column;
+    }
+
+    .about-grid-wrapper {
+        margin-bottom: 15px;
+    }
+    .director-section {
+        /* width: clamp(350px, 50vw, 1400px); */
+        max-width: 450px;
+        max-width: 560px;
+
+    }
+    .mobile-image{
+        min-width: 40  0px;
+        max-width: 560px;
+    }
+}

@@ -1,0 +1,15 @@
+.blog-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 24px;
+}
+.blog-img{
+    height: 230px;
+}
+.blog-main-heading{
+    color: white;
+}
+.banner-blog{
+    height: 300px;
+}

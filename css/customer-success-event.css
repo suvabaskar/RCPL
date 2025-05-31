@@ -1,0 +1,7 @@
+.grid-container-media{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    width: clamp(320px, 90%, 1400px);
+    margin:30px auto;
+}

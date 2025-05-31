@@ -1,0 +1,132 @@
+.contact-us{
+    margin: auto;
+    width: clamp(380px,90vw,1400px) !important;
+}
+
+.contact-us h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.contact-us h3{
+    font-weight: 400;
+    font-size: 16px;
+    color: #39AAE0;
+}
+.contact-us h4{
+    font-weight: 400;
+    font-size: 16px;
+}
+.contact-form-wrapper{
+    padding-top: 10px;
+    border-radius: 10px;
+    max-width: 550px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+} 
+.contact-us-form button{
+    background-color:#39AAE0 ;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+}
+.contact{
+    padding: 70px 70px 40px 70px;
+    justify-content: space-between;
+    /* width: 1280px; */
+    margin: auto;
+    width: clamp(380px,90vw,1280px) !important;
+}
+.contact-us-form input{
+    margin: 10px 0;
+    background-color: #D9D9D9;
+}
+.form-select-contact{
+    background-color: #D9D9D9;
+    color: #757575;
+    width: 550px;
+    padding: 10px 10px;
+}
+.contact-img{
+    width: 500px;
+    border-radius: 30px;
+}
+.flex-wrapper{
+    /* width: 1200px; */
+    justify-content: space-between;
+    /* width: clamp(380px,90vw,1200px) !important; */
+}
+.contact-us-icon{
+    padding: 20px;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+.contact-us-icon img{
+    width: 47px;
+    height: 47px;
+}
+.icon-content{
+    text-align: center;
+}
+.icon-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-content-heading{
+    color: black;
+    font-weight: 700;
+}
+.address{
+    background-color: #e4e4e4;
+    /* padding-left: 100px; */
+    padding: 40px 30px 40px 100px;
+    max-width: 100;
+}
+.reach-us{
+    font-weight: 800;
+    color: black;
+    font-size: 24px;
+}
+.chennai{
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+/* .office-address{
+    padding-left: 10px;
+} */
+.contact-map{
+    width: 880px;
+}
+.address-map{
+    max-width: 1600px;
+    margin: auto;
+}
+.contact-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+@media(max-width:426px){
+.contact{
+    padding: 0!important;
+    flex-direction: column;
+   gap: 20px;
+}
+.contact-img{
+    width: 400px;
+}
+.contact-us-icon{
+    width: 400px;
+    flex-direction: column;
+}
+.address-map {
+    flex-direction: column;
+}
+.address{
+    padding: 20px;
+}
+}

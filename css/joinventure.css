@@ -1,0 +1,114 @@
+.dir-msg-header{
+    width: clamp(320px,80%,1440px);
+    margin: auto;
+}
+.dir-msg-header h3{
+    font-size: clamp(1rem,2.5vw,1.6rem);
+    font-weight: 600;
+}
+.dir-msg-header p{
+    font-size: clamp(0.8rem,2vw,1rem);
+}
+.why-wrapper-main-grid{
+    width: clamp(320px,90%,1400px);
+    margin: auto;
+}
+.why-wrapper-main-grid h2{
+    font-size: clamp(1rem,2.5vw,1.5rem);
+    line-height: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.why-wrapper-grid h3{
+    font-size: clamp(0.8rem,2vw,1.2rem);
+}
+.grid-container-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: clamp(320px, 90%, 1400px);
+    padding: min(5vw, 20px);
+    margin: auto;
+}
+.why-wrapper-grid{
+    width: 380px;
+    text-align: left;
+    margin: 0 20px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    border-top: 2px solid rgb(16, 150, 239);
+}
+.why-wrapper-grid img{
+    padding-bottom: 10px;
+}
+@media (max-width: 480px){
+    .why-wrapper-grid{
+        width: 360px !important;
+        margin: auto !important;
+        padding: 20px 0;
+    }
+    .grid-container-wrapper{
+        padding: 0px;
+    }
+    .why-wrapper-grid p{
+        font-size: 0.9rem;
+    }
+    .jv-wrapper h2 {
+        font-weight: 500;
+        line-height: 1.3rem !important;
+        text-align: center;
+    }
+    .jv-wrapper p{
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: clamp(320px, 90%, 1200px);
+    /* padding: min(5vw, 50px); */
+    margin: auto;
+}
+.main-heading h2 {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: min(1vw, 50px);
+}
+
+.main-heading p {
+    text-align: center;
+    width: clamp(320px, 80%, 1200px);
+    margin: auto;
+}
+.jv-wrapper{
+    text-align: center;
+    width: clamp(320px, 80%, 1200px);
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+.jv-wrapper h1{
+    font-size: clamp(1rem, 2.5vw,1.8rem);
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: min(1vw, 50px);
+}
+.jv-wrapper h3{
+    font-size: clamp(1rem, 2.5vw,1.2rem);
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    color: navy;
+}
+.jv-wrapper h2{
+    font-size: clamp(0.8rem, 2.5vw,1.1rem);
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: center;
+}

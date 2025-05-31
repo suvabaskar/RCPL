@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <div class="container p-4">
+        <h2 class="text-muted">Website goes here.. </h2>
+        <p class="text-white">Wait for <strong>6 sec</strong> to open popup </p>
+    </div>
+
+    <div class="modal" id="modalpopup">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header p-4">
+                    <h4 class="modal-title">Here goes heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body p-5">
+                    Here goes all content
+                </div>
+                <div class="modal-footer p-2">
+                    <button type="button" class="btn btn-sm btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts Needed -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom script -->
+    <script>
+        $(document).ready(function () {
+            callshowpopup();
+        });
+        var showpopup;
+        function callshowpopup() {
+            showpopup = setTimeout(function () { $("#modalpopup").modal("show"); }, 2000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.box-grid-residential {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin: 30px auto auto auto;
+    padding: min(5vw, 30px);
+    width: clamp(320px, 90%, 1200px);
+}
+
+.box-grid-residential img {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box-grid-residential button {
+    background-color: rgb(1, 83, 1);
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+span .circle-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.residential-header {
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.7rem);
+    font-weight: 600;
+    color: rgb(0, 0, 113);
+    margin-top: 30px;
+}
+
+.bg-blue {
+    position: absolute;
+    z-index: -2;
+    right: 28%;
+    top: 32%;
+    width: 400px !important;
+    height: 250px !important;
+}
+
+.bg-blue-top {
+    position: absolute;
+    z-index: -2;
+    left: 28%;
+    top: 5%;
+    width: 400px !important;
+    height: 250px !important;
+}
+
+.bg-residential {
+    background: url(../img/Frame\ 11.png) no-repeat center center;
+}
+
+.residential-wrapper h2 {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    font-weight: 600;
+}
+
+.residential-wrapper h3 {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: rgb(2, 41, 130);
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.box-grid-residential {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin: 30px auto auto auto;
+    padding: min(5vw, 30px);
+    width: clamp(320px, 90%, 1200px);
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 1.5rem;
+    margin: 30px auto auto auto;
+    padding: min(5vw, 30px);
+    width: clamp(320px, 90%, 1200px);
+}
+
+.residential-header-sm {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: rgb(60, 60, 60);
+    text-align: center;
+    font-weight: 600;
+}
+
+@media(max-width:726px) {
+    .bg-blue {
+        width: 300px !important;
+        right: 12% !important;
+        top: 22% !important;
+    }
+
+    .box-img {
+        width: 300px !important;
+    }
+
+    .bg-blue-top {
+        width: 270px !important;
+        left: 21% !important;
+        top: -8% !important;
+    }
+
+    .bg-residential {
+        display: none;
+    }
+
+    .residential-header-sm {
+        padding: 0 20px;
+    }
+
+    .project-info-content p {
+        font-size: 14px !important;
+    }
+
+    .residential-header {
+        padding: 0 20px;
+    }
+
+    .project-wrapper-sale {
+        width: 350px;
+    }
+
+    .grid-box {
+        width: 320px;
+        padding: 0px;
+        margin: 0px;
+        gap: 0;
+    }
+}

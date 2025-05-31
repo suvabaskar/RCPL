@@ -1,0 +1,346 @@
+.elementor-2987 .elementor-element.elementor-element-be78fdd .elementor-heading-title {
+    font-size: 1rem !important;
+}
+
+.project-wrapper {
+    flex-direction: row ;
+    margin: auto;
+    width: clamp(320px, 90vw, 1400px);
+    justify-content: space-evenly;
+    padding: 50px 20px;
+}
+
+.project-image-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.project-container {
+    margin: auto;
+    width: clamp(320px, 90vw, 1400px);
+}
+
+.project-main-image {
+    width: clamp(320px, 50vw, 500px);
+    margin: auto;
+    object-fit: cover;
+}
+
+.project-details-box {
+    width: clamp(320px, 80vw, 700px);
+    margin: auto;
+}
+
+.project-units {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    margin: auto;
+}
+
+.bg-grey {
+    background-color: rgba(177, 177, 177, 0.105);
+}
+
+.invesment-item-box h1 {
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
+    font-weight: 600;
+    color: rgb(0, 0, 118);
+}
+
+.invesment-number-container {
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+}
+
+.invesment-item-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.commerical-property-img {
+    width: clamp(320px, 50vw, 500px);
+    margin: auto;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.clearfix {
+    display: flex;
+    align-items: center;
+}
+
+.y-us-title h2 {
+    font-size: clamp(1rem, 1.5vw, 2rem) !important;
+    text-transform: capitalize !important;
+}
+
+.y-building-bg {
+    position: absolute;
+    top: 62% !important;
+    height: 38% !important;
+    left: 38% !important;
+    object-fit: contain;
+}
+
+.investment-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 20px 0 !important;
+}
+
+.y-building-bg2 {
+    position: absolute;
+    top: 62% !important;
+    height: 38% !important;
+    left: -8% !important;
+    object-fit: contain;
+}
+
+.y-building-bg3 {
+    position: absolute;
+    top: 62% !important;
+    height: 38% !important;
+    left: 84% !important;
+    object-fit: contain;
+}
+
+.y-us-section {
+    position: relative;
+    padding: 82px 0 182px 0 !important;
+    width: clamp(425px,90vw,1400px) !important; 
+    margin: auto;
+    background: linear-gradient(135deg, #0D3C55, #1E87C2) !important;
+}
+
+.y-us-title h2 {
+    color: white !important;
+}
+.y-us-title p {
+    color: rgb(186, 239, 255) !important;
+}
+.y-us-content h4 {
+    color: white !important;
+
+}
+@media (max-width:426px){
+    .banner{
+        flex-direction: column !important;
+        height: 575px !important;
+        object-fit: cover !important;
+    }
+    .banner-content {
+        width: 320px !important;
+        margin: 0px !important;
+        position: absolute;
+               top: 13% !important;
+        left: 12% !important;
+    }
+    .contact-form {
+        top: 60% !important;
+    }
+    .rohaan{
+        font-size: 18px !important ;
+    }
+    .banner-title{
+        font-size: 25px !important;
+    }
+    .text-primary{
+        padding: 0px !important;
+    }
+    .banner-subtext{
+        font-size: 16px !important;
+    }
+    .project-wrapper{
+        padding: 0px !important;
+        flex-direction: column !important;
+    }
+    .project-details-box{
+        padding: 20px 0 0 0;
+    }
+    .project-description-text{
+        font-size: 12px !important;
+    } 
+    .mobile-project-wrapper{
+        flex-direction: column-reverse !important;
+    }
+    .project-container{
+        padding-top: 20px !important;
+    }
+    .investment-icons{
+        flex-direction: column;
+    }
+    .invesment-item-box{
+        margin: auto
+    }
+    .investment-heading{
+        font-size: 18px;
+    }
+    .y-us-section{
+        width: 425px !important;
+    }
+    .y-building-bg{
+    display: none !important;
+    }
+    .y-us-section .container{
+        width: 400px !important;
+    }
+    .y-building-bg2 {
+        position: absolute;
+        top: 79% !important;
+        height: 22% !important;
+        left: -8% !important;
+        object-fit: contain;
+    }
+    .redwood-icon-box p{
+        font-size: 12px !important;
+        text-align: center;
+    }
+    .redwood-icon-box img{
+        width: 40px;
+        height:40px;
+        align-items: center;
+    }
+    .redwood-icon-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-invest-grid {
+        gap: 02px !important;
+    }
+    .box-icon{
+        width: 320px !important;
+    }
+    /* .box-grid{
+        grid-template-columns: none !important;
+    } */
+}
+@media (max-width:768px){
+    /* .y-us-section{
+        width: 700px !important;
+    } */
+    .y-building-bg3{
+        display: none;
+    }
+    .y-building-bg {
+        display: none;
+    }
+    .rohaan{
+        font-size: 18px;
+    }
+    .banner-title{
+        line-height:1rem !important;
+        width: 300px;
+    }
+    .text-primary{
+        padding: 0px;
+    }
+    .banner-subtext{
+        font-size: 16px;
+    }
+    .project-wrapper{
+        flex-direction: column;
+        padding: 20px 0 0 0;
+    }
+    .project-details-box{
+        padding: 20px 0 20px 0;
+    }
+    .mobile-project-wrapper{
+        flex-direction: column-reverse;
+    }
+    .rent-container h3{
+        font-size: 16px !important;
+    }
+    .rent-container p{
+        font-size: 14px !important;
+    }
+    .unique-quote-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:1024px){
+    .y-building-bg{
+        display: none;
+    }
+    .y-building-bg3{
+        display: none;
+    }
+    .y-building-bg2{
+        left: 8% !important;
+    }
+    .project-details-box{
+        padding-left: 20px;
+    }
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 2px solid #adadad;
+  z-index: 9;
+  background-color: white;
+  padding: 20px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input[type=text], input[type=email] , input[type=number] {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px;
+  margin-top: 10px;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: rgb(195, 11, 11) !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 20px !important;
+  position: absolute !important;
+  right: 2px !important;
+  top: 2px !important;
+}
+.close-x{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    color: white;
+}
+
+body.overlay-active {
+  background-color: rgb(188, 188, 188); /* grey with opacity */
+  transition: background-color 0.3s ease;
+}

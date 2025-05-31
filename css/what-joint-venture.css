@@ -1,0 +1,7 @@
+.rent-container{
+    padding: 0px !important;
+}
+.rent-container h3{
+    font-size: clamp(0.9rem,2vw,1.1rem);
+    line-height: 1.4rem;
+}

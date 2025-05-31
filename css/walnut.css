@@ -1,0 +1,30 @@
+
+.table-main-heading{
+    text-align: center;
+}
+.responsive-map-container iframe {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    margin-top: -100px;
+    height: 100%;
+    border: 0;
+}
+@media(max-width:426px){
+    .banner-content{
+        width: 350px !important;
+        margin: auto;
+        top: -29% !important;
+        left: -80% !important;
+    }
+    .responsive-map-container iframe {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        margin-top: -100px;
+        height: 100%;
+        border: 0;
+    }
+}

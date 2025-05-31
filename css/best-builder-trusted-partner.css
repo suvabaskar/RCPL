@@ -1,0 +1,51 @@
+.partner-wrapper {
+    width: 700px;
+    margin: auto;
+}
+
+.trusted-main-wrapper {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.builder-heading-trusted {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    width: 300px;
+    margin: 30px auto auto auto;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(46, 107, 160);
+}
+.trusted-header{
+    font-size: 30px;
+    font-weight: 600;
+    width: 700px;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+.unique-info{
+    width: 700px !important;
+    margin: auto;
+}
+.unique-info h2{
+    font-size: clamp(1rem,2.5vw,2rem);
+    font-weight: 600;
+}
+.unique-info p{
+    font-size: clamp(0.8rem,2.5vw,1.2rem);
+}
+.why-wrapper h2{
+    font-size: clamp(0.9rem,2.5vw,1.2rem);
+    font-weight: 600;
+    text-align: left;
+}
+.why-heading{
+    font-size: clamp(1rem,2.5vw,1.5rem);
+    font-weight: 600;
+}

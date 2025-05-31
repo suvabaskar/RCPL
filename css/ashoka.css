@@ -1,0 +1,227 @@
+.banner-wrapper {
+    display: flex;
+    padding: 20px;
+    width: clamp(320px, 100vw, 1600px);
+    margin: auto;
+}
+
+.banner-info-container {
+    width: 800px;
+    color: white;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.banner-info-form {
+    background: rgba(255, 255, 255, 0.57);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba (0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.banner-inner-form {
+    background-color: #d9d9d983;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-info-form h3 {
+    color: #333;
+    font-size: 0.90rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.banner-inner-form button {
+    background: #0099ff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.banner-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/villa\ banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-info-form input {
+    margin: 05px 0;
+    background-color: #ffffff61 !important;
+}
+
+.banner-form-select {
+    margin: 3px 0 10px 0 !important;
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e7684;
+    border-color: #ffffff61;
+    background-color: #ffffff61 !important;
+    ;
+}
+
+.highlights-section {
+    /* background: url(../img/highlights-building.png); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/highlights-building.png);
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 50px;
+}
+
+.highlights img {
+    width: 60px;
+    height: 60px;
+}
+
+.highlights-item {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 74, 141);
+    background: linear-gradient(to bottom, rgb(0, 136, 255), rgb(1, 75, 159));
+    border-radius: 10px
+}
+
+.highlights-item h3 {
+    color: white;
+}
+
+.highlights-item h3 {
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
+    text-align: center;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.highlights-item:hover {
+    transform: translateY(-5px);
+}
+
+.highlights-title {
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: white;
+    font-weight: 700;
+}
+
+.highlights-container {
+    padding: min(20px, 5vw);
+}
+
+.responsive-container {
+    position: relative !important;
+    width: 100% !important;
+    height: 500px !important;
+    /* set your desired height */
+    overflow: hidden !important;
+}
+
+.responsive-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+}
+
+
+@media(max-width:728px) {
+    .banner-wrapper {
+        flex-direction: column;
+    }
+
+    .banner-description {
+        width: 320px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .banner-info-container {
+        width: 320px;
+        margin: auto;
+    }
+
+    .property-content {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .property-info {
+        width: 100%;
+    }
+
+    .card-img {
+        width: 350px;
+    }
+
+    .border-divider {
+        display: none;
+    }
+
+    #filter-buttons button.active {
+        font-size: 12px;
+    }
+
+    #filter-buttons button {
+        font-size: 12px;
+    }
+
+    .property-details {
+        height: auto;
+    }
+
+    .unique-property-section {
+        flex-direction: column;
+    }
+
+    .unique-property-info-container {
+        max-width: 100%;
+    }
+
+    .unique-contact-form {
+        width: 100%;
+    }
+    .highlights{
+        grid-template-columns: 1fr;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+    }
+    .project-card {
+        width: 100%;
+        max-width: 380px;
+    }
+    .projects-container1{
+        flex-direction: column;
+    }
+
+}

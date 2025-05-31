@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rohaan Construction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/commerical.css" rel="stylesheet">
+    <link href="css/commerical-sale-in-medavakkam.css" rel="stylesheet">
+    <link href="css/best-builder-in-medavakkam.css" rel="stylesheet">
+    <link href="css/residential-apartments.css" rel="stylesheet">
+    <link href="css/crest.css" rel="stylesheet">
+    <link href="css/apartments-madipakkam.css" rel="stylesheet">
+    <!-- <link href="css/index.css" rel="stylesheet"> -->
+
+
+
+
+    <link rel="icon" href="img/rcpl-icon.png" type="image/png">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".count");
+
+        counters.forEach((counter) => {
+            counter.innerText = "0"; // Initialize each counter
+
+            const updateCount = () => {
+                const target = +counter.getAttribute("data-target"); // Target number
+                let current = +counter.innerText.replace(/\D/g, ""); // Remove any non-numeric characters
+                const increment = Math.ceil(target / 100); // Adjust speed by dividing target
+
+                if (current < target) {
+                    counter.innerText = `${Math.min(current + increment, target)}+`; // Increment smoothly
+                    setTimeout(updateCount, 20); // Recursive call for smooth animation
+                } else {
+                    // Format the final number appropriately
+                    if (target >= 1000) {
+                        counter.innerText = `${(target / 1000).toFixed(1)}K+`; // Display "K+" for 1000+
+                    } else {
+                        counter.innerText = `${target}+`; // Normal number with "+"
+                    }
+                }
+            };
+
+            updateCount(); // Start counting
+        });
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".scroll-link");
+
+        links.forEach((link) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the page from refreshing
+                const targetId = this.getAttribute("href").substring(1); // Get the ID without the #
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Scroll smoothly to the target element
+                    targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+
+            fetch("../Rohaanconstr/send_mail.php", {
+                method: "POST",
+                body: formData,
+            })
+                .then(response => response.text())
+                .then(result => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: green;">${result}</p>`;
+                    form.reset(); // Clear the form
+                })
+                .catch(error => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: red;">Error: Could not send your message.</p>`;
+                });
+        });
+    });
+
+
+
+
+</script>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
+            <div class="container">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                            <a href="tel:+01234567890" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                            <a href="mailto:example@gmail.com" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+        <div class="contact-icons">
+            <a href="tel:9003198331" class="phone-icon">
+                <span class="rotated-text"> 9003198331</span> <i class="ph-icon fas fa-phone-alt"></i>
+            </a>
+            <a href="https://wa.me/9003198331" target="_blank" class="whatsapp-icon">
+                <img src="img/what-icom.png" alt="WhatsApp Icon">
+            </a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i>Cental</h1> -->
+                    <img src="img/Rohaancon-logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbarleft navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="commercial-property.html" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown">Commercial
+                                Property</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="crest.html" class="dropdown-item">Rohaan Crest</a>
+                                <a href="walnut.html" class="dropdown-item">Rohaan Walnut</a>
+                                <a href="redwood.html" class="dropdown-item">Rohaan Redwood</a>
+                                <a href="acacia.html" class="dropdown-item">Rohaan Acacia</a>
+                            </div>
+                        </div>
+                        <a href="join-venture-chennai.html" class="nav-item nav-link">Joint Venture</a>
+                        <div class="nav-item dropdown">
+                            <a href="residential-apartments.html" class="nav-link dropdown-toggle">Residential
+                                Property</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="Phoneix.html" class="dropdown-item">Rohaan Phoenix</a>
+                                <a href="Ashoka.html" class="dropdown-item">Rohaan Ashoka</a>
+                                <a href="Cypress.html" class="dropdown-item">Rohaan Cypress</a>
+                                <a href="villa.html" class="dropdown-item">Villa</a>
+
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="about.html" class="nav-link dropdown-toggle">About</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="channelpartner.html" class="dropdown-item">Channel Partners</a>
+                                <a href="careers.html" class="dropdown-item">Careers</a>
+                                <a href="blog.html" class="dropdown-item">Blogs</a>
+                                <a href="contact.html" class="dropdown-item">Contact</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Book a Site Visit </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+    <section class="banner">
+        <div class="banner-content">
+
+            <h1 class="banner-title"><span class="text-primary">Commercial</span> <span class="rohaan"> PROPERTY
+                    FOR SALE IN </span><span class="text-primary">CHENNAI</span></h1>
+
+            <p class="banner-subtext">Discover Prime Commercial Properties with Rohaan Constructions!</p>
+
+        </div>
+
+        <div class="contact-form">
+            <h3>Grab your Commercial Space Now
+
+            </h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="tel" placeholder="Phone no" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <div class="grab-section">
+        <marquee width="100%" direction="left" height="78px">
+            Discover Your Dream Property! Discover Your Dream Property! Discover Your Dream Property! Discover Your
+            Dream Property! Discover Your Dream Property!
+        </marquee>
+    </div> -->
+
+
+    <section class="project-container mt-4">
+        <h2 class="project-section-title">Our Projects</h2>
+        <div class="project-wrapper">
+            <!-- Image Section -->
+            <div class="project-image-box">
+                <img src="img/walnut.jpg" class="project-main-image">
+                <!-- <div class="price-button">₹ 6200/Sq.ft</div> -->
+            </div>
+
+            <!-- Content Section -->
+            <div class="project-details-box">
+                <h3 class="project-name">Rohaan Walnut - For Sale</h3>
+                <p class="project-location-name">Medavakkam</p>
+                <div class=" project-units">
+                    <p class="project-info-text"><strong>6 Units</strong></p>
+                    <p class="project-info-text"> <strong>1044 to 1125 Sq.ft</strong></p>
+                    <p class="project-info-text"> <strong>9000/Sq.ft</strong></p>
+                </div>
+                <p class="project-description-text">
+                    Rohaan Walnut is an upcoming Commercial Space in Medavakkam, ideal for your investment goals!
+                    This property offers 6 spacious commercial units, perfect for offices or retail outlets.
+                    These units are thoughtfully designed to cater to your business needs, offering ample space
+                    and a modern, professional environment. We also offer comprehensive property management services,
+                    ensuring that your investment is well-maintained and managed efficiently.
+                    Grab the opportunity to book your space in Rohaan Walnut, a prime commercial property
+                    in this thriving neighborhood.
+                </p>
+
+                <!-- Buttons -->
+                <div class="project-buttons-box">
+                    <button onclick="openForm()" class="project-brochure-button">Download E-Brochure</button>
+                    <a href="walnut.html"><button class="project-details-button">More Details</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-container my-2 bg-grey">
+        <div class="project-wrapper mobile-project-wrapper">
+            <!-- Content Section -->
+            <div class="project-details-box">
+                <h3 class="project-name">Rohaan Redwood</h3>
+                <p class="project-location-name">Perumbakkam</p>
+                <div class=" project-units">
+                    <p class="project-info-text"><strong>6 Units</strong></p>
+                    <p class="project-info-text"> <strong>1068 Sq.ft</strong></p>
+                </div>
+                <p class="project-description-text">
+                    Rohaan RedWood offers a prime opportunity for investors and businesses
+                    seeking a strategic location in Perumbakkam, Chennai. This commercial
+                    property comprises six exclusive units, providing a range of options for
+                    businesses looking to establish their presence in this thriving area.
+                </p>
+
+                <!-- Buttons -->
+                <div class="project-buttons-box">
+
+                    <!-- <button onclick="openForm()" class="project-brochure-button">Download E-Brochure</button> -->
+                    <a href="redwood.html"><button class="project-details-button">More Details</button></a>
+                </div>
+            </div>
+            <!-- Image Section -->
+            <div class="project-image-box">
+                <img src="img/redwood.png" class="project-main-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="project-container">
+        <div class="project-wrapper">
+            <!-- Image Section -->
+            <div class="project-image-box">
+                <img src="img/acacia.jpeg" class="project-main-image">
+            </div>
+
+            <!-- Content Section -->
+            <div class="project-details-box">
+                <h3 class="project-name">Rohaan Acacia</h3>
+                <p class="project-location-name">Medavakkam</p>
+                <div class=" project-units">
+                    <p class="project-info-text"><strong>6 Units/<br>1 Unit Available</strong></p>
+                    <p class="project-info-text"> <strong>1068 Sq.ft</strong></p>
+                    <p class="project-info-text"> <strong>7400/sqft</strong></p>
+                </div>
+                <p class="project-description-text">
+                    Introducing Rohaan Acacia – an exceptional commercial property by Rohaan
+                    Constructions in the heart of Chennai. Immerse your business in a thriving
+                    environment with thoughtfully designed spaces, offering the perfect blend of
+                    functionality and aesthetic appeal. From prime retail spaces to strategic office
+                    layouts, Rohaan Acacia caters to diverse business needs. Secure your space
+                    today and be part of a community that fosters growth and prosperity.
+                </p>
+
+                <!-- Buttons -->
+                <div class="project-buttons-box">
+
+                    <!-- <button onclick="openForm()" class="project-brochure-button">Download E-Brochure</button> -->
+                    <a href="acacia.html"><button class="project-details-button">More Details</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popup Form -->
+    <div id="popupForm" class="form-popup">
+        <form class="form-container" onsubmit="handleSubmit(event)">
+            <button type="button" class="btn cancel" onclick="closeForm()"><span class="close-x">X</span></button>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Your Email" name="email" required>
+
+            <label for="number"><b>Number</b></label>
+            <input type="number" placeholder="Enter Your Number" id="number" name="number" required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="invesment-number-container">
+        <div class="investment-heading">Investment and Rental Returns</div>
+        <div class="investment-icons">
+            <div class="invesment-item-box">
+                <h1>8.5+ LPA</h1>
+                <p>Rental Per Annum</p>
+            </div>
+            <div class="invesment-item-box">
+                <h1>69K+</h1>
+                <p>Monthly Rental</p>
+            </div>
+            <div class="invesment-item-box">
+                <h1>7+%</h1>
+                <p>Rental Yield</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- custom why choose us -->
+    <div class="y-us-section">
+        <div>
+            <img class="y-building-bg" src="./img/building_bg 1cccdx.png" alt="img">
+            <img class="y-building-bg2" src="./img/building_bg 1cccdx.png" alt="img">
+            <img class="y-building-bg3" src="./img/building_bg 1cccdx.png" alt="img">
+            <img class="y-building-bg" src="./img/building_bg 1cccdx.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row  align">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <div class="y-us-head">
+                        <div class="y-us-title">
+                            <h2>Find Your Perfect Commercial Property in Chennai!</h2>
+                            <p>Looking to expand your business or invest in prime locations? We have commercial
+                                properties for sale or rent in Chennai, including Medavakkam and Perumbakkam.</p>
+                            <span class="y-us-title-border"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-sm-6 col-xs-12">
+                    <div class="y-us-content">
+                        <div class="service-3">
+                            <div class="service-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <img class="glyphicon glyphicon-cog icon" src="img/preferences.png" alt="icon">
+                                    </div>
+                                    <div class="y-us-content">
+                                        <h4>Commercial Space
+                                            for Sale</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <img class="glyphicon glyphicon-cog icon" src="img/preferences.png" alt="icon">
+                                    </div>
+                                    <div class="y-us-content">
+                                        <h4>Rental Income
+                                            Commercial Spaces</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-xs-12">
+                    <div class="y-us-contentbox">
+                        <div class="service-3">
+                            <div class="service-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <img class="glyphicon glyphicon-cog icon" src="img/preferences.png" alt="icon">
+                                    </div>
+                                    <div class="y-us-content">
+                                        <h4>Commercial Plots
+                                            for Sale</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <img class="glyphicon glyphicon-cog icon" src="img/preferences.png" alt="icon">
+                                    </div>
+                                    <div class="y-us-content">
+                                        <h4>Commercial Office
+                                            Space for Rent</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- custom why choose us ends-->
+
+    <section class="project-container">
+        <div class="project-wrapper">
+            <!-- Image Section -->
+            <div class="project-image-box">
+                <img src="img/commerical-page.jpg" class="commerical-property-img">
+            </div>
+            <!-- Content Section -->
+            <div class="project-details-box">
+                <h3 class="project-name">We built investment hubs around the Chennai city.</h3>
+                <p class="project-description-text">
+                    Are you on the lookout for premium commercial real estate in Chennai? Your search ends here! Rohaan
+                    Constructions, a trusted name since 2015, proudly presents a plethora of opportunities for astute
+                    investors and business owners with commercial property for sale in Chennai. With 45+ successfully
+                    completed residential projects and 10+ thriving commercial ventures in key areas like Medavakkam,
+                    Madipakkam, Perumbakkam, Puzhuthivakkam, and Velacherry, we bring you the finest in Chennai’s real
+                    estate market.
+                </p>
+                <p class="project-description-text">
+                    Explore unparalleled opportunities in Chennai’s dynamic real estate with our range of commercial
+                    properties. Whether you seek a prime commercial property for sale in Chennai, a lucrative commercial
+                    land for sale, or a thoughtfully designed commercial space strategically located for your business,
+                    we have you covered. Our portfolio includes ready-to-use commercial buildings for sale, offering
+                    turnkey solutions that speak volumes of your success. Don’t miss the chance to secure your future –
+                    buy commercial property in Chennai with us. Discover the perfect match for your business needs and
+                    aspirations with our diverse range of commercial properties for sale in Chennai.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="investment-container">
+        <div class="investment-icons">
+            <div class="redwood-icon-box">
+                <img src="img/finance.png" alt="icon">
+                <p>Hassle-free Financing</p>
+            </div>
+            <div class="redwood-icon-box">
+                <img src="img/rent-house.png" alt="icon">
+                <p>Potential for High Rentals</p>
+            </div>
+            <div class="redwood-icon-box">
+                <img src="img/connectivity.png" alt="icon">
+                <p>Seamless Connectivity</p>
+            </div>
+            <div class="redwood-icon-box">
+                <img src="img/price-graph.png" alt="icon">
+                <p>Price Appreciation</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-3">
+        <div>
+            <h2 class="heading-blue mt-5">Why invest with Rohaan Constructions?</h2>
+            <div class="why-invest-grid">
+                <div class="rent-container">
+                    <h3>01 Proven Track Record:</h3>
+                    <p>With a robust foundation laid in 2015, we’ve earned the trust of our clients through impeccable
+                        delivery on 45+ residential and 10+ commercial projects.</p>
+                </div>
+                <div class="rent-container">
+                    <h3>02 Strategic Locations: </h3>
+                    <p>Our projects strategically dot the prominent neighborhoods of Medavakkam, Madipakkam,
+                        Perumbakkam, Puzhuthivakkam, and Velacherry, ensuring your investment is in high-demand areas.
+                    </p>
+                </div>
+                <div class="rent-container">
+                    <h3>03 Quality Construction:</h3>
+                    <p>At Rohaan Constructions, we pride ourselves on delivering structures that stand the test of time.
+                        Our commitment to quality is evident in every brick we lay.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- accordian -->
+    <section class="accordian-wrapper">
+        <h2>Find the answers you need </h2>
+        <p>Frequently Asked Questions </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong> What is a commercial property in Chennai's real estate market?</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        A commercial property in Chennai involves developing, buying, or leasing income-generating
+                        business spaces like offices, retail, and industrial facilities.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>How do commercial properties work in Chennai's real estate?</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Commercial properties involve owning, leasing, or investing in business spaces to generate
+                        rental income, operate businesses, or resell for profit.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>What are the roles and responsibilities of partners in a commercial property investment?
+                        </strong> </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        In Chennai’s commercial property market, developers handle construction, investors provide
+                        funding, and agreements define profit-sharing, ownership, and management roles.
+                        And don’t worry, we will send you a reminder through email and admin notice banner of your
+                        WordPress dashboard.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>What is the expected return on investment in Chennai's commercial properties?
+                        </strong> </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        ROI in commercial properties depends on location, type, demand, and rental yield, with returns
+                        as fixed income, profit shares, or capital appreciation.
+                        And don’t worry, we will send you a reminder through email and admin notice banner of your
+                        WordPress dashboard.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <strong>What tips can ensure the success of commercial property investments in Chennai?
+                        </strong> </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Success in commercial property investment requires market research, prime locations,
+                        understanding tenants, favorable leases, expert management, and market awareness. And don’t
+                        worry, we will send you a reminder through email and admin notice banner of your WordPress
+                        dashboard.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <strong>What are the benefits of investing in commercial properties in Chennai?
+                        </strong> </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Commercial properties offer stable rental income, capital appreciation, diversification, tax
+                        benefits, and lower vacancy risks, making them a lucrative investment. </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <strong>Who are commercial property developers, and what role do they play in Chennai's real
+                            estate market?
+                        </strong> </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Commercial property developers design, build, and manage business spaces, facilitating
+                        investments and helping businesses find suitable locations.. </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <strong>How do I choose the right commercial property developer in Chennai?
+                        </strong> </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Choosing a commercial property developer requires assessing reputation, track record, financial
+                        stability, and transparency to align with investment goals.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        <strong>What are the advantages of investing in commercial properties?
+                        </strong> </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Commercial properties offer high rental yields, long leases, low tenant turnover, value
+                        appreciation, and steady cash flow from business tenants.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header-text">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        <strong>What are the disadvantages of commercial property investments?
+                        </strong> </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body-text">
+                        Commercial properties require high initial investment, face market fluctuations, management
+                        complexities, and risks from economic downturns affecting tenants.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- accordian ends -->
+
+    <!-- request a Quote block -->
+    <div class="unique-quote-container">
+        <div class="unique-quote-form-section">
+            <h4 class="unique-quote-appointment-title">APPOINTMENT</h4>
+            <h1 class="unique-quote-main-title">Request a Quote</h1>
+            <form class="unique-quote-form">
+                <label class="unique-quote-label" for="unique-quote-name">Name</label>
+                <input type="text" id="unique-quote-name" class="unique-quote-input" placeholder="Enter your full name"
+                    required>
+
+                <label class="unique-quote-label" for="unique-quote-phone">Phone</label>
+                <input type="tel" id="unique-quote-phone" class="unique-quote-input"
+                    placeholder="Enter your  phone number" required>
+
+                <label class="unique-quote-label" for="unique-quote-email">Email</label>
+                <input type="email" id="unique-quote-email" class="unique-quote-input"
+                    placeholder="Enter your email address" required>
+
+                <button type="submit" class="unique-quote-submit-button">Submit</button>
+            </form>
+        </div>
+
+        <div class="unique-quote-info-section ">
+            <div class="wrapper">
+                <div class="box-grid">
+                    <div class="box-icon">
+                        <div class="image"> <img src="img/Vector-4.png" alt="Safety Icon"
+                                class="unique-quote-info-icon"></div>
+                        <div class="info">
+                            <h3 class="title">Safety and Security</h3>
+                            <p>Rohaan Constructions takes safety and security very seriously. All of our projects are
+                                designed and built to meet the highest safety standards.</p>
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <div class="image"> <img src="img/Vector-4.png" alt="Safety Icon"
+                                class="unique-quote-info-icon"></div>
+                        <div class="info">
+                            <h3 class="title">Quality Products Used</h3>
+                            <p>We source our materials from reputable suppliers and we have a strict quality control
+                                process in place.</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <div class="image"> <img src="img/Vector-4.png" alt="Safety Icon"
+                                class="unique-quote-info-icon"></div>
+                        <div class="info">
+                            <h3 class="title">Build Quality</h3>
+                            <p>We use the latest construction techniques and we have a team of experienced builders who
+                                are committed to delivering high-quality work.</p>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- request a Quote block ends -->
+
+    <section class="projects-section">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="projects-container">
+            <div class="project-category">
+                <h3>Chennai</h3>
+                <h4>FLATS</h4>
+                <ul>
+                    <li><a href="#">1 BHK Flats in Chennai</a></li>
+                    <li><a href="#">2 BHK Flats in Chennai</a></li>
+                    <li><a href="#">3 BHK Flats in Chennai</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Apartments in Chennai</h3>
+                <h4>PRICE RANGE</h4>
+                <ul>
+                    <li><a href="#">Apartments Between 50L - 60L in Chennai</a></li>
+                    <li><a href="#">Apartments Between 70L - 80L in Chennai</a></li>
+                    <li><a href="#">Apartments Between 80L - 90L in Chennai</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Apartments in Chennai</h3>
+                <h4>FLATS</h4>
+                <ul>
+                    <li><a href="#">2BHK Flats in Madipakkam</a></li>
+                    <li><a href="#">2BHK Flats in Perumbakkam</a></li>
+                    <li><a href="#">2BHK Flats in Medavakkam</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Flats in Chennai</h3>
+                <h4>APARTMENTS</h4>
+                <ul>
+                    <li><a href="#">Apartments in Madipakkam</a></li>
+                    <li><a href="#">Apartments in Perumbakkam</a></li>
+                    <li><a href="#">Apartments in Medavakkam</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <img src="img/Rohaancon-logo.png" alt="Logo">
+                        <div class="footer-item">
+                            <p class="text-white mb-0">Rohaan Constructions Private LTD is a leading real estate
+                                developer in Chennai, Tamil Nadu. We’re in business for over 15 years and have a
+                                reputation for quality construction and customer service.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Join as Channel Partner</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Projects</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Residential Projects</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Commercial Projects </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Villa</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Joint Venture</a>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i>
+                            Medavakkam, Chennai,Tamil Nadu 600100</a>
+                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i>
+                            sales@rohaanconstructions.com</a>
+                        <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i>
+                            +91 9003198331</a>
+                        <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +91
+                            9597088298</a>
+                        <div class="d-flex">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <script>
+        function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+            document.body.classList.add('overlay-active');
+
+        }
+
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+            document.body.classList.remove('overlay-active');
+
+        }
+        function validateNumber() {
+            const number = document.getElementById("number").value;
+
+            if (number.length !== 10) {
+                alert("Please enter a valid 10-digit number.");
+                return false; // form won't submit
+            }
+
+            return true; // form will submit
+        }
+        function handleSubmit(event) {
+            event.preventDefault(); // stop form from submitting
+
+            event.target.reset(); // clear all inputs
+            closeForm(); // close the popup form
+
+            // Trigger brochure download
+            const link = document.createElement('a');
+            link.href = "./assests/Walnut brochure.pdf"; // replace with your actual file path
+            link.download = 'Rohaan-Walnut-Brochure.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+    </script>
+    <img src="./assests/Walnut brochure.pdf" alt="">
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

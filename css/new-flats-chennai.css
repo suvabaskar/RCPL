@@ -1,0 +1,57 @@
+.property-wrapper-content{
+    width: 420px;
+    justify-content: space-between;
+    margin: 80px auto 10px auto;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px
+}
+.property-wrapper-content h3{
+    font-size: clamp(1rem,2.5vw,1.1rem);
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+.property-wrapper-content p{
+    font-size: clamp(0.8rem,2.5vw,1rem);
+}
+.why-content{
+    width: clamp(320px,80%,1400px);
+    margin: auto
+}
+.why-content h3{
+    font-size: clamp(1rem,2.5vw,1.1rem);
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+.why-content p{
+    font-size: clamp(0.8rem,2.5vw,1rem);
+  
+}
+.accordian-wrapper{
+    width: clamp(320px, 90%, 1440px);
+    margin: auto;
+}
+#accordionExample{
+    width: clamp(320px, 90%, 1440px);
+    margin: auto;
+}
+.accordion-body-text{
+    padding: 20px;
+}
+
+/* move-in-vs-construction */
+.why-invest-grid-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 1.5rem;
+    width: clamp(320px, 90%, 1400px);
+    padding: min(5vw, 15px);
+    margin: auto;    
+}
+.rent-container h4{
+    font-size: clamp(0.8rem,2.5vw,1rem);
+    margin-top: 10px;
+    color: rgb(106, 106, 106);
+    font-weight: 600;
+}

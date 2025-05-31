@@ -1,0 +1,388 @@
+.rohaan-feature-box {
+    background: #888888 !important;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.rohaan-features {
+    background-color: #f5f5f5a6 !important;
+}
+
+.rohaan-feature-box h3,
+.rohaan-feature-box p {
+    color: white !important;
+}
+
+
+.why-rohaan {
+    background: #39aae000;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    background-image: url(../img/WHYROHAAN_.png);
+    background-position: center;
+}
+
+.why-rohaan h2 {
+    color: #b0b0b0 !important;
+}
+
+.why-rohaan span {
+    color: #b0b0b0 !important;
+
+}
+
+.info-box {
+    background: #c3e0f45e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    color: #000000;
+}
+
+.info-box p {
+    color: #858585;
+}
+
+.form-containerparent {
+    margin: auto;
+}
+
+.form-heading {
+    color: white;
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.form-container1 {
+    margin: auto;
+}
+
+.cta-buttons {
+    margin: 0px !important;
+}
+
+.property-info {
+    gap: 0 !important;
+    justify-content: center !important;
+}
+
+.progress-bar-container {
+    margin-top: 20px !important;
+}
+
+.container4 {
+    width: clamp(320px, 100%, 1600px) !important;
+    margin: auto;
+    max-width: 1600px !important;
+}
+
+.bg-orange {
+    background-color: #ff5900;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -27px;
+
+}
+
+.bg-blue {
+    background-color: #0077ff !important;
+    width: 95px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -27px;
+
+}
+
+.bg-green {
+    background-color: #007e37;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -27px;
+
+}
+
+.bg-red {
+    background-color: #ff0000;
+    width: 95px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -27px;
+
+}
+
+.bg-navy {
+    background-color: #000b87;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -27px;
+
+}
+
+.advantage-green-h2 {
+    color: #007e37;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantage-navy-h2 {
+    color: #000b87;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantage-blue-h2 {
+    color: #0077ff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantage-red-h2 {
+    color: #ff0000;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.circle-num {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    margin: 0 !important;
+}
+
+.advantage-container-wrapper {
+    display: flex;
+    width: clamp(320px, 90vw, 1200px);
+    margin: 20px auto auto auto;
+}
+
+.advantage-container-wrapper-top {
+    display: flex;
+    width: clamp(320px, 90vw, 800px);
+    margin: 20px auto auto auto;
+}
+
+.advantage-container p {
+    display: flex;
+    padding: 0 0;
+}
+
+.advantage-orange-h2 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff5900;
+}
+
+.advantage-container p {
+    text-align: left;
+}
+
+.advantage-crest-img {
+    width: clamp(320px, 90vw, 1000px);
+}
+
+.advantage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    width: auto;
+
+}
+
+.advantage-content {
+
+    padding-left: 20px;
+}
+
+.advantages-mobile-wrapper {
+    display: none;
+}
+
+@media (max-width:426px) {
+    .banner {
+        flex-direction: column !important;
+        height: 770px;
+        object-fit: cover !important;
+    }
+
+    .banner-content {
+        width: 350px !important;
+        margin: auto;
+        top: -31%;
+        left: 1%;
+    }
+
+    .banner-description {
+        width: 350px !important;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .contact-form {
+        top: 68%;
+    }
+
+    .property-content {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .property-info {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .rohaan-features-container {
+        flex-direction: column;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .rohaan-features-content {
+        width: 380px;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .form-heading {
+        width: 214px;
+    }
+
+    .form-container1 input {
+        width: 390px !important;
+    }
+
+    .form-container1 select {
+        width: 390px !important;
+
+    }
+
+    .projects-container1 {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .fliter-container {
+        margin-top: 350px;
+    }
+
+    .filter-buttons-wrapper {
+        justify-content: start;
+    }
+    .form-container1 select{
+        margin: 0px;
+    }
+    .filter-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .border-divider {
+        display: none;
+    }
+
+    .card-img {
+        width: 350px;
+    }
+
+    .table-head {
+        margin-top: 0px;
+    }
+
+    table {
+        width: 320px !important;
+    }
+
+    td {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    .rohaan-crest {
+        padding: 20px 10px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .advantages-container {
+        display: none;
+    }
+    .advantages-mobile-wrapper{
+        display: block;
+    }
+    .advantage-orange-h2,
+    .advantage-blue-h2,
+    .advantage-green-h2,
+    .advantage-red-h2,
+    .advantage-navy-h2{
+        text-align: center;
+    }
+    .mobile-img{
+        width: 80px;
+        height: 75px;
+        margin: 10px 0;
+    }
+    .advantage-mobile-para{
+        font-size: 14px;
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+    .footer-text{
+        font-size: 14px;
+    } 
+}
+
