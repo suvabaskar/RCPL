@@ -750,9 +750,11 @@ p.awesome_line {
 .allied-companies-wrapper {
     margin-top: 100px;
 }
-.rohaan-group{
-   margin-top: 50px;
+
+.rohaan-group {
+    margin-top: 50px;
 }
+
 .rohaan-group-img {
     height: 300px;
     width: 600px;
@@ -760,21 +762,25 @@ p.awesome_line {
     object-position: center center;
     border-radius: 20px 20px 20px 20px;
 }
-.rohaan-group-container{
+
+.rohaan-group-container {
     display: flex;
     justify-content: space-between;
     width: 1240px;
     margin: auto;
     align-items: center;
 }
-.rohaan-group-text{
+
+.rohaan-group-text {
     width: 600px;
     text-align: left;
 }
-.rohaan-group-text h3{
+
+.rohaan-group-text h3 {
     font-size: 20px;
     font-weight: 600;
 }
+
 .video-wrapper {
     position: relative;
     width: 300px;
@@ -1049,40 +1055,134 @@ ul {
     height: 200px;
 }
 
-@media(max-width:768px){
-    .typeJsWrapper h1{
+@media(max-width:768px) {
+    .typeJsWrapper h1 {
         font-size: 20px;
         line-height: 32px;
     }
-    .container-typewrapper span{
+
+    .container-typewrapper span {
         font-size: 20px;
     }
-    .typeJsText{
+
+    .typeJsText {
         font-size: 20px !important;
     }
-    .property-heading{
+
+    .property-heading {
         width: 400px;
+        padding-bottom: 20px;
     }
-    .nav-item a{
+
+    .nav-item a {
         padding: 0px 10px !important;
     }
+
     /* .nav-item{
         font-size: 16px !important;
     } */
-    .nav-tabs .nav-link{
+    .nav-tabs .nav-link {
         font-size: 16px !important;
     }
-    .tab1-wrapper{
+
+    .tab1-wrapper {
         flex-direction: column;
     }
-    .container-custom-director{
+
+    .container-custom-director {
         width: 400px;
         display: block !important;
+        background-image: url(../img/Dir_msg-mview111.png);
+        background-size: cover;
     }
-    .description-custom{
+
+    .description-custom {
         width: 400px !important;
     }
-    .description-custom p{
+
+    .description-custom p {
         width: 300px;
+    }
+
+    .about-container h1 {
+        font-size: 20px;
+    }
+
+    .about-container .about-text {
+        width: 100% !important;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-container p {
+        font-size: 16px;
+    }
+
+    .three-columns-wrapper {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .column-image {
+        flex-direction: column;
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .google-review-card,
+    .right-section {
+        flex-direction: column;
+    }
+
+    .video-wrapper {
+        padding-left: 50px;
+    }
+
+    .testimonial-text h1 {
+        font-size: 20px;
+    }
+
+    .testimonial-text p {
+        font-size: 14px;
+    }
+
+    .play-button {
+        left: 60%;
+    }
+
+    .rohaan-group {
+        width: 400px;
+        margin: auto;
+    }
+
+    .rohaan-group-container {
+        width: 350px;
+        margin: auto;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .rohaan-group-text {
+        width: 350px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .tabsnew {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .tabsnew li {
+        font-size: 14px;
+    }
+
+    .show {
+        flex-direction: column;
+    }
+    .categories-img-size{
+        height: 345px !important;
     }
 }

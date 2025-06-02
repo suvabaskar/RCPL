@@ -11,12 +11,25 @@
     height: 100%;
     border: 0;
 }
+.commerical-wrapper{
+    width: clamp(320px,80%,1200px);
+    margin: auto;
+    padding: 50px;
+}
+.commerical-wrapper h2{
+    font-size: clamp(20px,1.6vw,40px);
+    text-align: center;
+}
 @media(max-width:426px){
     .banner-content{
         width: 350px !important;
         margin: auto;
         top: -29% !important;
-        left: -80% !important;
+        /* left: -80% !important; */
+    }
+    .text-primary{
+        font-size: 40px !important;
+        padding: 0px !important;
     }
     .responsive-map-container iframe {
         position: absolute;
@@ -27,4 +40,13 @@
         height: 100%;
         border: 0;
     }
+     .fliter-container {
+        width: 450px;
+        margin-top: 135px;
+    }
+    .commerical-wrapper {
+    width: clamp(320px, 80%, 1200px);
+    margin: 150px auto auto auto;
+    padding: 20px;
+}
 }

@@ -1,0 +1,9 @@
+@media(max-width:426px){
+    .card-img{
+        width: 250px;
+        margin: auto;
+    } 
+    #filter-buttons button{
+        font-size: 13px;
+    }
+}

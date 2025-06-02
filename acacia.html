@@ -32,7 +32,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/redwood.css">
     <link rel="icon" href="img/rcpl-icon.png" type="image/png">
-        <link rel="stylesheet" href="css/apartments-madipakkam.css">
+    <link rel="stylesheet" href="css/apartments-madipakkam.css">
+    <link rel="stylesheet" href="css/acacia.css">
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
@@ -171,7 +172,7 @@
                         </div>
 
                         <div class="nav-item dropdown">
-                            <a href="about.html" class="nav-link dropdown-toggle" >About</a>
+                            <a href="about.html" class="nav-link dropdown-toggle">About</a>
                             <div class="dropdown-menu m-0">
                                 <a href="channelpartner.html" class="dropdown-item">Channel Partners</a>
                                 <a href="careers.html" class="dropdown-item">Careers</a>
@@ -226,11 +227,11 @@
     <section class="property-details acacia-property-details">
         <div class="property-content">
             <div class="image-container">
-                <img src="img/elev1.jpg" alt="Rohan Ashoka" class="property-image">
+                <img src="img/acacia-new.jpg" alt="Rohan Ashoka" class="property-image">
             </div>
             <div class="property-info">
                 <div class="property-details-info">
-                    <p><i class="fas fa-building"></i> <strong>6 Units / 1 Unit Available</strong></p>
+                    <p><i class="fas fa-building"></i> <strong>6 Units </strong></p>
                     <p><i class="fas fa-ruler-combined"></i> <strong>1068 Sq.ft</strong></p>
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Medavakkam</strong></p>
                 </div>
@@ -257,11 +258,11 @@
         <!-- Images Filter Buttons Section -->
         <div class="row mt-5" id="filter-buttons">
             <div class="col-12  d-flex justify-content-center">
+                <button class="btn mb-2 mx-1" data-filter="Interior">Interior Design</button>
+                <span class="border-divider"></span>
                 <button class="btn mb-2 me-1  active" data-filter="elevation">Elevation</button>
                 <span class="border-divider"></span>
-                <button class="btn mb-2 mx-1" data-filter="Floorplan">Floor Plan</button>
-                <span class="border-divider"></span>
-                <button class="btn mb-2 mx-1" data-filter="Walkthrough">Walkthrough</button>
+                <button class="btn mb-2 mx-1" data-filter="floorplan">FloorPlan</button>
                 <span class="border-divider"></span>
                 <button class="btn mb-2 mx-1" data-filter="amenities">Amenities</button>
             </div>
@@ -269,40 +270,49 @@
         <!-- Filterable Images / Cards Section -->
         <div class="row px-2  mt-4 gap-3 filter-width" id="filterable-cards">
             <div class="card p-0" data-name="elevation">
-                <img src="img/elevation.jpeg" alt="img">
+                <img src="img/acacia-new.jpg" alt="img">
             </div>
-            <div class="card p-0" data-name="elevation">
-                <img src="img/elevation.jpeg" alt="img">
+            <div class="card p-0 " data-name="Interior">
+                <img src="img/hotel1.jpg" alt="img">
 
             </div>
-            <div class="card p-0" data-name="elevation">
-                <img src="img/elevation.jpeg" alt="img">
+            <div class="card p-0" data-name="Interior">
+                <img src="img/hotel5.jpg" alt="img">
 
             </div>
-            <div class="card p-0 " data-name="Floorplan">
-                <img src="img/18 rev.jpg" alt="img">
+            <div class="card p-0" data-name="Interior">
+                <img src="img/hotel3.jpg" alt="img">
 
             </div>
-            <div class="card p-0" data-name="Floorplan">
-                <img src="img/22 rev.jpg" alt="img">
-
-            </div>
-            <div class="card p-0" data-name="Floorplan">
-                <img src="img/23 rev.jpg" alt="img">
-
-            </div>
-            <div class="card p-0" data-name="Floorplan">
-                <img src="img/24 rev.jpg" alt="img">
+            <div class="card p-0" data-name="Interior">
+                <img src="img/hotel4.jpg" alt="img">
 
             </div>
 
-            <div class="card p-0" data-name="Walkthrough">
-                <img src="img/walkthroughs.png" alt="img">
-
+            <div class="card p-0" data-name="floorplan">
+                <img src="img/acacia-1.png" alt="img">
+            </div>
+            <div class="card p-0" data-name="floorplan">
+                <img src="img/acacia-2.png" alt="img">
+            </div>
+            <div class="card p-0" data-name="floorplan">
+                <img src="img/acacia-3.png" alt="img">
             </div>
             <div class="card p-0" data-name="amenities">
-                <img src="img/amentities.jpeg" alt="img">
+                <img class="card-img" src="img/generator.jpeg" alt="img">
+            </div>
+            <div class="card p-0" data-name="amenities">
+                <img class="card-img" src="img/car-parking.jpeg" alt="img">
+            </div>
 
+            <div class="card p-0" data-name="amenities">
+                <img class="card-img" src="img/security.jpeg" alt="img">
+            </div>
+            <div class="card p-0" data-name="amenities">
+                <img class="card-img" src="img/lift (2).jpeg" alt="img">
+            </div>
+            <div class="card p-0" data-name="amenities">
+                <img class="card-img" src="img/camer-new.jpeg" alt="img">
             </div>
         </div>
         <div class="redwood-bg-image"></div>
@@ -356,7 +366,7 @@
                 <p>Transportation Hub</p>
             </div>
         </div>
-        <div class="redwood-ruler-animation animation-infinite"></div>
+        <!-- <div class="redwood-ruler-animation animation-infinite"></div> -->
 
     </div>
 
@@ -370,11 +380,9 @@
             <thead>
                 <tr>
                     <th>Shop No</th>
-                    <th>Type</th>
                     <th>Available Status</th>
                     <th>Area (sqft)</th>
                     <th>UDS</th>
-                    <th>Common</th>
                     <th>Built Up </th>
                     <th>Carpet</th>
                     <th>Facing</th>
@@ -383,65 +391,53 @@
             <tbody>
                 <tr>
                     <td>F1</td>
-                    <td>COMMERCIAL</td>
                     <td>SOLD OUT </td>
                     <td>1068</td>
                     <td>466</td>
-                    <td>210</td>
                     <td>795 </td>
                     <td>712</td>
                     <td>South</td>
                 </tr>
                 <tr>
                     <td>F2 </td>
-                    <td>COMMERCIAL</td>
                     <td>SOLD OUT </td>
                     <td>1068</td>
                     <td>466</td>
-                    <td>210</td>
                     <td>795 </td>
                     <td>712</td>
                     <td>North</td>
                 <tr>
                     <td>S1 </td>
-                    <td>COMMERCIAL</td>
                     <td>SOLD OUT </td>
                     <td>1068</td>
                     <td>466</td>
-                    <td>210</td>
                     <td>795 </td>
                     <td>712</td>
                     <td>South</td>
                 </tr>
                 <tr>
                     <td>S2 </td>
-                    <td>COMMERCIAL</td>
                     <td>SOLD OUT </td>
                     <td>1068</td>
                     <td>466</td>
-                    <td>210</td>
                     <td>795 </td>
                     <td>712</td>
                     <td>North</td>
                 </tr>
                 <tr>
                     <td>T1 </td>
-                    <td>COMMERCIAL</td>
                     <td>SOLD OUT </td>
                     <td>1068</td>
                     <td>466</td>
-                    <td>210</td>
                     <td>795 </td>
                     <td>712</td>
                     <td>South</td>
                 </tr>
                 <tr>
                     <td>T2 </td>
-                    <td>COMMERCIAL</td>
                     <td>SOLD OUT </td>
                     <td>1068</td>
                     <td>466</td>
-                    <td>210</td>
                     <td>795 </td>
                     <td>712</td>
                     <td>North</td>
@@ -458,48 +454,43 @@
     </section> -->
 
 
-    <div class="responsive-map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.5501432757087!2d80.19336257484028!3d12.909437487400195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d5838aada8f%3A0xe9499d2d58f25e59!2sRohaan%20Redwood!5e1!3m2!1sen!2sin!4v1742796711183!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-
-
-
     <section class="related-projects">
         <h2>RELATED PROJECTS</h2>
         <div class="projects-container1">
             <div class="project-card">
-                <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
-                <div class="project-details">
-                    <h3 class="black">Rohaan Crest</h3>
-                    <p>Perumbakkam</p>
-                    <ul>
-                        <li>🏠 25 Units</li>
-                        <li>📏 1008 - 1224 Sq.ft</li>
-                        <li>🛏️ 2/2.5/3 BHK</li>
-                        <li>🏊‍♂️ 5 Amenities</li>
-                    </ul>
-                </div>
+                <a href="crest.html">
+                    <img src="img/rohaan-crest.jpg" alt="Project Image" class="project-image" />
+                    <div class="project-details">
+                        <h3 class="black">Rohaan Crest</h3>
+                        <p>Perumbakkam</p>
+                        <ul>
+                            <li>🏠 25 Units</li>
+                            <li>📏 1008 - 1224 Sq.ft</li>
+                            <li>🛏️ 2/2.5/3 BHK</li>
+                            <li>🏊‍♂️ 5 Amenities</li>
+                        </ul>
+                    </div>
+                </a>
             </div>
             <!-- Repeat for additional cards -->
             <div class="project-card">
-                <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
-                <div class="project-details">
-                    <h3 class="black">Rohaan Walnut</h3>
-                    <p>Medavakkam</p>
-                    <ul>
-                        <li>🏠6 Units </li>
-                        <li>📏 1044 to 1125 Sq.ft</li>
-                        <li>🛏️ 2/2.5/3 BHK</li>
-                        <li>🏊‍♂️ 5 Amenities</li>
-                    </ul>
-                </div>
+                <a href="walnut.html">
+                    <img src="img/walnut.jpg" alt="Project Image" class="project-image" />
+                    <div class="project-details">
+                        <h3 class="black">Rohaan Walnut</h3>
+                        <p>Medavakkam</p>
+                        <ul>
+                            <li>🏠6 Units </li>
+                            <li>📏 1044 to 1125 Sq.ft</li>
+                            <li>🛏️ 2/2.5/3 BHK</li>
+                            <li>🏊‍♂️ 5 Amenities</li>
+                        </ul>
+                </a>
             </div>
-            <div class="project-card">
-                <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
+        </div>
+        <div class="project-card">
+            <a href="acacia.html">
+                <img src="img/acacia-new.jpg" alt="Project Image" class="project-image" />
                 <div class="project-details">
                     <h3 class="black">Rohaan Acacia</h3>
                     <p>Medavakkam</p>
@@ -509,14 +500,65 @@
                         <li>🛏️ 2/2.5/3 BHK</li>
                         <li>🏊‍♂️ 5 Amenities</li>
                     </ul>
-                </div>
-            </div>
+            </a>
+        </div>
+        </div>
         </div>
         </div>
 
     </section>
+    <section class="related-projects">
+        <h2>OTHER PROJECTS</h2>
+        <div class="projects-container1">
+            <div class="project-card">
+                <a href="Ashoka.html">
+                    <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
+                    <div class="project-details">
+                        <h3 class="black">Rohaan Ashoka</h3>
+                        <p>Perumbakkam</p>
+                        <ul>
+                            <li>🏠 25 Units</li>
+                            <li>📏 1008-1224 Sq.ft</li>
+                            <li>🛏️ 2/2.5/3 BHK</li>
+                            <li>🏊‍♂️ 5 Amenities</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="Cypress.html">
+                    <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
+                    <div class="project-details">
+                        <h3 class="black">Rohaan Cypress</h3>
+                        <p>Madipakkam</p>
+                        <ul>
+                            <li>🏠 23 Units</li>
+                            <li>📏 887-1208 Sq.ft </li>
+                            <li>🛏️ 2BHK & 3BHK</li>
+                            <li>🏊‍♂️ 7 Amenities</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="Cypress.html">
+                    <img src="img/Front-View-min.jpg" alt="Project Image" class="project-image" />
+                    <div class="project-details">
+                        <h3 class="black">Rohaan RoseGarden</h3>
+                        <p> Perumbakkam</p>
+                        <ul>
+                            <li>🏠4 Blocks - 24 Units</li>
+                            <li>📏 898 Sq.ft & 1098 Sq.ft</li>
+                            <li>🛏️ 2/3 BHK</li>
+                            <li>🏊‍♂️ 5 Amenities</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
- <!-- accordian -->
+    <!-- accordian -->
     <section class="accordian-wrapper">
         <h2>Find the answers you need </h2>
         <p>Frequently Asked Questions </p>

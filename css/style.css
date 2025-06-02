@@ -2490,6 +2490,7 @@ input:focus {
 .property-image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 
 }
 
@@ -2951,6 +2952,7 @@ input:focus {
 .project-details p {
     margin: 5px 0 15px;
     font-size: 16px;
+    color: white;
 }
 
 .project-details ul {
@@ -2971,6 +2973,7 @@ input:focus {
     align-items: flex-start;
     /* Align text to the left */
     margin-left: 95px;
+    color: white;
 }
 
 

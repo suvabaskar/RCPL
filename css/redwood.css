@@ -21,7 +21,7 @@ table {
 }
 
 .table-head {
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 /* iconbox */
@@ -58,11 +58,11 @@ table {
     }
 }
 @media (max-width:426px){
-    .banner-content {
+    /* .banner-content {
         width: 350px !important;
       top: 0%;
       left: -85%;
-    }
+    } */
     .contact-form {
         top: 73%;
     }
@@ -161,7 +161,8 @@ table {
     }
 
     .fliter-container {
-        margin-top: 350px;
+        margin-top: 380px;
+        width: 420px;
     }
 
     .filter-buttons-wrapper {
