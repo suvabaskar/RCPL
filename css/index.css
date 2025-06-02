@@ -722,12 +722,12 @@ p.awesome_line {
 
 .container-custom-director {
     display: flex !important;
-    width: 1400px;
+    width: 1240px;
     height: auto;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../img/dirban.png);
+    background-image: url(../img/dirmsgnew.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 50px;
@@ -736,7 +736,7 @@ p.awesome_line {
 }
 
 .director-heading {
-    color: #474747;
+    color: #ffffff;
     font-weight: 700;
     text-transform: capitalize;
     text-align: left;
@@ -745,7 +745,7 @@ p.awesome_line {
 
 .description-custom {
     text-align: left;
-    width: 800px;
+    width: 650px;
     color: white;
 
 }
