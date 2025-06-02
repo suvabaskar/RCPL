@@ -792,7 +792,10 @@ p.awesome_line {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+.box{
+    width: 700px !important;
+    margin: auto;
+}
 .video-thumb {
     width: 100%;
     height: auto;
