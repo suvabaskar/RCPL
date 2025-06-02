@@ -4492,7 +4492,8 @@ select {
 }
 
 .unique-quote-info-section {
-    max-width: 1000px;
+    max-width: 600px;
+    width: 500px;
 }
 
 .unique-quote-label {

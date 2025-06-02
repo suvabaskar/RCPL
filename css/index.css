@@ -52,7 +52,10 @@
 .bg-blue {
     background-color: #1a1a1a9c;
 }
-
+.tab-content{
+    width: 1300px;
+    margin: auto;
+}
 .tab-content2-pane {
     max-width: 1050px;
     margin: auto;
@@ -480,11 +483,11 @@ p.awesome_line {
     justify-content: center;
     margin-top: 30px;
 }
-
+/* 
 .tab-content>.tab-pane {
     width: 1380px;
     margin: auto;
-}
+} */
 
 .blue-btn-carousel {
     flex-basis: 80%;
@@ -796,13 +799,14 @@ p.awesome_line {
     display: block;
 }
 
-.testimonial-text {
-    width: 650px;
+ .testimonial-text {
+    width: 420px;
     background-color: #f4f4f4;
-    padding: 80px 20px;
+    padding: 32px 20px;
     margin: auto;
     border-radius: 10px;
 }
+
 
 .testimonial-text h1 {
     font-size: 26px;
