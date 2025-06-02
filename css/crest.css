@@ -319,9 +319,11 @@
     .filter-buttons-wrapper {
         justify-content: start;
     }
-    .form-container1 select{
+
+    .form-container1 select {
         margin: 0px;
     }
+
     .filter-btn {
         padding: 8px;
         font-size: 14px;
@@ -363,30 +365,34 @@
     .advantages-container {
         display: none;
     }
-    .advantages-mobile-wrapper{
+
+    .advantages-mobile-wrapper {
         display: block;
     }
+
     .advantage-orange-h2,
     .advantage-blue-h2,
     .advantage-green-h2,
     .advantage-red-h2,
-    .advantage-navy-h2{
+    .advantage-navy-h2 {
         text-align: center;
     }
-    .mobile-img{
+
+    .mobile-img {
         width: 80px;
         height: 75px;
         margin: 10px 0;
     }
-    .advantage-mobile-para{
+
+    .advantage-mobile-para {
         font-size: 14px;
         width: 300px;
         text-align: center;
         align-items: center;
         margin: auto;
     }
-    .footer-text{
-        font-size: 14px;
-    } 
-}
 
+    .footer-text {
+        font-size: 14px;
+    }
+}

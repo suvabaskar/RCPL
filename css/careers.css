@@ -13,12 +13,15 @@
     margin: auto;
     justify-content: space-between;
 }
+
 .current-heading {
     text-align: center;
 }
-.current-openings-main{
-    padding:50px 0
+
+.current-openings-main {
+    padding: 50px 0
 }
+
 .openings-container {
     width: 450px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
@@ -26,45 +29,68 @@
     margin-top: 20px;
     border-radius: 10px;
 }
-.openings-container h2{
+
+.openings-container h2 {
     font-size: 20px;
     font-weight: 600;
 }
-.openings-container h3{
+
+.openings-container h3 {
     font-size: 18px;
     font-weight: 600;
     color: gray;
 }
-.openings-container button{
+
+.openings-container button {
     border: none;
     color: rgb(33, 155, 255);
     padding: 10px 20px;
     border-radius: 10px;
 }
-.openings-container:hover{
+
+.openings-container:hover {
     background-color: rgb(33, 167, 229);
-}   
-.openings-container:hover h2{
+}
+
+.openings-container:hover h2 {
     color: white;
 }
-.openings-container:hover h3{
+
+.openings-container:hover h3 {
     color: rgb(216, 216, 216);
 }
-@media(max-width:768px){
-    .career-main-heading{
+
+@media(max-width:768px) {
+    .career-main-heading {
         font-size: 25px;
     }
-    .current-openings-wrapper{
+
+    .current-openings-wrapper {
         flex-direction: column;
     }
-    .openings-container{
+
+    .openings-container {
         width: 400px;
         margin: auto;
     }
-    .openings-container h2{
+
+    .openings-container h2 {
         font-size: 16px;
     }
-    .openings-container h3{
+
+    .openings-container h3 {
         font-size: 14px;
+    }
+
+    .footer1 a {
+        font-size: 14px;
+    }
+
+    .banner {
+        height: 100px;
+    }
+
+    .career-main-heading {
+        font-size: 16px;
     }
 }

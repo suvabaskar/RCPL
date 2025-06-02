@@ -1,15 +1,32 @@
-.blog-heading{
+.blog-heading {
     font-size: 18px;
     font-weight: 700;
     margin-top: 20px;
     line-height: 24px;
 }
-.blog-img{
+
+.blog-img {
     height: 230px;
 }
-.blog-main-heading{
+
+.blog-main-heading {
     color: white;
 }
-.banner-blog{
+
+.banner-blog {
     height: 300px;
+}
+
+@media(max-width:426px) {
+    .footer1 a {
+        font-size: 14px;
+    }
+
+    .banner {
+        height: 100px;
+    }
+
+    .banner-title {
+        font-size: 20px;
+    }
 }
