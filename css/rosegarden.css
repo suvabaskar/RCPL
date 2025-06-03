@@ -112,6 +112,11 @@
     color: white;
 }
 
+
+#filterable-cards .card {
+    width: 20rem;
+}
+
 .form-containerparent{
     max-width: 1440px;
     margin: auto;
@@ -460,3 +465,4 @@ table{
     margin: auto;
     max-width: 1440px;
 }
+
