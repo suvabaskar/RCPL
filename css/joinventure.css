@@ -9,6 +9,10 @@
     margin-top: 20px;
 }
 
+.project-card img {
+    width: 340px;
+}
+
 .dir-msg-header p {
     font-size: clamp(0.8rem, 2vw, 1rem);
 }
@@ -64,8 +68,15 @@
         padding: 0px;
     }
 
+    .project-card img {
+        width: 300px;
+        height: 220px;
+        object-fit: cover;
+    }
+
     .projects-container1 {
         flex-direction: column;
+        width: 300px;
     }
 
     .project-card {

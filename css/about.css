@@ -101,7 +101,8 @@
     height: 640px;
     justify-content: space-between;
     margin-top: -1px;
-
+    padding-top: 15px;
+    margin-bottom: 25px;
 }
 
 .image-content-container {
@@ -151,16 +152,24 @@
     font-weight: 400;
 }
 
+/* .rohaan-team-image img {
+    width: 350px;
+} */
+
 .rohaan-team-wrapper {
     max-width: 1600px;
     background-color: #F5F5F5;
-    padding: 50px 0;
     margin: auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
 
 .rohaan-team-content {
     max-width: 1200px;
     margin: auto;
+    /* flex-direction: column;
+    width: 350px; */
 }
 
 .rohaan-team-wrapper h3 {
@@ -170,6 +179,7 @@
     color: black;
     text-transform: capitalize;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .rohaan-cont-description {
@@ -214,6 +224,28 @@
         font-size: 1rem;
     }
 
+    .rohaan-team-content {
+        flex-direction: column;
+        width: 350px;
+        margin: auto;
+    }
+
+    .rohaan-team-wrapper h3 {
+        padding: 20px 0 0 0;
+        margin-top: 10px;
+    }
+
+    .rohaan-team-image img {
+        width: 350px;
+    }
+
+    .rohaan-button-wrapper {
+        flex-direction: column;
+        gap: 5px;
+        padding: 15px;
+        width: 330px;
+    }
+
     .banner-about-description {
         font-size: 1rem;
     }
@@ -226,14 +258,16 @@
     .about-grid-wrapper {
         margin-bottom: 15px;
     }
+
     .director-section {
         /* width: clamp(350px, 50vw, 1400px); */
         max-width: 450px;
         max-width: 560px;
 
     }
-    .mobile-image{
-        min-width: 40  0px;
+
+    .mobile-image {
+        min-width: 40 0px;
         max-width: 560px;
     }
 }
