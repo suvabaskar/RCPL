@@ -108,13 +108,13 @@
 .image-content-container {
     max-width: 800px;
     align-items: end;
-    max-height: 627px;
+    /* max-height: 627px; */
     background-image: url(../img/hand-drawn-mall-drawing-illustration\ 111\ 1.png);
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 1;
     margin: auto;
-    padding: 150px 100px 150px 30px;
+    /* padding: 150px 100px 150px 30px; */
 }
 
 .image-section-wrapper {
@@ -269,5 +269,40 @@
     .mobile-image {
         min-width: 40 0px;
         max-width: 560px;
+    }
+
+    .image-section-wrapper {
+        width: 300px;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-section-left-container{
+        height: auto;
+    }
+    .image-content-wrapper {
+        flex-direction: column;
+        width: 350px;
+    }
+    .img2,
+    .img4 {
+        display: none;
+    }
+    .image-content-container{
+        max-height: auto;
+        padding: 0px;
+    }
+    .image-content-container-wrapper{
+        height: auto;
+    }
+    .image-content-wrapper {
+        height: auto;
+    }
+    .image-content-container-wrapper h2{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .rohaan-cont-description{
+        padding-right: 0px;
     }
 }

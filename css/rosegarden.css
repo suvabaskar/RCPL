@@ -1,7 +1,7 @@
 .banner-wrapper {
     display: flex;
     padding: 20px;
-    width: clamp(320px, 100vw, 1440px);
+    width: clamp(320px, 100vw, 1600px);
     margin: auto;
 }
 
@@ -16,18 +16,17 @@
 
 }
 
-.rohaan{
+.rohaan {
     color: white;
-    font-size: 40px;
 }
 
-.text-primary{
+.text-primary {
     /* font-weight: bold; */
     color: #0099ff;
     font-size: 40px;
 }
 
-.desc-title{
+.desc-title {
     /* font-weight: bold; */
     color: white;
     font-size: 20px;
@@ -69,17 +68,19 @@
     cursor: pointer;
     font-size: 1rem;
 }
-.banner-wrapper{
+
+.banner-wrapper {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/villa\ banner.png);
     background-size: cover;
     background-position: center;
 }
-.banner-info-form input{
+
+.banner-info-form input {
     margin: 05px 0;
     background-color: #ffffff61 !important;
 }
 
-.banner-form-select{
+.banner-form-select {
     margin: 3px 0 10px 0 !important;
     display: block;
     width: 100%;
@@ -89,7 +90,8 @@
     line-height: 1.5;
     color: #6e7684;
     border-color: #ffffff61;
-    background-color: #ffffff61 !important;;
+    background-color: #ffffff61 !important;
+    ;
 }
 
 .property-image {
@@ -100,33 +102,34 @@
 .redwood-property-details {
     height: 515px !important;
     margin: auto;
-    max-width: 1440px;
+    max-width: 1600px;
 }
 
-.property-info{
+.property-info {
     padding: 125px;
 }
 
-.property-details-info h4{
+.property-details-info h4 {
     font-weight: 700;
     color: white;
 }
 
-.form-containerparent{
-    max-width: 1440px;
+.form-containerparent {
     margin: auto;
 }
 
-@media(max-width:728px){
-    .banner-wrapper{
-        flex-direction:  column;
+@media(max-width:728px) {
+    .banner-wrapper {
+        flex-direction: column;
     }
-    .banner-description{
+
+    .banner-description {
         width: 320px;
         margin: auto;
         padding-bottom: 10px;
     }
-    .banner-info-container{
+
+    .banner-info-container {
         width: 320px;
         margin: auto;
     }
@@ -152,78 +155,86 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* max-width: 1200px; */
     margin: auto;
-    max-width: 1440px;
 }
 
-.key-features-points{
+.key-features-points {
     margin: auto;
     width: 600px;
 }
 
-.unique-features h2{
+.unique-features h2 {
     padding-bottom: 15px;
 }
 
-.prebook-container{
+.prebook-container {
     margin: auto;
     width: 600px;
 }
 
-.highlights-section{
+.highlights-section {
     /* background: url(../img/highlights-building.png); */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/highlights-building.png);
     background-size: cover;
     background-position: top center;
 
 }
-.highlights img{
+
+.highlights img {
     width: 50px;
     height: 50px;
 }
-.highlights-item{
+
+.highlights-item {
     width: 150px;
     height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom,rgb(0, 104, 195),rgb(0, 40, 85));
+    background: linear-gradient(to bottom, rgb(0, 104, 195), rgb(0, 40, 85));
     border-radius: 10px
 }
-.highlights-item h3{
+
+.highlights-item h3 {
     color: white;
 }
-.highlights-item h3{
-    font-size: clamp(0.9rem,1vw,1.2rem);
+
+.highlights-item h3 {
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
     text-align: center;
 }
-.highlights{
+
+.highlights {
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0px 65px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 65px;
 }
+
 .highlights-item:hover {
     transform: translateY(-5px);
 }
-.highlights-title{
+
+.highlights-title {
     text-align: center;
-    font-size: clamp(1rem,2vw,1.2rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     color: rgb(0, 0, 0);
     font-weight: 700;
     padding-bottom: 10px;
 }
-.highlights-container{
-    padding:min(20px,5vw);
+
+.highlights-container {
+    padding: min(20px, 5vw);
 }
 
-.w-1100{
+.w-1100 {
     width: 1100px;
     margin: auto;
 }
-.builder-heading{
+
+.builder-heading {
     text-align: center;
     font-size: 25px;
     font-weight: 600;
@@ -234,7 +245,8 @@
     border-radius: 10px;
     background-color: rgb(46, 107, 160);
 }
-.blue-button{
+
+.blue-button {
     background-color: rgb(46, 107, 160);
     color: white;
     border: none;
@@ -245,7 +257,8 @@
     height: 50px;
     border-radius: 10px;
 }
-.sold-out {
+
+/* .sold-out {
     background-color: rgba(246, 29, 29, 0.781);
     color: white;
     border: none;
@@ -255,14 +268,17 @@
     width: 200px;
     height: 50px;
     border-radius: 10px;
-}
-a{
+} */
+
+a {
     color: #ffffff;
 }
-a:hover{
+
+a:hover {
     color: rgb(236, 251, 255);
 }
-.why-content-wrapper{
+
+.why-content-wrapper {
     background-color: rgb(237, 237, 255);
     padding: 50px 0;
     width: 1600px;
@@ -270,55 +286,65 @@ a:hover{
     background-size: cover;
 
 }
-.why-wrapper{
+
+.why-wrapper {
     width: 400px;
     text-align: left;
     margin: 0 20px;
     padding: 20px;
     margin-top: 30px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;   
-     border-top: 2px solid rgb(16,150,239);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    border-top: 2px solid rgb(16, 150, 239);
 }
-.why-wrapper img{
+
+.why-wrapper img {
     padding: 20px 0;
 }
-.why-wrapper-main{
+
+.why-wrapper-main {
     width: 1200px;
     margin: auto;
 }
-.why-wrapper-main h2{
+
+.why-wrapper-main h2 {
     text-align: center;
 }
-.why-wrapper-down{
+
+.why-wrapper-down {
     width: 900px;
     margin: auto;
 }
 
-.expertise-wrapper{
+.expertise-wrapper {
     display: flex;
     width: 1000px;
     margin: auto;
     align-items: center;
     justify-content: space-between;
 }
-.expertise-wrapper p{
+
+.expertise-wrapper p {
     width: 800px;
 }
-.expertise-wrapper h2{
+
+.expertise-wrapper h2 {
     width: 200px;
     font-size: 20px;
     font-weight: 700;
 }
-.expertise-main-wrapper{
+
+.expertise-main-wrapper {
     padding: 50px 0;
 
 }
-.expertise-main-wrapper h2{
+
+.expertise-main-wrapper h2 {
     text-align: center;
     padding: 20px;
 }
-.why-grid-wrapper{
+
+.why-grid-wrapper {
     width: 400px;
     height: 400px;
 }
@@ -327,20 +353,22 @@ a:hover{
     position: relative;
     padding: 25px 0 25px;
     margin: auto;
-    max-width: 1440px;
     background-color: rgb(235, 235, 235);
 }
-.y-building-bg{
+
+.y-building-bg {
     position: absolute;
     top: 71%;
     height: 29%;
     left: 33%;
     object-fit: contain;
 }
+
 .y-us-head {
     text-align: center;
     margin: 0 0 45px;
 }
+
 .y-us-title h2 {
     color: #000;
     font-size: 30px;
@@ -349,10 +377,12 @@ a:hover{
     text-transform: uppercase;
     margin-bottom: 6px;
 }
-.y-us-title > p {
+
+.y-us-title>p {
     color: #777777;
     line-height: 22px;
 }
+
 .y-us-title-border {
     background: #3a79e6 none repeat scroll 0 0;
     border-radius: 2px;
@@ -361,22 +391,27 @@ a:hover{
     position: relative;
     width: 50px;
 }
+
 .service-3 .service-box {
     margin-bottom: 18px;
 }
+
 .service-3 .service-box .iconset {
     float: left;
     text-align: center;
     width: 18%;
 }
+
 .service-3 .service-box .iconset i {
     color: #000;
     font-size: 44px;
 }
+
 .service-3 .service-box .y-us-content {
     float: left;
     width: 75%;
 }
+
 service-3 .service-box .y-us-content h4 {
     color: #3a3a3a;
     font-size: 18px;
@@ -385,6 +420,7 @@ service-3 .service-box .y-us-content h4 {
     margin: 14px 0 12px;
     text-transform: uppercase;
 }
+
 .service-3 .service-box .y-us-content p {
     color: #777777;
     font-size: 13px;
@@ -393,9 +429,9 @@ service-3 .service-box .y-us-content h4 {
 }
 
 .glyphicon {
-    color : #f4b841;
-    padding:10px;
-    font-size:40px;
+    color: #f4b841;
+    padding: 10px;
+    font-size: 40px;
     border: 1px solid #447cff;
     border-radius: 100px;
     color: #fdb801;
@@ -405,15 +441,17 @@ service-3 .service-box .y-us-content h4 {
     text-align: center;
     width: 40px;
 }
-.align{
+
+.align {
     justify-content: center;
 }
-.y-us-content h4{
+
+.y-us-content h4 {
     font-size: 16px;
     font-weight: 600;
 }
 
-.project-content-list .prebook-head{
+.project-content-list .prebook-head {
     margin: auto;
     max-width: 1440px;
     text-align: center;
@@ -421,29 +459,29 @@ service-3 .service-box .y-us-content h4 {
     padding-top: 35px;
 }
 
-.project-sub-heading{
+.project-sub-heading {
     margin-top: 20px;
 }
 
-.table{
+.table {
     margin: auto;
     max-width: 1440px;
 }
 
-table{
+table {
     margin: 10px auto 35px auto;
 }
 
-.grid-box{
+.grid-box {
     margin: auto;
     max-width: 1440px;
 }
 
-.walnut-header{
+.walnut-header {
     margin: 30px 100px 10px 100px;
 }
 
-.invest-early{
+.invest-early {
     text-align: center;
     max-width: 1440px;
     margin: auto;
@@ -452,11 +490,76 @@ table{
     padding-top: 25px;
 }
 
-.invest-early a{
+.invest-early a {
     color: blue;
 }
 
-.rosegarden-map{
+.rosegarden-map {
     margin: auto;
     max-width: 1440px;
+}
+
+@media(max-width:426px) {
+    .property-content {
+        flex-direction: column;
+    }
+
+    .property-info {
+        padding: 20px !important;
+    }
+
+    .property-details {
+        height: fit-content !important;
+    }
+
+    .fliter-container {
+        margin-top: 30px;
+    }
+
+    .features-prebook {
+        flex-direction: column;
+    }
+
+    .key-features-points {
+        width: 400px;
+    }
+
+    .unique-features h2 {
+        font-size: 20px;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+
+    .highlights-item {
+        width: 350px;
+    }
+
+    .y-us-title h2 {
+        font-size: 18px;
+    }
+
+    .project-content-list .prebook-head {
+        font-size: 20px;
+    }
+
+    .grid-box {
+        width: 350px;
+    }
+
+    table {
+        width: 380px !important;
+    }
+
+    .walnut-header {
+        margin: 0px !important;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+    .invest-early {
+        width: 380px;
+    }
 }
