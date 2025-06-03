@@ -52,10 +52,12 @@
 .bg-blue {
     background-color: #1a1a1a9c;
 }
-.tab-content{
+
+.tab-content {
     width: 1300px;
     margin: auto;
 }
+
 .tab-content2-pane {
     max-width: 1050px;
     margin: auto;
@@ -483,6 +485,7 @@ p.awesome_line {
     justify-content: center;
     margin-top: 30px;
 }
+
 /* 
 .tab-content>.tab-pane {
     width: 1380px;
@@ -516,6 +519,7 @@ p.awesome_line {
 
 .categories-content {
     position: relative;
+    padding: 12px !important;
 }
 
 .ongoing-btn {
@@ -792,17 +796,19 @@ p.awesome_line {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.box{
+
+.box {
     width: 700px !important;
     margin: auto;
 }
+
 .video-thumb {
     width: 100%;
     height: auto;
     display: block;
 }
 
- .testimonial-text {
+.testimonial-text {
     width: 420px;
     background-color: #f4f4f4;
     padding: 32px 20px;
@@ -1189,7 +1195,13 @@ ul {
     .show {
         flex-direction: column;
     }
-    .categories-img-size{
+
+    .categories-img-size {
         height: 345px !important;
+    }
+
+    .box {
+        width: 400px !important;
+        margin: auto;
     }
 }

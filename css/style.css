@@ -2309,7 +2309,7 @@ input:focus {
 }
 
 .banner-description {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
     line-height: 1.5;
     width: 850px;
@@ -3055,7 +3055,9 @@ input:focus {
 
 .rohaan {
     color: #ffffff !important;
-}
+    font-size: 32px;
+    text-transform: uppercase;
+}   
 
 /* Mobile Responsive Adjustments */
 /* @media (max-width: 768px) {
@@ -4627,6 +4629,7 @@ select {
     color: #0099ff !important;
     font-size: 32px;
     padding-left: 10px;
+    text-transform: uppercase;
 }
 
 /* mobile tab */
