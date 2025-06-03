@@ -161,6 +161,10 @@
     font-size: 35px !important;
 }
 
+.progress-fill {
+    width: 100% !important;
+}
+
 @media(max-width:728px) {
     .banner-wrapper {
         flex-direction: column;
