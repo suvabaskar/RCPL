@@ -114,6 +114,11 @@
     color: white;
 }
 
+
+#filterable-cards .card {
+    width: 20rem;
+}
+
 .form-containerparent {
     margin: auto;
 }
