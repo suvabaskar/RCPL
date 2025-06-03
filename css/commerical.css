@@ -5,7 +5,7 @@
 .project-wrapper {
     flex-direction: row ;
     margin: auto;
-    width: clamp(320px, 90vw, 1400px);
+    width: clamp(320px, 90vw, 1280px);
     justify-content: space-evenly;
     padding: 50px 20px;
 }
@@ -33,6 +33,7 @@
 .project-details-box {
     width: clamp(320px, 80vw, 700px);
     margin: auto;
+    padding-left: 30px;
 }
 
 .project-units {
