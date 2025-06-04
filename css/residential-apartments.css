@@ -106,7 +106,47 @@ span .circle-icon {
     font-weight: 600;
 }
 
+@media(max-width:426px) {
+    .banner {
+        flex-direction: column !important;
+        height: 575px !important;
+        object-fit: cover !important;
+    }
+
+    .banner-content {
+        width: 320px !important;
+        margin: 0px !important;
+        position: absolute;
+        top: 13% !important;
+        left: 12% !important;
+    }
+
+    .contact-form {
+        top: 60% !important;
+        margin-top: 20px;
+    }
+
+    .banner-title {
+        font-size: 25px !important;
+    }
+
+    .banner-subtext {
+        font-size: 16px !important;
+    }
+
+    .rohaan {
+        font-size: 18px !important;
+    }
+
+    .text-primary {
+        padding: 0px !important;
+        font-size: 20px !important;
+        line-height: 32px;
+    }
+}
+
 @media(max-width:726px) {
+
     .bg-blue {
         width: 300px !important;
         right: 12% !important;

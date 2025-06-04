@@ -165,6 +165,14 @@
     width: 100% !important;
 }
 
+#filterable-cards .card {
+    width: 25rem !important;
+}
+
+.card-img {
+    height: 280px;
+}
+
 @media(max-width:728px) {
     .banner-wrapper {
         flex-direction: column;
@@ -197,8 +205,17 @@
         width: 100%;
     }
 
+    .filter-buttons-wrapper {
+        flex-direction: row;
+        width: 430px;
+    }
+
+    .filter-width {
+        flex-direction: column;
+    }
+
     .card-img {
-        width: 350px;
+        width: 380px !important;
     }
 
     .border-divider {
