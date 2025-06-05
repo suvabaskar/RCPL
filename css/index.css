@@ -1204,4 +1204,21 @@ ul {
         width: 400px !important;
         margin: auto;
     }
+    .tab-content {
+        width: 320px;
+        margin: auto;
+    }
+    .tab-content>.active{
+        width: 320px;
+        margin: auto;
+    }
+    .tab1-wrapper{
+        width: 320px;
+        margin: auto;
+    }
+    .categories-item-inner{
+        width: 320px;
+        margin: auto;
+    }
+    
 }
