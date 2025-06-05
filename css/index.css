@@ -1217,7 +1217,7 @@ ul {
         margin: auto;
     }
     .categories-item-inner{
-        width: 320px;
+        width: 320px !important;
         margin: auto;
     }
     
