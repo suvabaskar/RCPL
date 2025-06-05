@@ -3350,7 +3350,7 @@ td {
 
 .contact-form {
     position: absolute;
-    right: 8%;
+    /* right: 8%; */
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.57);

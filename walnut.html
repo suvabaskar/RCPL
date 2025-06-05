@@ -33,6 +33,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/crest.css" rel="stylesheet">
     <link href="css/walnut.css" rel="stylesheet">
+    <link href="css/commerical.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/apartments-madipakkam.css">
 
@@ -171,6 +173,22 @@
         </div>
     </section>
 
+     <!-- Popup Form -->
+    <div id="popupForm" class="form-popup">
+        <form class="form-container" onsubmit="handleSubmit(event)">
+            <button type="button" class="btn cancel" onclick="closeForm()"><span class="close-x">X</span></button>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Your Email" name="email" required>
+
+            <label for="number"><b>Number</b></label>
+            <input type="number" placeholder="Enter Your Number" id="number" name="number" required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
 
     <section class="property-details">
         <div class="property-content">
@@ -184,7 +202,11 @@
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Medavakkam</strong></p>
                 </div>
                 <div class="cta-buttons">
-                    <button class="download-brochure">Download E-brochure</button>
+                    <button onclick="openForm()" class="download-brochure">Download E-brochure</button>
+                </div>
+                <div class="project-buttons-box">
+                    <button onclick="openForm()" class="project-brochure-button">Download E-Brochure</button>
+                    <a href="walnut.html"><button class="project-details-button">More Details</button></a>
                 </div>
                 <!-- <div class="progress-bar-container">
                     <p class="progress-title">Construction Update</p>
@@ -847,6 +869,44 @@
     <!-- Back to Top -->
     <!-- <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>    -->
 
+    <script>
+        function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+            document.body.classList.add('overlay-active');
+
+        }
+
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+            document.body.classList.remove('overlay-active');
+
+        }
+        function validateNumber() {
+            const number = document.getElementById("number").value;
+
+            if (number.length !== 10) {
+                alert("Please enter a valid 10-digit number.");
+                return false; // form won't submit
+            }
+
+            return true; // form will submit
+        }
+        function handleSubmit(event) {
+            event.preventDefault(); // stop form from submitting
+
+            event.target.reset(); // clear all inputs
+            closeForm(); // close the popup form
+
+            // Trigger brochure download
+            const link = document.createElement('a');
+            link.href = "./assests/Walnut brochure.pdf"; // replace with your actual file path
+            link.download = 'Rohaan-Walnut-Brochure.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rohaan Construction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/affordable-realestate.css" rel="stylesheet">
+    <!-- index css stylesheet -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="icon" href="img/rcpl-icon.png" type="image/png">
+    <!-- fast bootstrap stylesheet -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.2.0/dist/css/fastbootstrap.min.css" rel="stylesheet" integrity="sha256-V6lu+OdYNKTKTsVFBuQsyIlDiRWiOmtC8VQ8Lzdm2i4=" crossorigin="anonymous"> -->
+
+
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".count");
+
+        counters.forEach((counter) => {
+            counter.innerText = "0"; // Initialize each counter
+
+            const updateCount = () => {
+                const target = +counter.getAttribute("data-target"); // Target number
+                let current = +counter.innerText.replace(/\D/g, ""); // Remove any non-numeric characters
+                const increment = Math.ceil(target / 100); // Adjust speed by dividing target
+
+                if (current < target) {
+                    counter.innerText = `${Math.min(current + increment, target)}+`; // Increment smoothly
+                    setTimeout(updateCount, 20); // Recursive call for smooth animation
+                } else {
+                    // Format the final number appropriately
+                    if (target >= 1000) {
+                        counter.innerText = `${(target / 1000).toFixed(1)}K+`; // Display "K+" for 1000+
+                    } else {
+                        counter.innerText = `${target}+`; // Normal number with "+"
+                    }
+                }
+            };
+
+            updateCount(); // Start counting
+        });
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".scroll-link");
+
+        links.forEach((link) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the page from refreshing
+                const targetId = this.getAttribute("href").substring(1); // Get the ID without the #
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Scroll smoothly to the target element
+                    targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+
+            fetch("../Rohaanconstr/send_mail.php", {
+                method: "POST",
+                body: formData,
+            })
+                .then(response => response.text())
+                .then(result => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: green;">${result}</p>`;
+                    form.reset(); // Clear the form
+                })
+                .catch(error => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: red;">Error: Could not send your message.</p>`;
+                });
+        });
+    });
+
+</script>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
+            <div class="container">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                            <a href="tel:+01234567890" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                            <a href="mailto:example@gmail.com" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+        <div class="contact-icons">
+            <a href="tel:9003198331" class="phone-icon">
+                <span class="rotated-text"> 9003198331</span> <i class="ph-icon fas fa-phone-alt"></i>
+            </a>
+            <a href="https://wa.me/9003198331" target="_blank" class="whatsapp-icon">
+                <img src="img/what-icom.png" alt="WhatsApp Icon">
+            </a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i>Cental</h1> -->
+                    <img src="img/Rohaancon-logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbarleft navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="commercial-property.html" class="nav-link dropdown-toggle">Commercial
+                                Property</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="crest.html" class="dropdown-item">Rohaan Crest</a>
+                                <a href="walnut.html" class="dropdown-item">Rohaan Walnut</a>
+                                <a href="redwood.html" class="dropdown-item">Rohaan Redwood</a>
+                                <a href="acacia.html" class="dropdown-item">Rohaan Acacia</a>
+
+                            </div>
+                        </div>
+                        <a href="service.html1" class="nav-item nav-link">Joint Venture</a>
+                        <div class="nav-item dropdown">
+                            <a href="Resedential.html" class="nav-link dropdown-toggle">Residential
+                                Property</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="Phoneix.html" class="dropdown-item">Rohaan Phoenix</a>
+                                <a href="Ashoka.html" class="dropdown-item">Rohaan Ashoka</a>
+                                <a href="Cypress.html" class="dropdown-item">Rohaan Cypress</a>
+                                <a href="testimonial.html1" class="dropdown-item">Villa</a>
+
+                            </div>
+                        </div>
+
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html1" class="dropdown-item">Channel Partners</a>
+                                <a href="cars.html1" class="dropdown-item">Careers</a>
+                                <a href="team.html1" class="dropdown-item">Blogs</a>
+                                <a href="testimonial.html1" class="dropdown-item">Contact</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book a Site Visit </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <section>
+        <div class="blog-banner">
+            <div class="blog-heading">
+                <p>December 10, 2024 / Uncategorized</p>
+                <h1>Top 5 Affordable Real Estate Investment Tips for Beginners</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="blog-icon d-flex">
+        <img class="social-icons" src="./img/facebook-logo-bold.svg" alt="facebook">
+        <img class="social-icons" src="./img/instagram-logo-bold.svg" alt="instagram">
+        <img class="social-icons" src="./img/x-logo-bold.svg" alt="instagram">
+        <img class="social-icons" src="./img/linkedin-logo-bold.svg" alt="instagram">
+    </section>
+
+    <section>
+        <div class="blog-content-para">
+            <p>Investing in real estate can be one of the most rewarding ways to grow your wealth and secure your
+                financial future. Whether you’re looking to invest in real estate online or explore traditional methods,
+                these beginner-friendly tips will help you get started.</p>
+        </div>
+        <div class="blog-content-heading">
+            <h4>1. Research Real Estate Investment Opportunities</h4>
+        </div>
+        <div class="blog-content-desc">
+            <p>Understanding the market is crucial before diving into real estate. From local properties to global
+                trends, explore the best real estate investment opportunities available. Real estate investment
+                companies often provide insights and data to help you make informed decisions.</p>
+        </div>
+        <div class="blog-content-heading">
+            <h4>2. Consider Investment Property for Sale</h4>
+        </div>
+        <div class="blog-content-desc">
+            <p>Look for investment property for sale that fits your budget and investment goals. Whether it’s a rental
+                property or a house to flip,
+                prioritize properties in growing neighborhoods or areas with high rental demand.</p>
+        </div>
+        <div class="blog-content-heading">
+            <h4>3. Collaborate with Real Estate Investment Companies</h4>
+        </div>
+        <div class="blog-content-desc">
+            <p>Partnering with reputable real estate investment companies or real estate private equity firms can
+                streamline the process. These companies provide access to valuable resources,
+                helping you navigate the complexities of investing in larger properties or diversified portfolios.</p>
+        </div>
+        <div class="blog-content-heading">
+            <h4>4. Leverage Online Platforms for Real Estate Investments</h4>
+        </div>
+        <div class="blog-content-desc">
+            <p>The rise of technology has made it easier than ever to invest in real estate online. Crowdfunding
+                platforms and digital marketplaces provide access to both residential and
+                commercial properties, allowing you to invest with smaller capital.</p>
+        </div>
+        <div class="blog-content-heading">
+            <h4>5. Learn from Experienced House Investors</h4>
+        </div>
+        <div class="blog-content-desc">
+            <p>Networking with seasoned house investors can provide insights into market trends, potential pitfalls, and
+                strategies for success. Attend real estate seminars,
+                join forums, or connect with experts who can guide you in making profitable investments.</p>
+        </div>
+        <div class="blog-content-heading">
+            <h3>Conclusion</h3>
+        </div>
+        <div class="blog-content-desc">
+            <p>Real estate offers diverse opportunities for both short-term and long-term gains. By leveraging tools
+                like real estate private equity, exploring investment
+                property for sale, and staying informed about real estate investment opportunities, you can confidently
+                start your journey as a real estate investor. Whether you’re a
+                novice or planning to invest in real estate online, the key is to take informed steps and stay
+                consistent. <br><br> Are you ready to make your first move in real estate? Let us know your questions or
+                experiences in the comments!</p>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
+    <section class="leave-reply">
+        <div>
+            <h4>Leave a Reply</h4>
+            <p>Your email address will not be published. Required fields are marked</p>
+        </div>
+        <div class="reply-wrapper">
+            <form >
+                <div class="reply-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Website">
+
+                </div>
+                <div class="reply-form  mt-3">
+                    <input class="form-comment" type="text" placeholder="Add a Comment">
+                </div>
+                <button>Post Comment</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <img src="img/Rohaancon-logo.png" alt="Logo">
+                        <div class="footer-item">
+
+
+                            <p class="text-white mb-0">Rohaan Constructions Private LTD is a leading real estate
+                                developer in Chennai, Tamil Nadu. We’re in business for over 15 years and have a
+                                reputation for quality construction and customer service.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Join as Channel Partner</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Projects</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Residential Projects</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Commercial Projects </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Villa</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Joint Venture</a>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-0">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i>
+                            Medavakkam, Chennai,Tamil Nadu 600100</a>
+                        <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i>
+                            sales@rohaanconstructions.com</a>
+                        <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i>
+                            +91 9003198331</a>
+                        <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +91
+                            9597088298</a>
+                        <div class="d-flex">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <!-- <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                </div>
+             
+            </div>
+        </div>
+    </div> -->
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>    -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
