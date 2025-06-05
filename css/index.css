@@ -1201,7 +1201,7 @@ ul {
     }
 
     .box {
-        width: 400px !important;
+        width: 350px !important;
         margin: auto;
     }
     .tab-content {
@@ -1220,5 +1220,21 @@ ul {
         width: 320px !important;
         margin: auto;
     }
-    
+    .rohaan-group-img{
+        width: 320px;
+        margin: auto;
+    }
+        .unique-quote-info-section {
+            width: 350px;
+            margin: auto;
+        }
+        .about-column-img{
+            width: 350px;
+            margin: auto;
+        }
+           .about-column-img2{
+            width: 350px;
+            margin: auto;
+        }
+
 }
