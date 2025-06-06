@@ -193,20 +193,22 @@
         margin: 0px !important;
         position: absolute;
         top: 13% !important;
-        left: 12% !important;
+        left: 8% !important;
     }
 
     .contact-form {
         top: 60% !important;
         margin-top: 20px;
         right: 0%;
-        left: 3%;
+        left: 0%;
         width: 320px !important;
         margin: auto;
     }
-.unique-quote-main-title{
-    font-size: 20px !important;
-}
+
+    .unique-quote-main-title {
+        font-size: 20px !important;
+    }
+
     .rohaan {
         font-size: 18px !important;
     }
@@ -287,9 +289,11 @@
     .why-invest-grid {
         gap: 02px !important;
     }
-.box-icon{
-    width: 290px !important;
-}
+
+    .box-icon {
+        width: 290px !important;
+    }
+
     /* .box-icon {
         width: 320px !important;
     } */
