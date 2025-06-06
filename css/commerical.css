@@ -3,7 +3,7 @@
 }
 
 .project-wrapper {
-    flex-direction: row ;
+    flex-direction: row;
     margin: auto;
     width: clamp(320px, 90vw, 1280px);
     justify-content: space-evenly;
@@ -124,7 +124,7 @@
 .y-us-section {
     position: relative;
     padding: 82px 0 182px 0 !important;
-    width: clamp(425px,90vw,1400px) !important; 
+    width: clamp(425px, 90vw, 1400px) !important;
     margin: auto;
     background: linear-gradient(135deg, #0D3C55, #1E87C2) !important;
 }
@@ -132,78 +132,133 @@
 .y-us-title h2 {
     color: white !important;
 }
+
 .y-us-title p {
     color: rgb(186, 239, 255) !important;
 }
+
 .y-us-content h4 {
     color: white !important;
-
 }
-@media (max-width:426px){
-    .banner{
+
+.banner::before {
+    height: 0 !important;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/acacia-new.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    right: 8%;
+}
+
+@media (max-width:1024px) {
+    .y-building-bg {
+        display: none;
+    }
+
+    .y-building-bg3 {
+        display: none;
+    }
+
+    .y-building-bg2 {
+        left: 8% !important;
+    }
+
+    .project-details-box {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .banner {
         flex-direction: column !important;
         height: 575px !important;
         object-fit: cover !important;
     }
+
     .banner-content {
         width: 320px !important;
         margin: 0px !important;
         position: absolute;
-               top: 13% !important;
+        top: 13% !important;
         left: 12% !important;
     }
+
     .contact-form {
         top: 60% !important;
         margin-top: 20px;
+        right: 0%;
+        left: 3%;
+        width: 320px !important;
+        margin: auto;
     }
-    .rohaan{
-        font-size: 18px !important ;
+.unique-quote-main-title{
+    font-size: 20px !important;
+}
+    .rohaan {
+        font-size: 18px !important;
     }
-    .banner-title{
-        font-size: 25px !important;
-    }
-    .text-primary{
+
+    .text-primary {
         padding: 0px !important;
         font-size: 20px !important;
         line-height: 32px;
     }
-    .banner-subtext{
+
+    .banner-subtext {
         font-size: 16px !important;
     }
-    .project-wrapper{
-        padding: 0px !important;
-        flex-direction: column !important;
-    }
-    .project-details-box{
-        padding: 20px 0 0 0;
-    }
-    .project-description-text{
+
+
+    .project-description-text {
         font-size: 12px !important;
-    } 
-    .mobile-project-wrapper{
+    }
+
+    .mobile-project-wrapper {
         flex-direction: column-reverse !important;
     }
-    .project-container{
+
+    .project-container {
         padding-top: 20px !important;
     }
-    .investment-icons{
+
+    .investment-icons {
         flex-direction: column;
     }
-    .invesment-item-box{
+
+    .invesment-item-box {
         margin: auto
     }
-    .investment-heading{
+
+    .investment-heading {
         font-size: 18px;
     }
-    .y-us-section{
-        width: 425px !important;
+
+    .y-us-section {
+        width: 375px !important;
+        padding: 22px 0 !important;
     }
-    .y-building-bg{
-    display: none !important;
+
+    .y-building-bg {
+        display: none !important;
     }
-    .y-us-section .container{
-        width: 400px !important;
+
+    .y-us-section .container {
+        width: 350px !important;
     }
+
     .y-building-bg2 {
         position: absolute;
         top: 79% !important;
@@ -211,140 +266,132 @@
         left: -8% !important;
         object-fit: contain;
     }
-    .redwood-icon-box p{
+
+    .redwood-icon-box p {
         font-size: 12px !important;
         text-align: center;
     }
-    .redwood-icon-box img{
+
+    .redwood-icon-box img {
         width: 40px;
-        height:40px;
+        height: 40px;
         align-items: center;
     }
-    .redwood-icon-box{
+
+    .redwood-icon-box {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .why-invest-grid {
         gap: 02px !important;
     }
-    .box-icon{
-        width: 320px !important;
-    }
-    /* .box-grid{
-        grid-template-columns: none !important;
-    } */
+.box-icon{
+    width: 290px !important;
 }
-@media (max-width:768px){
-    /* .y-us-section{
-        width: 700px !important;
+    /* .box-icon {
+        width: 320px !important;
     } */
-    .y-building-bg3{
+
+    .unique-quote-container {
+        flex-direction: row !important;
+    }
+
+    .unique-quote-form-section {
+        width: 350px !important;
+        margin: auto;
+    }
+
+    .y-building-bg3 {
         display: none;
     }
-    .y-building-bg {
-        display: none;
-    }
-    .rohaan{
-        font-size: 18px;
-    }
-    .banner-title{
-        line-height:1rem !important;
+
+
+    .banner-title {
+        line-height: 1rem !important;
         width: 300px;
+        font-size: 25px !important;
     }
-    .text-primary{
-        padding: 0px;
-    }
-    .banner-subtext{
-        font-size: 16px;
-    }
-    .project-wrapper{
+
+    .project-wrapper {
         flex-direction: column;
         padding: 20px 0 0 0;
     }
-    .project-details-box{
+
+    .project-details-box {
         padding: 20px 0 20px 0;
     }
-    .mobile-project-wrapper{
-        flex-direction: column-reverse;
-    }
-    .rent-container h3{
+
+    .rent-container h3 {
         font-size: 16px !important;
     }
-    .rent-container p{
+
+    .rent-container p {
         font-size: 14px !important;
     }
-    .unique-quote-container{
+
+    .y-us-head {
+        width: 320px;
+        margin: auto;
+    }
+
+    .form-popup {
+        display: none;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border: 2px solid #adadad;
+        z-index: 9;
+        background-color: white;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .form-container {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 300px;
     }
-}
-@media (max-width:1024px){
-    .y-building-bg{
-        display: none;
+
+    input[type=text],
+    input[type=email],
+    input[type=number] {
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        width: 100%;
     }
-    .y-building-bg3{
-        display: none;
+
+    .btn {
+        padding: 10px;
+        margin-top: 10px;
+        color: white !important;
+        border: none;
+        cursor: pointer;
     }
-    .y-building-bg2{
-        left: 8% !important;
+
+    .cancel {
+        background-color: rgb(195, 11, 11) !important;
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 20px !important;
+        position: absolute !important;
+        right: 2px !important;
+        top: 2px !important;
     }
-    .project-details-box{
-        padding-left: 20px;
+
+    .close-x {
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        color: white;
     }
-}
 
-
-.form-popup {
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  border: 2px solid #adadad;
-  z-index: 9;
-  background-color: white;
-  padding: 20px;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-input[type=text], input[type=email] , input[type=number] {
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-
-.btn {
-  padding: 10px;
-  margin-top: 10px;
-  color: white !important;
-  border: none;
-  cursor: pointer;
-}
-
-.cancel {
-  background-color: rgb(195, 11, 11) !important;
-  width: 30px !important;
-  height: 30px !important;
-  border-radius: 20px !important;
-  position: absolute !important;
-  right: 2px !important;
-  top: 2px !important;
-}
-.close-x{
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    color: white;
-}
-
-body.overlay-active {
-  background-color: rgb(188, 188, 188); /* grey with opacity */
-  transition: background-color 0.3s ease;
+    body.overlay-active {
+        background-color: rgb(188, 188, 188);
+        /* grey with opacity */
+        transition: background-color 0.3s ease;
+    }
 }
