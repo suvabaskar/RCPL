@@ -1067,7 +1067,9 @@ ul {
     width: 300px;
     height: 200px;
 }
-
+.mobile-imagenew{
+    display: none;
+}
 @media (min-width: 320px) and (max-width: 767px) {
     .typeJsWrapper h1 {
         font-size: 20px;
@@ -1115,10 +1117,7 @@ ul {
     }
 
     .container-custom-director {
-        width: 400px;
-        display: block !important;
-        background-image: url(../img/Dir_msg-mview111.png);
-        background-size: cover;
+      display: none !important;
     }
 
     .description-custom {
@@ -1211,20 +1210,32 @@ ul {
     .categories-img-size {
         height: 345px !important;
     }
-    .tab1-wrapper{
+
+    .tab1-wrapper {
         margin-top: 0px;
     }
-    .box{
+
+    .box {
         width: 350px !important;
     }
-    .partners-banner{
+
+    .partners-banner {
         display: none !important;
     }
-    .mobile-image1{
+
+    .mobile-image1 {
         display: block !important;
     }
+
     .partners-section {
-            width: 60%;
-            box-shadow: none;
+        width: 60%;
+        box-shadow: none;
+    }
+
+    .mobile-imagenew {
+        border-radius: 20px;
+        width: 380px;
+        margin: 30px auto;
+        display: block !important;
     }
 }
