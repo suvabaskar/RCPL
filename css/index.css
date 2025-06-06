@@ -1091,9 +1091,7 @@ ul {
         padding: 0px 10px !important;
     }
 
-    /* .nav-item{
-        font-size: 16px !important;
-    } */
+   
     .nav-tabs .nav-link {
         font-size: 16px !important;
     }
@@ -1199,50 +1197,5 @@ ul {
     .categories-img-size {
         height: 345px !important;
     }
-
-    /* .box {
-        width: 350px !important;
-        margin: auto;
-    }
-
-    .tab-content {
-        width: 320px;
-        margin: auto;
-    }
-
-    .tab-content>.active {
-        width: 320px;
-        margin: auto;
-    }
-
-    .tab1-wrapper {
-        width: 320px;
-        margin: auto;
-    }
-
-    .categories-item-inner {
-        width: 320px !important;
-        margin: auto;
-    }
-
-    .rohaan-group-img {
-        width: 320px;
-        margin: auto;
-    }
-
-    .unique-quote-info-section {
-        width: 350px;
-        margin: auto;
-    }
-
-    .about-column-img {
-        width: 350px;
-        margin: auto;
-    }
-
-    .about-column-img2 {
-        width: 350px;
-        margin: auto;
-    } */
 
 }
