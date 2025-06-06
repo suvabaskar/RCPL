@@ -1068,7 +1068,7 @@ ul {
     height: 200px;
 }
 
-@media(max-width:768px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .typeJsWrapper h1 {
         font-size: 20px;
         line-height: 32px;
