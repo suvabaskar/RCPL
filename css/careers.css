@@ -60,7 +60,7 @@
     color: rgb(216, 216, 216);
 }
 
-@media(max-width:768px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .career-main-heading {
         font-size: 25px;
     }
