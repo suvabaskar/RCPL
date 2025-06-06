@@ -1217,4 +1217,14 @@ ul {
     .box{
         width: 350px !important;
     }
+    .partners-banner{
+        display: none !important;
+    }
+    .mobile-image1{
+        display: block !important;
+    }
+    .partners-section {
+            width: 60%;
+            box-shadow: none;
+    }
 }
