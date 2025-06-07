@@ -11,8 +11,10 @@
 }
 
 .banner {
-    background-image: url(../img/Acaciawebsite\ banner2.jpg);
+    background: linear-gradient(rgb(2 13 41 / 78%), rgb(0 0 0 / 51%)), url(../img/RohaanAshokabanner.jpg);
+
 }
+
 
 .project-image-box {
     width: 100%;
@@ -158,18 +160,18 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .banner {
         flex-direction: column !important;
-        height: 575px !important;
+        height: 575px;
         object-fit: cover !important;
         background-image: url(../img/Acaciawebsite\ banner2.jpg);
         background-position: left center !important;
     }
 
     .banner-content {
-        width: 320px !important;
-        margin: 0px !important;
+        width: 320px;
+        margin: 0px;
         position: absolute;
-        top: 13% !important;
-        left: 8% !important;
+        top: 13%;
+        left: 8%;
     }
 
     .box-icon {

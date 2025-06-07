@@ -89,7 +89,16 @@ span .circle-icon {
     padding: min(5vw, 30px);
     width: clamp(320px, 90%, 1200px);
 }
-
+.banner{
+    /* background: url(../img/RohaanAshokabanner.jpg); */
+    background: linear-gradient(rgba(12, 2, 92, 0.5), rgba(41, 41, 41, 0.8)), url(../img/RohaanAshokabanner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.contact-form{
+    right: 8%;
+}
 .grid-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
