@@ -228,6 +228,10 @@
     display: none;
 }
 
+.contact-form {
+    right: 8%;
+}
+
 @media (max-width:426px) {
     .banner {
         flex-direction: column !important;
@@ -250,6 +254,7 @@
 
     .contact-form {
         top: 68%;
+        right: 3%;
     }
 
     .property-content {
@@ -281,13 +286,21 @@
     }
 
     .rohaan-features-content {
-        width: 380px;
+        width: 330px;
         margin: auto;
         grid-template-columns: 1fr;
     }
 
     .form-heading {
         width: 214px;
+    }
+
+    .form-container1 {
+        width: 330px !important;
+    }
+
+    .form-container1 button {
+        width: 330px !important;
     }
 
     .form-container1 input {
@@ -309,16 +322,22 @@
     }
 
     .fliter-container {
-        margin-top: 195px;
-        width: 400px;
+        margin-top: 165px;
+        width: 350px;
     }
-    .filter-width{
+
+    .filter-width {
         flex-direction: column;
     }
 
     .filter-buttons-wrapper {
         justify-content: start;
     }
+
+    /* 
+    #filter-buttons {
+        margin-top: 20px !important;
+    } */
 
     .form-container1 select {
         margin: 0px;
@@ -334,7 +353,8 @@
     }
 
     .card-img {
-        width: 350px;
+        width: 300px !important;
+        margin: auto;
     }
 
     .table-head {
@@ -394,5 +414,17 @@
 
     .footer-text {
         font-size: 14px;
+    }
+
+    .rohaan-features {
+        padding: 0 !important;
+    }
+
+    .unique-quote-main-title {
+        font-size: 20px !important;
+    }
+
+    .unique-quote-info-section {
+        width: 330px !important;
     }
 }
