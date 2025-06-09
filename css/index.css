@@ -1067,18 +1067,30 @@ ul {
     width: 300px;
     height: 200px;
 }
-.mobile-imagenew{
+
+.mobile-imagenew {
     display: none;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
     .typeJsWrapper h1 {
         font-size: 20px;
         line-height: 32px;
     }
 
+    .ulClass {
+        width: 432px !important;
+    }
+
     .tab-content>.active {
         width: 330px;
         margin: auto;
+    }
+
+    .btn-container {
+        width: 230px !important;
+        left: 25% !important;
+        padding: 13px !important;
     }
 
     .tab-content {
@@ -1117,7 +1129,7 @@ ul {
     }
 
     .container-custom-director {
-      display: none !important;
+        display: none !important;
     }
 
     .description-custom {
