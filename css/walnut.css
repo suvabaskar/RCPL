@@ -79,13 +79,17 @@ input[type=email] {
     .banner-content {
         width: 350px !important;
         margin: auto;
-        top: 5% !important;
+        top: -38% !important;
+        left: 0% !important;
     }
-.banner{
-    padding: 0 20px;
-}
+
+    .banner {
+        padding: 0 20px;
+        height: 600px !important;
+    }
+
     .text-primary {
-        font-size: 40px !important;
+        font-size: 20px !important;
         padding: 0px !important;
     }
 
@@ -116,20 +120,21 @@ input[type=email] {
 
     .contact-form {
         top: 57% !important;
-                right: 7% !important;
+        right: 7% !important;
 
     }
 
     .form-container1 button {
         width: 230px !important;
     }
-    .form-container1 input{
+
+    .form-container1 input {
         margin: 0px !important;
     }
-    .contact-form{
-     }
-     .filter-buttons-wrapper{
+
+
+    .filter-buttons-wrapper {
         margin: auto;
         width: 320px;
-     }
+    }
 }
