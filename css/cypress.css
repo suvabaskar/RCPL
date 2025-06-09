@@ -1,0 +1,5 @@
+@media (min-width: 320px) and (max-width: 767px){
+    .text-primary{
+        padding: 0px !important;
+    }
+}

@@ -57,7 +57,11 @@
     padding-bottom: 10px;
 }
 
-@media (max-width: 480px) {
+.box-icon{
+    width: auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
     .why-wrapper-grid {
         width: 360px !important;
         margin: auto !important;

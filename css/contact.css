@@ -131,7 +131,7 @@
     margin-right: 5px;
 }
 
-@media(max-width:426px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .contact {
         padding: 0 !important;
         flex-direction: column;
