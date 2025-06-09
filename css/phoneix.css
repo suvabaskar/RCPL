@@ -39,7 +39,7 @@
 }
 
 
-@media(max-width:728px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .banner-wrapper {
         flex-direction: column;
     }
@@ -139,6 +139,7 @@
 
     .text-primary {
         font-size: 35px !important;
+        padding: 0px;
     }
 
 }

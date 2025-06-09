@@ -165,15 +165,15 @@
     width: 100% !important;
 }
 
-#filterable-cards .card {
+/* #filterable-cards .card {
     width: 25rem !important;
 }
 
 .card-img {
     height: 280px;
-}
+} */
 
-@media(max-width:728px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .banner-wrapper {
         flex-direction: column;
     }
@@ -269,6 +269,7 @@
 
     .text-primary {
         font-size: 35px !important;
+        padding-left: 0px;
     }
 
     .unique-features li {

@@ -148,30 +148,35 @@
 
 }
 
-.contact-form {
-    right: 8% !important;
+@media (max-width:426px) {
+    .contact-form {
+        right: 8% !important;
 
-}
-
-.contact-form h3 {
-    color: white !important;
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .banner {
-        flex-direction: column !important;
-        height: 575px;
-        object-fit: cover !important;
-        background-image: url(../img/Acaciawebsite\ banner2.jpg);
-        background-position: left center !important;
     }
 
-    .banner-content {
-        width: 320px;
-        margin: 0px;
-        position: absolute;
-        top: 13%;
-        left: 8%;
+    .contact-form h3 {
+        color: white !important;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        .banner {
+            flex-direction: column !important;
+            height: 575px;
+            object-fit: cover !important;
+            background-image: url(../img/Acaciawebsite\ banner2.jpg);
+            background-position: left center !important;
+        }
+
+        .banner-content {
+            width: 320px;
+            margin: 0px;
+            position: absolute;
+            top: 13% !important;
+            left: 12% !important;
+        }
+
+        /* top: 13%;
+        left: 8%; */
     }
 
     .box-icon {
@@ -184,6 +189,10 @@
         margin-top: 20px;
         width: 320px !important;
         right: 6% !important;
+    }
+
+    .rohaan {
+        font-size: 18px !important;
     }
 
     .contact-form h3 {
@@ -247,6 +256,19 @@
         font-size: 18px;
     }
 
+    .y-us-section {
+        width: 425px !important;
+    }
+
+    .y-building-bg {
+        display: none !important;
+    }
+
+    .y-us-section .container {
+        width: 400px !important;
+    }
+
+
     .project-buttons-box {
         gap: 20px;
     }
@@ -267,6 +289,7 @@
     .y-us-head {
         margin: 0 !important;
     }
+
 
     .y-building-bg2 {
         position: absolute;
@@ -296,6 +319,13 @@
     .why-invest-grid {
         gap: 02px !important;
     }
+
+
+    .box-icon {
+        width: 320px !important;
+    }
+
+
 
 
 
@@ -356,6 +386,7 @@
     }
 
     .unique-quote-container {
+        flex-direction: column;
         align-items: center;
     }
 }

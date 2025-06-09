@@ -86,7 +86,7 @@
     margin: 50px auto;
 }
 
-@media(max-width:426px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .banner.d-flex.banner-channelpartner {
         max-width: 425px;
         margin: auto;
@@ -116,7 +116,7 @@
     }
 
     .white-box-wrapper {
-        width: 350px;
+        width: 400px;
     }
 
     .partner-content {
