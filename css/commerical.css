@@ -155,7 +155,8 @@
         color: white !important;
     }
     .contact-form{
-        right: 0%;
+        right: 1%;
+        width: 300px;
     }
 
     /* @media (min-width: 320px) and (max-width: 767px) {
