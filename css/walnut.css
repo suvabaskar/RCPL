@@ -101,7 +101,7 @@ input[type=email] {
 
     .fliter-container {
         /* width: 450px; */
-        margin-top: 360px;
+        margin-top: 385px;
     }
 
     .commerical-wrapper {
@@ -125,11 +125,9 @@ input[type=email] {
         margin: 0px !important;
     }
     .contact-form{
-        right: 13%;
-        right: 8%;
+        right: 13% !important;
      }
      .filter-buttons-wrapper{
-        width: 300px;
         margin: auto;
         width: 320px;
      }
