@@ -79,9 +79,11 @@ input[type=email] {
     .banner-content {
         width: 350px !important;
         margin: auto;
-        top: 0% !important;
+        top: 5% !important;
     }
-
+.banner{
+    padding: 0 20px;
+}
     .text-primary {
         font-size: 40px !important;
         padding: 0px !important;
@@ -124,9 +126,11 @@ input[type=email] {
     }
     .contact-form{
         right: 13%;
+        right: 8%;
      }
      .filter-buttons-wrapper{
         width: 300px;
         margin: auto;
+        width: 320px;
      }
 }
