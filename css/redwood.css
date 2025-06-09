@@ -69,7 +69,7 @@ table {
     .banner-content {
         width: 350px !important;
         margin: auto;
-        top: 0 !important;
+        top: 0 ;
         /* top: -29%; */
     }
 .rohaan,
