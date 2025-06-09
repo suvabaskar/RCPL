@@ -148,13 +148,8 @@
 
 }
 
-<<<<<<< HEAD
-@media (max-width:426px) {
 
-=======
 @media (min-width: 320px) and (max-width: 767px){
-   
->>>>>>> 8ceac4c9a7aeb2f5c14262dc6e3c005cf26786ef
 
     .contact-form h3 {
         color: white !important;
@@ -187,17 +182,17 @@
         margin: auto !important;
     }
 
-<<<<<<< HEAD
+
     .contact-form {
         top: 60%;
         margin-top: 20px;
         width: 320px !important;
         right: 8%;
     }
-=======
->>>>>>> 8ceac4c9a7aeb2f5c14262dc6e3c005cf26786ef
 
-    /* .rohaan {
+
+
+    /* .rohaan 
         font-size: 18px !important;
     } */
 
@@ -362,10 +357,6 @@
     .banner-title {
         line-height: 1rem !important;
         width: 300px;
-    }
-
-    .text-primary {
-        padding: 0px;
     }
 
     .banner-subtext {
