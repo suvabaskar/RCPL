@@ -57,43 +57,25 @@ table {
         background-position: -2000px 0; /* Adjust to match image width */
     }
 }
-@media (max-width:426px){
-    /* .banner-content {
-        width: 350px !important;
-      top: 0%;
-      left: -85%;
-    } */
-    .contact-form {
-        top: 73%;
-    }
-    .banner-description {
-        width: 350px !important;
-        margin: auto;
-        font-size: 14px;
-    }
-    .rohaan{
-        font-size: 2rem;
-    }
-    .text-primary{
-        font-size: 2rem !important;
-        padding: 0px;
 
-    }
-}
 
 @media (max-width:426px) {
     .banner {
         flex-direction: column !important;
-        height: 770px !important;
+        height:663px;
         object-fit: cover !important;
     }
 
     .banner-content {
         width: 350px !important;
         margin: auto;
-        top: -29%;
+        top: 0 !important;
+        /* top: -29%; */
     }
-
+.rohaan,
+.text-primary{
+    font-size: 30px ;
+}
     .banner-description {
         width: 350px !important;
         margin: auto;
