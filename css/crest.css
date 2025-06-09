@@ -245,9 +245,12 @@
         top: -31%;
         left: 1%;
     }
+    .rohaan{
+        font-size: 20px;
+    }
 
     .text-primary {
-        font-size: 30px;
+        font-size: 20px !important;
     }
 
     .banner-description {
