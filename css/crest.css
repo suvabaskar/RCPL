@@ -245,9 +245,11 @@
         top: -31%;
         left: 1%;
     }
-.text-primary{
-    font-size: 30px !important;
-} 
+
+    .text-primary {
+        font-size: 30px;
+    }
+
     .banner-description {
         width: 350px !important;
         margin: auto;

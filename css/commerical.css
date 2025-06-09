@@ -148,14 +148,8 @@
 
 }
 
-<<<<<<< HEAD
 
 @media (min-width: 320px) and (max-width: 767px){
-=======
-@media (max-width:426px) {
-
-    @media (min-width: 320px) and (max-width: 767px) {
->>>>>>> 53e5f7b309f88789c0232cd298f5226908d1bfb4
 
         .contact-form h3 {
             color: white !important;
@@ -189,7 +183,6 @@
             margin: auto !important;
         }
 
-<<<<<<< HEAD
 
     .contact-form {
         top: 60%;
@@ -201,7 +194,6 @@
 
 
     /* .rohaan 
-=======
 
         .contact-form {
             top: 60%;
@@ -212,7 +204,6 @@
 
 
         /* .rohaan {
->>>>>>> 53e5f7b309f88789c0232cd298f5226908d1bfb4
         font-size: 18px !important;
     } */
 
@@ -452,26 +443,8 @@
         width: 300px;
     }
 
-<<<<<<< HEAD
     .banner-subtext {
         font-size: 16px;
-=======
-    input[type=text],
-    input[type=email],
-    input[type=number] {
-        padding: 10px;
-        margin: 8px 0;
-        border: 1px solid #ccc;
-        width: 100%;
-    }
-
-    .btn {
-        padding: 10px;
-        margin-top: 10px;
-        color: white !important;
-        border: none;
-        cursor: pointer;
->>>>>>> 53e5f7b309f88789c0232cd298f5226908d1bfb4
     }
 
     .cancel {
@@ -496,4 +469,3 @@
         /* grey with opacity */
         transition: background-color 0.3s ease;
     }
-}
