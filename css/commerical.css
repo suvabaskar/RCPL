@@ -148,9 +148,8 @@
 
 }
 
-@media (max-width:426px) {
 
-    @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px){
 
         .contact-form h3 {
             color: white !important;
@@ -185,6 +184,17 @@
         }
 
 
+    .contact-form {
+        top: 60%;
+        margin-top: 20px;
+        width: 320px !important;
+        right: 8%;
+    }
+
+
+
+    /* .rohaan 
+
         .contact-form {
             top: 60%;
             margin-top: 20px;
@@ -211,7 +221,7 @@
 
         .text-primary {
             padding: 0px !important;
-            font-size: 20px !important;
+            font-size: 20px;
             line-height: 32px;
         }
 
@@ -328,7 +338,7 @@
         }
 
         .banner-content {
-            left: 13% !important;
+            left: 13% ;
         }
 
 
@@ -433,21 +443,8 @@
         width: 300px;
     }
 
-    input[type=text],
-    input[type=email],
-    input[type=number] {
-        padding: 10px;
-        margin: 8px 0;
-        border: 1px solid #ccc;
-        width: 100%;
-    }
-
-    .btn {
-        padding: 10px;
-        margin-top: 10px;
-        color: white !important;
-        border: none;
-        cursor: pointer;
+    .banner-subtext {
+        font-size: 16px;
     }
 
     .cancel {
@@ -472,4 +469,3 @@
         /* grey with opacity */
         transition: background-color 0.3s ease;
     }
-}
