@@ -14,7 +14,11 @@
     height: 660px;
 }
 
-@media(max-width:768px) {
+.villa-content{
+    width: 1290px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
 
     .villa-content-section {
         position: relative;
@@ -110,15 +114,21 @@
     }
 
     .banner-description {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .rohaan {
-        font-size: 40px !important;
+        font-size: 28px !important;
     }
 
     .text-primary {
-        font-size: 40px !important;
+        font-size: 28px !important;
         padding-left: 0px;
+    }
+
+    .box{
+        width: auto;
+        align-items: center;
+
     }
 }

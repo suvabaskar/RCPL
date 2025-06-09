@@ -1067,11 +1067,27 @@ ul {
     width: 300px;
     height: 200px;
 }
-
-@media(max-width:768px) {
+.mobile-imagenew{
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
     .typeJsWrapper h1 {
         font-size: 20px;
         line-height: 32px;
+    }
+
+    .tab-content>.active {
+        width: 330px;
+        margin: auto;
+    }
+
+    .tab-content {
+        width: 330px;
+        margin: auto;
+    }
+
+    .categories-item-inner {
+        width: 330px !important;
     }
 
     .container-typewrapper span {
@@ -1091,9 +1107,7 @@ ul {
         padding: 0px 10px !important;
     }
 
-    /* .nav-item{
-        font-size: 16px !important;
-    } */
+
     .nav-tabs .nav-link {
         font-size: 16px !important;
     }
@@ -1103,10 +1117,7 @@ ul {
     }
 
     .container-custom-director {
-        width: 400px;
-        display: block !important;
-        background-image: url(../img/Dir_msg-mview111.png);
-        background-size: cover;
+      display: none !important;
     }
 
     .description-custom {
@@ -1200,49 +1211,31 @@ ul {
         height: 345px !important;
     }
 
-    /* .box {
-        width: 350px !important;
-        margin: auto;
-    }
-
-    .tab-content {
-        width: 320px;
-        margin: auto;
-    }
-
-    .tab-content>.active {
-        width: 320px;
-        margin: auto;
-    }
-
     .tab1-wrapper {
-        width: 320px;
-        margin: auto;
+        margin-top: 0px;
     }
 
-    .categories-item-inner {
-        width: 320px !important;
-        margin: auto;
+    .box {
+        width: 350px !important;
     }
 
-    .rohaan-group-img {
-        width: 320px;
-        margin: auto;
+    .partners-banner {
+        display: none !important;
     }
 
-    .unique-quote-info-section {
-        width: 350px;
-        margin: auto;
+    .mobile-image1 {
+        display: block !important;
     }
 
-    .about-column-img {
-        width: 350px;
-        margin: auto;
+    .partners-section {
+        width: 60%;
+        box-shadow: none;
     }
 
-    .about-column-img2 {
-        width: 350px;
-        margin: auto;
-    } */
-
+    .mobile-imagenew {
+        border-radius: 20px;
+        width: 380px;
+        margin: 30px auto;
+        display: block !important;
+    }
 }

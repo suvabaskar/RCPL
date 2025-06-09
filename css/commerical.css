@@ -10,6 +10,12 @@
     padding: 50px 20px;
 }
 
+.banner {
+    background: linear-gradient(rgb(2 13 41 / 78%), rgb(0 0 0 / 51%)), url(../img/RohaanAshokabanner.jpg);
+
+}
+
+
 .project-image-box {
     width: 100%;
     display: flex;
@@ -142,30 +148,70 @@
 
 }
 
+<<<<<<< HEAD
 @media (max-width:426px) {
+=======
+.contact-form {
+    right: 8% !important;
+
+}
+
+.contact-form h3 {
+    color: white !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+>>>>>>> 45304487acaccd3feb06b88af811b50b03e67881
     .banner {
         flex-direction: column !important;
-        height: 575px !important;
+        height: 575px;
         object-fit: cover !important;
+        background-image: url(../img/Acaciawebsite\ banner2.jpg);
+        background-position: left center !important;
     }
 
     .banner-content {
-        width: 320px !important;
-        margin: 0px !important;
+        width: 320px;
+        margin: 0px;
         position: absolute;
+<<<<<<< HEAD
         top: 13% !important;
         left: 12% !important;
     }
 
+=======
+        top: 13%;
+        left: 8%;
+    }
+
+    .box-icon {
+        width: 250px !important;
+        margin: auto !important;
+    }
+
+>>>>>>> 45304487acaccd3feb06b88af811b50b03e67881
     .contact-form {
         top: 60% !important;
         margin-top: 20px;
+        width: 320px !important;
+        right: 6% !important;
+    }
+
+<<<<<<< HEAD
+    .rohaan {
+        font-size: 18px !important;
+    }
+
+=======
+    .contact-form h3 {
+        color: white !important;
     }
 
     .rohaan {
         font-size: 18px !important;
     }
 
+>>>>>>> 45304487acaccd3feb06b88af811b50b03e67881
     .banner-title {
         font-size: 25px !important;
     }
@@ -180,6 +226,15 @@
         font-size: 16px !important;
     }
 
+<<<<<<< HEAD
+=======
+    .unique-quote-main-title {
+        font-size: 24px !important;
+        font-weight: bold !important;
+        color: rgb(255, 255, 255) !important;
+    }
+
+>>>>>>> 45304487acaccd3feb06b88af811b50b03e67881
     .project-wrapper {
         padding: 0px !important;
         flex-direction: column !important;
@@ -213,6 +268,7 @@
         font-size: 18px;
     }
 
+<<<<<<< HEAD
     .y-us-section {
         width: 425px !important;
     }
@@ -225,6 +281,29 @@
         width: 400px !important;
     }
 
+=======
+    .project-buttons-box {
+        gap: 20px;
+    }
+
+    .y-us-section {
+        width: 355px !important;
+        padding: 22px 0 !important;
+    }
+
+    .y-building-bg {
+        display: none !important;
+    }
+
+    .y-us-section .container {
+        width: 350px !important;
+    }
+
+    .y-us-head {
+        margin: 0 !important;
+    }
+
+>>>>>>> 45304487acaccd3feb06b88af811b50b03e67881
     .y-building-bg2 {
         position: absolute;
         top: 79% !important;
@@ -254,9 +333,13 @@
         gap: 02px !important;
     }
 
+<<<<<<< HEAD
     .box-icon {
         width: 320px !important;
     }
+=======
+
+>>>>>>> 45304487acaccd3feb06b88af811b50b03e67881
 
     /* .box-grid{
         grid-template-columns: none !important;
@@ -315,7 +398,10 @@
     }
 
     .unique-quote-container {
+<<<<<<< HEAD
         flex-direction: column;
+=======
+>>>>>>> 45304487acaccd3feb06b88af811b50b03e67881
         align-items: center;
     }
 }

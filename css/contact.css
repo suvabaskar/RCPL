@@ -131,7 +131,7 @@
     margin-right: 5px;
 }
 
-@media(max-width:426px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .contact {
         padding: 0 !important;
         flex-direction: column;
@@ -139,11 +139,11 @@
     }
 
     .contact-img {
-        width: 270px;
+        width: 340px;
     }
 
     .contact-img-wrapper {
-        width: 330px;
+        /* width: 330px; */
         margin: auto;
     }
 
@@ -171,19 +171,19 @@
 
     .contact-wrapper h4 {
         font-size: 14px;
-        width: 280px;
+        width: 350px;
     }
 
     .contact-us-form input {
-        width: 280px;
+        width: 340px;
     }
 
     .form-select-contact {
-        width: 280px;
+        width: 340px;
     }
 
     .icon-wrapper {
-        width: 300px;
+        /* width: 300px; */
     }
 
     .icon-wrapper p {
