@@ -1,3 +1,7 @@
+.contact-form {
+    right: 8% !important;
+}
+
 @media(max-width:426px) {
     .card-img {
         width: 250px;

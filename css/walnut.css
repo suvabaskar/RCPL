@@ -77,16 +77,26 @@ input[type=email] {
 
 @media (min-width: 320px) and (max-width: 767px) {
     .banner-content {
-        width: 350px !important;
-        margin: auto;
-        top: 5% !important;
+        width: 320px;
+        margin: 0px;
+        position: absolute;
+        top: 3%;
+        left: 12% !important;
+        margin-top: 10px;
     }
-.banner{
-    padding: 0 20px;
-}
+
+    .banner {
+        flex-direction: column !important;
+        height: 700px !important;
+        object-fit: cover !important;
+        background-image: url(../img/Acaciawebsite\ banner2.jpg);
+        background-position: left center !important;
+    }
+
     .text-primary {
-        font-size: 40px !important;
         padding: 0px !important;
+        font-size: 20px !important;
+        line-height: 32px;
     }
 
     .responsive-map-container iframe {
@@ -108,6 +118,7 @@ input[type=email] {
         width: clamp(320px, 80%, 1200px);
         margin: 10px auto auto auto;
         padding: 20px;
+        margin-top: 150px;
     }
 
     .banner-form {
@@ -115,21 +126,39 @@ input[type=email] {
     }
 
     .contact-form {
-        top: 57% !important;
-                right: 7% !important;
+        top: 65% !important;
+        margin-top: 20px;
+        width: 320px !important;
+        right: 8%;
 
     }
 
     .form-container1 button {
         width: 230px !important;
     }
-    .form-container1 input{
+
+    .form-container1 input {
         margin: 0px !important;
     }
-    .contact-form{
-     }
-     .filter-buttons-wrapper{
+
+    .banner-subtext {
+        font-size: 16px !important;
+    }
+
+    .filter-buttons-wrapper {
         margin: auto;
         width: 320px;
-     }
+    }
+
+    .contact-form h3 {
+        color: white !important;
+    }
+
+    .rohaan {
+        font-size: 20px !important;
+    }
+
+    .banner-title {
+        font-size: 25px !important;
+    }
 }

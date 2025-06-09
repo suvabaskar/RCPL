@@ -32,7 +32,8 @@ table {
     height: 160px;
     justify-content: space-between;
 }
-.redwood-icon-box p{
+
+.redwood-icon-box p {
     color: #6a6a6a;
 
 }
@@ -43,8 +44,10 @@ table {
     padding: 20px 0;
     width: 1150px;
     height: 30px;
-    background-repeat: repeat-x; /* Ensure seamless scrolling */
-    background-size: cover; /* Adjust based on your needs */
+    background-repeat: repeat-x;
+    /* Ensure seamless scrolling */
+    background-size: cover;
+    /* Adjust based on your needs */
     animation: ShapeAnim 30s linear infinite;
     z-index: 10;
 }
@@ -53,14 +56,64 @@ table {
     0% {
         background-position: 0 0;
     }
+
     100% {
-        background-position: -2000px 0; /* Adjust to match image width */
+        background-position: -2000px 0;
+        /* Adjust to match image width */
     }
 }
 
 
 @media (max-width:426px) {
+
     .banner {
+        flex-direction: column !important;
+        height: 800px !important;
+        object-fit: cover !important;
+        background-image: url(../img/Acaciawebsite\ banner2.jpg);
+        background-position: left center !important;
+    }
+
+    .banner-content {
+        width: 320px;
+        margin: 0px;
+        position: absolute;
+        top: 3%;
+        left: 12% !important;
+        margin-top: 10px;
+    }
+
+    .contact-form {
+        top: 68%;
+        margin-top: 20px;
+        width: 320px !important;
+        right: 8%;
+    }
+
+
+    .contact-form h3 {
+        color: white !important;
+    }
+
+    .rohaan {
+        font-size: 20px !important;
+    }
+
+    .banner-title {
+        font-size: 25px !important;
+    }
+
+    .text-primary {
+        padding: 0px !important;
+        font-size: 20px !important;
+        line-height: 32px;
+    }
+
+    .banner-subtext {
+        font-size: 16px !important;
+    }
+
+    /* .banner {
         flex-direction: column !important;
         height:663px;
         object-fit: cover !important;
@@ -70,7 +123,7 @@ table {
         width: 350px !important;
         margin: auto;
         top: 0 ;
-        /* top: -29%; */
+        /* top: -29%; 
     }
 .rohaan,
 .text-primary{
@@ -84,7 +137,7 @@ table {
 
     .contact-form {
         top: 70%;
-    }
+    } */
 
     .property-content {
         flex-direction: column;
@@ -150,9 +203,11 @@ table {
     .filter-buttons-wrapper {
         justify-content: start;
     }
-    .form-container1 select{
+
+    .form-container1 select {
         margin: 0px;
     }
+
     .filter-btn {
         padding: 8px;
         font-size: 14px;
@@ -194,44 +249,54 @@ table {
     .advantages-container {
         display: none;
     }
-    .advantages-mobile-wrapper{
+
+    .advantages-mobile-wrapper {
         display: block;
     }
+
     .advantage-orange-h2,
     .advantage-blue-h2,
     .advantage-green-h2,
     .advantage-red-h2,
-    .advantage-navy-h2{
+    .advantage-navy-h2 {
         text-align: center;
     }
-    .mobile-img{
+
+    .mobile-img {
         width: 80px;
         height: 75px;
         margin: 10px 0;
     }
-    .advantage-mobile-para{
+
+    .advantage-mobile-para {
         font-size: 14px;
         width: 300px;
         text-align: center;
         align-items: center;
         margin: auto;
     }
-    .footer-text{
+
+    .footer-text {
         font-size: 14px;
-    } 
-    .investment-icons{
+    }
+
+    .investment-icons {
         flex-direction: column;
     }
-    .invesment-item-box{
+
+    .invesment-item-box {
         margin: auto
     }
-    .investment-heading{
+
+    .investment-heading {
         font-size: 18px;
     }
-    .box-icon{
+
+    .box-icon {
         width: 320px !important;
     }
-    .box{
+
+    .box {
         flex-direction: column;
     }
 }
