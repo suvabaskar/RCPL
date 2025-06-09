@@ -79,7 +79,7 @@ input[type=email] {
     .banner-content {
         width: 350px !important;
         margin: auto;
-        top: 6% !important;
+        top: 0% !important;
     }
 
     .text-primary {
