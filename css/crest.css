@@ -240,21 +240,21 @@
     }
 
     .banner-content {
-        width: 350px !important;
+        width: 320px !important;
         margin: auto;
         top: -31%;
         left: 1%;
     }
 
     .banner-description {
-        width: 350px !important;
+        width: 300px !important;
         margin: auto;
         font-size: 14px;
     }
 
     .contact-form {
         top: 68%;
-        right: 3%;
+        right: 2%;
     }
 
     .property-content {

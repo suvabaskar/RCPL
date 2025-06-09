@@ -148,14 +148,23 @@
 
 }
 
+<<<<<<< HEAD
 @media (max-width:426px) {
 
+=======
+@media (min-width: 320px) and (max-width: 767px){
+   
+>>>>>>> 8ceac4c9a7aeb2f5c14262dc6e3c005cf26786ef
 
     .contact-form h3 {
         color: white !important;
     }
+    .contact-form{
+        right: 15% !important;
+        width: 300px;
+    }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    /* @media (min-width: 320px) and (max-width: 767px) {
         .banner {
             flex-direction: column !important;
             height: 575px;
@@ -171,22 +180,22 @@
             top: 13%;
             left: 12% !important;
         }
-
-        /* top: 13%;
-        left: 8%; */
-    }
+    } */
 
     .box-icon {
         width: 250px !important;
         margin: auto !important;
     }
 
+<<<<<<< HEAD
     .contact-form {
         top: 60%;
         margin-top: 20px;
         width: 320px !important;
         right: 8%;
     }
+=======
+>>>>>>> 8ceac4c9a7aeb2f5c14262dc6e3c005cf26786ef
 
     /* .rohaan {
         font-size: 18px !important;
@@ -322,7 +331,9 @@
         width: 320px !important;
     }
 
-
+.banner-content{
+    left: 13% !important;
+}
 
 
 
