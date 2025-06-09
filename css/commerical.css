@@ -149,7 +149,7 @@
 }
 
 @media (max-width:426px) {
-   
+
 
     .contact-form h3 {
         color: white !important;
@@ -182,15 +182,15 @@
     }
 
     .contact-form {
-        top: 60% ;
+        top: 60%;
         margin-top: 20px;
         width: 320px !important;
         right: 8%;
     }
 
-    .rohaan {
+    /* .rohaan {
         font-size: 18px !important;
-    }
+    } */
 
     .contact-form h3 {
         color: white !important;

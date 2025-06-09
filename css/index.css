@@ -1082,6 +1082,10 @@ ul {
         width: 432px !important;
     }
 
+    .hidden {
+        width: 432px !important;
+    }
+
     .tab-content>.active {
         width: 330px;
         margin: auto;
