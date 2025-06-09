@@ -232,7 +232,7 @@
     right: 8%;
 }
 
-@media (max-width:426px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .banner {
         flex-direction: column !important;
         height: 770px;
@@ -240,21 +240,21 @@
     }
 
     .banner-content {
-        width: 320px !important;
+        width: 350px !important;
         margin: auto;
         top: -31%;
         left: 1%;
     }
 
     .banner-description {
-        width: 300px !important;
+        width: 350px !important;
         margin: auto;
         font-size: 14px;
     }
 
     .contact-form {
         top: 68%;
-        right: 2%;
+        right: 8%;
     }
 
     .property-content {
