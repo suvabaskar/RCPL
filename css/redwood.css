@@ -65,70 +65,25 @@ table {
 
 
 @media (max-width:426px) {
-
     .banner {
         flex-direction: column !important;
-        height: 800px !important;
+        height: 650px !important;
         object-fit: cover !important;
-        background-image: url(../img/Acaciawebsite\ banner2.jpg);
-        background-position: left center !important;
+
     }
 
     .banner-content {
-        width: 320px;
-        margin: 0px;
-        position: absolute;
-        top: 3%;
-        left: 12% !important;
-        margin-top: 10px;
-    }
-
-    .contact-form {
-        top: 68%;
-        margin-top: 20px;
         width: 320px !important;
-        right: 8%;
-    }
-
-
-    .contact-form h3 {
-        color: white !important;
-    }
-
-    .rohaan {
-        font-size: 20px !important;
-    }
-
-    .banner-title {
-        font-size: 25px !important;
-    }
-
-    .text-primary {
-        padding: 0px !important;
-        font-size: 20px !important;
-        line-height: 32px;
-    }
-
-    .banner-subtext {
-        font-size: 16px !important;
-    }
-
-    /* .banner {
-        flex-direction: column !important;
-        height:663px;
-        object-fit: cover !important;
-    }
-
-    .banner-content {
-        width: 350px !important;
         margin: auto;
-        top: 0 ;
-        /* top: -29%; 
+        top: -210px !important;
+        /* top: -29%; */
     }
-.rohaan,
-.text-primary{
-    font-size: 30px ;
-}
+
+    .rohaan,
+    .text-primary {
+        font-size: 20px !important;
+    }
+
     .banner-description {
         width: 350px !important;
         margin: auto;
@@ -136,8 +91,12 @@ table {
     }
 
     .contact-form {
-        top: 70%;
-    } */
+        top: 66% !important;
+    }
+
+    .commerical-wrapper h2 {
+        margin-top: 145px !important;
+    }
 
     .property-content {
         flex-direction: column;

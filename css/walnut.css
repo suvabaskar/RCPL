@@ -77,81 +77,56 @@ input[type=email] {
 
 @media (min-width: 320px) and (max-width: 767px) {
     .banner-content {
-        width: 350px !important;
+        width: 350px;
         margin: auto;
-        top: -38% !important;
+        top: -38%;
         left: 0% !important;
     }
 
     .banner {
         padding: 0 20px;
-        height: 600px !important;
+        height: 600px;
     }
 
-    width: 320px;
-    margin: 0px;
-    position: absolute;
-    top: 3%;
-    left: 12% !important;
-    margin-top: 10px;
-}
+    .text-primary {
+        font-size: 20px !important;
+        padding: 0px !important;
+    }
 
-.banner {
-    flex-direction: column !important;
-    height: 700px !important;
-    object-fit: cover !important;
-    background-image: url(../img/Acaciawebsite\ banner2.jpg);
-    background-position: left center !important;
-}
+    .responsive-map-container iframe {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        margin-top: -100px;
+        height: 100%;
+        border: 0;
+    }
 
-.text-primary {
-    font-size: 20px !important;
-    padding: 0px !important;
-    font-size: 20px !important;
-    line-height: 32px;
-}
+    .fliter-container {
+        /* width: 450px; */
+        margin-top: 385px;
+    }
 
-.responsive-map-container iframe {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    margin-top: -100px;
-    height: 100%;
-    border: 0;
-}
+    .commerical-wrapper {
+        width: clamp(320px, 80%, 1200px);
+        margin: 10px auto auto auto;
+        padding: 20px;
+    }
 
-.fliter-container {
-    /* width: 450px; */
-    margin-top: 385px;
-}
+    .banner-form {
+        width: 280px !important;
+    }
 
-.commerical-wrapper {
-    width: clamp(320px, 80%, 1200px);
-    margin: 10px auto auto auto;
-    padding: 20px;
-    margin-top: 150px;
-}
+    .contact-form {
+        top: 57%;
+        right: 7% !important;
 
-.banner-form {
-    width: 280px !important;
-}
+    }
 
-.contact-form {
-    top: 57% !important;
-    right: 7% !important;
-    top: 65% !important;
-    margin-top: 20px;
-    width: 320px !important;
-    right: 8%;
-
-}
-
-.form-container1 button {
-    width: 230px !important;
-}
-
-.form-container1 input {
+    .form-container1 button {
+        width: 230px !important;
+    }
 
     .form-container1 input {
         margin: 0px !important;
@@ -159,27 +134,7 @@ input[type=email] {
 
 
     .filter-buttons-wrapper {
-
-        .banner-subtext {
-            font-size: 16px !important;
-        }
-
-        .filter-buttons-wrapper {
-            margin: auto;
-            width: 320px;
-        }
+        margin: auto;
+        width: 320px;
     }
-}
-
-.contact-form h3 {
-    color: white !important;
-}
-
-.rohaan {
-    font-size: 20px !important;
-}
-
-.banner-title {
-    font-size: 25px !important;
-}
 }
