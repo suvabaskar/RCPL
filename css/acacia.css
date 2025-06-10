@@ -32,7 +32,7 @@
     .contact-form {
         top: 70%;
         margin-top: 20px;
-        /* width: 320px !important; */
+        width: 300px !important;
     }
 
 
@@ -60,5 +60,8 @@
     }
     .banner-description{
         width: 330px;
+    }
+    .banner-form{
+        width: 260px;
     }
 }
