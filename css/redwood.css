@@ -64,10 +64,10 @@ table {
 }
 
 
-@media (max-width:426px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .banner {
         flex-direction: column !important;
-        height: 650px !important;
+        height: 650px ;
         object-fit: cover !important;
 
     }
@@ -87,9 +87,11 @@ table {
     .text-primary {
         font-size: 20px !important;
     }
-
+.banner-form{
+    width: 280px;
+}
     .banner-description {
-        width: 350px !important;
+        width: 350px ;
         margin: auto;
         font-size: 14px;
     }

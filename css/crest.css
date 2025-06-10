@@ -235,7 +235,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .banner {
         flex-direction: column !important;
-        height: 770px !important;
+        height: 770px;
         object-fit: cover !important;
     }
 
