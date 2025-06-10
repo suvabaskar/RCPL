@@ -339,6 +339,7 @@
 
         .banner-content {
             left: 13% ;
+            
         }
 
 
@@ -348,11 +349,9 @@
     } */
     }
 
-    @media (max-width:768px) {
+    /* @media (max-width:768px) {
 
-        /* .y-us-section{
-        width: 700px !important;
-    } */
+   
         .y-building-bg3 {
             display: none;
         }
@@ -403,9 +402,9 @@
             flex-direction: column;
             align-items: center;
         }
-    }
+    } */
 
-    @media (max-width:1024px) {
+    /* @media (max-width:1024px) {
         .y-building-bg {
             display: none;
         }
@@ -421,7 +420,7 @@
         .project-details-box {
             padding-left: 20px;
         }
-    }
+    } */
 
 
     .form-popup {
