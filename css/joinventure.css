@@ -72,6 +72,28 @@
         padding: 20px 20px;
     }
 
+    .banner {
+        height: 450px;
+    }
+
+    .contact-form {
+        top: 63%;
+    }
+
+    .rohaan {
+        font-size: 20px;
+    }
+
+    .text-primary {
+        font-size: 20px !important;
+    }
+
+    .banner-content {
+        position: absolute;
+        margin-right: 0px;
+        top: 5%;
+    }
+
     .grid-container-wrapper {
         padding: 0px;
     }
