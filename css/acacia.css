@@ -1,9 +1,65 @@
-@media(max-width:426px){
-    .card-img{
+.contact-form {
+    right: 8% !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .card-img {
         width: 250px;
         margin: auto;
-    } 
-    #filter-buttons button{
+    }
+
+    #filter-buttons button {
         font-size: 13px;
+    }
+
+    .banner {
+        flex-direction: column !important;
+        height: 800px !important;
+        object-fit: cover !important;
+        background-image: url(../img/Acaciawebsite\ banner2.jpg);
+        background-position: left center !important;
+    }
+
+    .banner-content {
+        width: 320px;
+        margin: 0px;
+        position: absolute;
+        top: 3%;
+        left: 12% !important;
+        margin-top: 10px;
+    }
+
+    .contact-form {
+        top: 70%;
+        margin-top: 20px;
+        width: 320px !important;
+        right: 8%;
+    }
+
+
+    .contact-form h3 {
+        color: white !important;
+    }
+
+    .rohaan {
+        font-size: 20px !important;
+    }
+
+    .banner-title {
+        font-size: 25px !important;
+        margin-top: 0px;
+    }
+
+    .text-primary {
+        padding: 0px !important;
+        font-size: 20px !important;
+        line-height: 32px;
+    }
+
+    .banner-subtext {
+        font-size: 16px !important;
+    }
+    .banner-description{
+        width: 330px;
     }
 }

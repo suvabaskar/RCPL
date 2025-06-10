@@ -232,7 +232,7 @@
     right: 8%;
 }
 
-@media (max-width:426px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .banner {
         flex-direction: column !important;
         height: 770px;
@@ -246,6 +246,19 @@
         left: 1%;
     }
 
+    .banner-title {
+        margin-top: 0;
+    }
+
+    .rohaan {
+        font-size: 20px;
+    }
+
+    .text-primary {
+        font-size: 20px !important;
+        padding-left: 0px;
+    }
+
     .banner-description {
         width: 350px !important;
         margin: auto;
@@ -254,7 +267,7 @@
 
     .contact-form {
         top: 68%;
-        right: 3%;
+        right: 8%;
     }
 
     .property-content {
@@ -322,7 +335,7 @@
     }
 
     .fliter-container {
-        margin-top: 165px;
+        margin-top: 180px;
         width: 350px;
     }
 

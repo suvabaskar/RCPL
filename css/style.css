@@ -3057,7 +3057,7 @@ input:focus {
     color: #ffffff !important;
     font-size: 32px;
     text-transform: uppercase;
-}   
+}
 
 /* Mobile Responsive Adjustments */
 /* @media (max-width: 768px) {
@@ -3350,7 +3350,7 @@ td {
 
 .contact-form {
     position: absolute;
-       top: 50%;
+    top: 50%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.57);
     padding: 20px;
@@ -4246,7 +4246,6 @@ banner button container */
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 10px;
-    margin-right: 10px;
 }
 
 .btn2 {
@@ -4637,9 +4636,9 @@ select {
     .btn-container {
         position: absolute;
         top: 90%;
-        left: 8% !important;
+        left: 8%;
         gap: 10px;
-        padding: 15px !important;
+        padding: 15px;
     }
 
     .btn1 {
@@ -4650,7 +4649,6 @@ select {
         color: rgb(255, 255, 255);
         border: none;
         border-radius: 10px;
-        margin-right: 10px;
     }
 
     .btn2 {

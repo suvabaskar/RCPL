@@ -129,6 +129,8 @@
 
 .container-typewrapper {
     text-align: center;
+    width: 350px !important;
+    margin: auto;
 }
 
 .container-typewrapper span {
@@ -1067,18 +1069,37 @@ ul {
     width: 300px;
     height: 200px;
 }
-.mobile-imagenew{
+
+.mobile-imagenew {
     display: none;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
     .typeJsWrapper h1 {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 16px;
+        /* line-height: 32px; */
+    }
+    .typeJsWrapper{
+        padding: 20px 10px;
+    }
+
+    /* .ulClass {
+        width: 432px !important;
+    } */
+
+    .hidden {
+        width: 432px !important;
     }
 
     .tab-content>.active {
         width: 330px;
         margin: auto;
+    }
+
+    .btn-container {
+        width: 230px !important;
+        left: 25% !important;
+        padding: 13px !important;
     }
 
     .tab-content {
@@ -1100,14 +1121,17 @@ ul {
 
     .property-heading {
         width: 400px;
-        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-top: 0px;
     }
 
     /* .nav-item a {
         padding: 0px 10px !important;
     } */
 
-
+.padding-top{
+    margin-top: 0px !important;
+}
     .nav-tabs .nav-link {
         font-size: 16px !important;
     }
@@ -1117,7 +1141,7 @@ ul {
     }
 
     .container-custom-director {
-      display: none !important;
+        display: none !important;
     }
 
     .description-custom {
@@ -1237,5 +1261,9 @@ ul {
         width: 380px;
         margin: 30px auto;
         display: block !important;
+    }
+
+    .nav-fill .nav-item .nav-link {
+        padding: 0px 10px!important;
     }
 }

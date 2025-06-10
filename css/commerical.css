@@ -148,17 +148,23 @@
 
 }
 
-@media (max-width:426px) {
-    .contact-form {
-        right: 8% !important;
 
-    }
+@media (min-width: 320px) and (max-width: 767px) {
 
     .contact-form h3 {
         color: white !important;
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    .project-info-text {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        right: 15% !important;
+        width: 300px;
+    }
+
+    /* @media (min-width: 320px) and (max-width: 767px) {
         .banner {
             flex-direction: column !important;
             height: 575px;
@@ -171,29 +177,39 @@
             width: 320px;
             margin: 0px;
             position: absolute;
-            top: 13% !important;
+            top: 13%;
             left: 12% !important;
         }
-
-        /* top: 13%;
-        left: 8%; */
-    }
+    } */
 
     .box-icon {
         width: 250px !important;
         margin: auto !important;
     }
 
+
     .contact-form {
-        top: 60% !important;
+        top: 60%;
         margin-top: 20px;
         width: 320px !important;
-        right: 6% !important;
+        right: 8%;
     }
 
-    .rohaan {
+
+
+    /* .rohaan 
+
+        .contact-form {
+            top: 60%;
+            margin-top: 20px;
+            width: 320px !important;
+            right: 8%;
+        }
+
+
+        /* .rohaan {
         font-size: 18px !important;
-    }
+    } */
 
     .contact-form h3 {
         color: white !important;
@@ -209,7 +225,7 @@
 
     .text-primary {
         padding: 0px !important;
-        font-size: 20px !important;
+        font-size: 20px;
         line-height: 32px;
     }
 
@@ -228,12 +244,13 @@
         flex-direction: column !important;
     }
 
-    .project-details-box {
+    /* .project-details-box {
         padding: 20px 0 0 0;
-    }
+    } */
 
     .project-description-text {
         font-size: 12px !important;
+        text-align: left;
     }
 
     .mobile-project-wrapper {
@@ -325,6 +342,15 @@
         width: 320px !important;
     }
 
+<<<<<<< HEAD
+=======
+    .banner-content {
+        left: 13%;
+    }
+
+
+
+>>>>>>> c0f7dbb7ddac3c8976ea11099524bb4d3b0f8828
     /* .box-grid{
         grid-template-columns: none !important;
     } */
@@ -400,9 +426,9 @@
         left: 8% !important;
     }
 
-    .project-details-box {
+    /* .project-details-box {
         padding-left: 20px;
-    }
+    } */
 }
 
 
@@ -425,21 +451,8 @@
     width: 300px;
 }
 
-input[type=text],
-input[type=email],
-input[type=number] {
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-
-.btn {
-    padding: 10px;
-    margin-top: 10px;
-    color: white !important;
-    border: none;
-    cursor: pointer;
+.banner-subtext {
+    font-size: 16px;
 }
 
 .cancel {
