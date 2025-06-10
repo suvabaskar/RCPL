@@ -13,6 +13,10 @@
     width: 340px;
 }
 
+.contact-form {
+    right: 8%;
+}
+
 .dir-msg-header p {
     font-size: clamp(0.8rem, 2vw, 1rem);
 }
@@ -57,7 +61,7 @@
     padding-bottom: 10px;
 }
 
-.box-icon{
+.box-icon {
     width: auto;
 }
 
