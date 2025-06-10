@@ -75,8 +75,12 @@ table {
     .banner-content {
         width: 320px !important;
         margin: auto;
-        top: -210px !important;
+        top: -210px;
         /* top: -29%; */
+    }
+
+    .banner-title {
+        margin-top: 50px;
     }
 
     .rohaan,
@@ -91,7 +95,7 @@ table {
     }
 
     .contact-form {
-        top: 66% !important;
+        top: 66%;
     }
 
     .commerical-wrapper h2 {

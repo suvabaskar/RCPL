@@ -235,7 +235,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .banner {
         flex-direction: column !important;
-        height: 770px;
+        height: 770px !important;
         object-fit: cover !important;
     }
 
@@ -245,12 +245,18 @@
         top: -31%;
         left: 1%;
     }
-    .rohaan{
+
+    .banner-title {
+        margin-top: 0;
+    }
+
+    .rohaan {
         font-size: 20px;
     }
 
     .text-primary {
         font-size: 20px !important;
+        padding-left: 0px;
     }
 
     .banner-description {
@@ -329,7 +335,7 @@
     }
 
     .fliter-container {
-        margin-top: 165px;
+        margin-top: 180px;
         width: 350px;
     }
 

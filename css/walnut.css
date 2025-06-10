@@ -79,7 +79,7 @@ input[type=email] {
     .banner-content {
         width: 350px;
         margin: auto;
-        top: -38%;
+        top: -35%;
         left: 0% !important;
     }
 
@@ -119,7 +119,7 @@ input[type=email] {
     }
 
     .contact-form {
-        top: 57%;
+        top: 66%;
         right: 7% !important;
 
     }
