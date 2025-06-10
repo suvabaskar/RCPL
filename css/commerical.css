@@ -160,7 +160,7 @@
     }
 
     .contact-form {
-        right: 15% !important;
+        right: 12% !important;
         width: 300px;
     }
 
@@ -244,13 +244,12 @@
         flex-direction: column !important;
     }
 
-    /* .project-details-box {
+    .project-details-box {
         padding: 20px 0 0 0;
-    } */
+    }
 
     .project-description-text {
         font-size: 12px !important;
-        text-align: left;
     }
 
     .mobile-project-wrapper {
@@ -284,6 +283,154 @@
     .y-us-section .container {
         width: 400px !important;
     }
+
+
+    .project-buttons-box {
+        gap: 20px;
+    }
+
+    .y-us-section {
+        width: 355px !important;
+        padding: 22px 0 !important;
+    }
+
+    .y-building-bg {
+        display: none !important;
+    }
+
+    .y-us-section .container {
+        width: 350px !important;
+    }
+
+    .y-us-head {
+        margin: 0 !important;
+    }
+
+
+    .y-building-bg2 {
+        position: absolute;
+        top: 79% !important;
+        height: 22% !important;
+        left: -8% !important;
+        object-fit: contain;
+    }
+
+    .redwood-icon-box p {
+        font-size: 12px !important;
+        text-align: center;
+    }
+
+    .redwood-icon-box img {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .redwood-icon-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-invest-grid {
+        gap: 02px !important;
+    }
+
+
+    .box-icon {
+        width: 320px !important;
+    }
+
+    .banner-content {
+        left: 13%;
+
+    }
+
+
+
+    /* .box-grid{
+        grid-template-columns: none !important;
+    /* .project-details-box {
+        padding: 20px 0 0 0;
+    } */
+
+    .project-description-text {
+        font-size: 12px !important;
+        text-align: left;
+    }
+
+    /* @media (max-width:768px) {
+
+   
+        .y-building-bg3 {
+            display: none;
+        }
+
+        .y-building-bg {
+            display: none;
+        }
+
+        .rohaan {
+            font-size: 18px;
+        }
+
+        .banner-title {
+            line-height: 1rem !important;
+            width: 300px;
+        }
+
+        .text-primary {
+            padding: 0px;
+        }
+
+        .banner-subtext {
+            font-size: 16px;
+        }
+
+        .project-wrapper {
+            flex-direction: column;
+            padding: 20px 0 0 0;
+        }
+
+        .project-details-box {
+            padding: 20px 0 20px 0;
+        }
+
+        .mobile-project-wrapper {
+            flex-direction: column-reverse;
+        }
+
+        .rent-container h3 {
+            font-size: 16px !important;
+        }
+
+        .rent-container p {
+            font-size: 14px !important;
+        }
+
+        .unique-quote-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    } */
+
+    /* @media (max-width:1024px) {
+        .y-building-bg {
+            display: none;
+        }
+
+    .investment-icons {
+        flex-direction: column;
+    }
+
+    .invesment-item-box {
+        margin: auto
+    }
+
+        .project-details-box {
+            padding-left: 20px;
+        }
+    } */
 
 
     .project-buttons-box {

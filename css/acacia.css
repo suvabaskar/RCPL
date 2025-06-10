@@ -1,5 +1,5 @@
 .contact-form {
-    right: 8% !important;
+    right: 8% ;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -32,8 +32,7 @@
     .contact-form {
         top: 70%;
         margin-top: 20px;
-        width: 320px !important;
-        right: 8%;
+        /* width: 320px !important; */
     }
 
 
