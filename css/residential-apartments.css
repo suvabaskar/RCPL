@@ -30,6 +30,13 @@
     position: relative;
 }
 
+.box-img-rosegarden{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 .box-grid-residential button {
     background-color: rgb(1, 83, 1);
     color: white;
@@ -164,6 +171,20 @@ span .circle-icon {
         font-size: 20px !important;
         line-height: 32px;
     }
+
+    .box-img-rosegarden{
+        display: flex;
+    }
+    
+
+    .bg-residential{
+        background: none;
+    }
+
+    .mobile-view{
+        display: none;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -184,9 +205,9 @@ span .circle-icon {
         top: -8% !important;
     }
 
-    .bg-residential {
+    /* .bg-residential {
         display: none;
-    }
+    } */
 
     .residential-header-sm {
         padding: 0 20px;
