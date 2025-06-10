@@ -79,8 +79,8 @@ input[type=email] {
     .banner-content {
         width: 350px;
         margin: auto;
-        top: -35%;
-        left: 0% !important;
+        top: -30%;
+        left: 5% !important;
     }
 
     .banner {

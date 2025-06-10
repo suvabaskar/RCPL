@@ -73,7 +73,7 @@ table {
     }
 
     .banner-content {
-        width: 320px !important;
+        width: 320px;
         margin: auto;
         top: -210px;
         /* top: -29%; */

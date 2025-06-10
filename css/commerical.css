@@ -160,7 +160,7 @@
     }
 
     .contact-form {
-        right: 15% !important;
+        right: 12% !important;
         width: 300px;
     }
 
@@ -244,111 +244,111 @@
         flex-direction: column !important;
     }
 
-        .project-details-box {
-            padding: 20px 0 0 0;
-        }
+    .project-details-box {
+        padding: 20px 0 0 0;
+    }
 
-        .project-description-text {
-            font-size: 12px !important;
-        }
+    .project-description-text {
+        font-size: 12px !important;
+    }
 
-        .mobile-project-wrapper {
-            flex-direction: column-reverse !important;
-        }
+    .mobile-project-wrapper {
+        flex-direction: column-reverse !important;
+    }
 
-        .project-container {
-            padding-top: 20px !important;
-        }
+    .project-container {
+        padding-top: 20px !important;
+    }
 
-        .investment-icons {
-            flex-direction: column;
-        }
+    .investment-icons {
+        flex-direction: column;
+    }
 
-        .invesment-item-box {
-            margin: auto
-        }
+    .invesment-item-box {
+        margin: auto
+    }
 
-        .investment-heading {
-            font-size: 18px;
-        }
+    .investment-heading {
+        font-size: 18px;
+    }
 
-        .y-us-section {
-            width: 425px !important;
-        }
+    .y-us-section {
+        width: 425px !important;
+    }
 
-        .y-building-bg {
-            display: none !important;
-        }
+    .y-building-bg {
+        display: none !important;
+    }
 
-        .y-us-section .container {
-            width: 400px !important;
-        }
-
-
-        .project-buttons-box {
-            gap: 20px;
-        }
-
-        .y-us-section {
-            width: 355px !important;
-            padding: 22px 0 !important;
-        }
-
-        .y-building-bg {
-            display: none !important;
-        }
-
-        .y-us-section .container {
-            width: 350px !important;
-        }
-
-        .y-us-head {
-            margin: 0 !important;
-        }
+    .y-us-section .container {
+        width: 400px !important;
+    }
 
 
-        .y-building-bg2 {
-            position: absolute;
-            top: 79% !important;
-            height: 22% !important;
-            left: -8% !important;
-            object-fit: contain;
-        }
+    .project-buttons-box {
+        gap: 20px;
+    }
 
-        .redwood-icon-box p {
-            font-size: 12px !important;
-            text-align: center;
-        }
+    .y-us-section {
+        width: 355px !important;
+        padding: 22px 0 !important;
+    }
 
-        .redwood-icon-box img {
-            width: 40px;
-            height: 40px;
-            align-items: center;
-        }
+    .y-building-bg {
+        display: none !important;
+    }
 
-        .redwood-icon-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .y-us-section .container {
+        width: 350px !important;
+    }
 
-        .why-invest-grid {
-            gap: 02px !important;
-        }
+    .y-us-head {
+        margin: 0 !important;
+    }
 
 
-        .box-icon {
-            width: 320px !important;
-        }
+    .y-building-bg2 {
+        position: absolute;
+        top: 79% !important;
+        height: 22% !important;
+        left: -8% !important;
+        object-fit: contain;
+    }
 
-        .banner-content {
-            left: 13% ;
-            
-        }
+    .redwood-icon-box p {
+        font-size: 12px !important;
+        text-align: center;
+    }
+
+    .redwood-icon-box img {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .redwood-icon-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-invest-grid {
+        gap: 02px !important;
+    }
+
+
+    .box-icon {
+        width: 320px !important;
+    }
+
+    .banner-content {
+        left: 13%;
+
+    }
 
 
 
-        /* .box-grid{
+    /* .box-grid{
         grid-template-columns: none !important;
     /* .project-details-box {
         padding: 20px 0 0 0;
