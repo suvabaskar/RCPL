@@ -119,8 +119,8 @@ input[type=email] {
     }
 
     .contact-form {
-        top: 66%;
-        right: 7% !important;
+        top: 60%;
+        right: auto !important;
 
     }
 
