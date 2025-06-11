@@ -249,7 +249,7 @@ p {
     } */
 
     .box-icon {
-        width: 250px !important;
+        /* width: 250px !important; */
         margin: auto !important;
     }
 
@@ -297,6 +297,7 @@ p {
 
     .banner-subtext {
         font-size: 16px !important;
+        
     }
 
     .unique-quote-main-title {
@@ -403,9 +404,9 @@ p {
     }
 
 
-    .box-icon {
+    /* .box-icon {
         width: 320px !important;
-    }
+    } */
 
     .banner-content {
         left: 13%;
@@ -552,7 +553,7 @@ p {
 
 
     .box-icon {
-        width: 320px !important;
+        width: 300px !important;
     }
 
     /* .box-grid{
@@ -623,6 +624,7 @@ p {
 
     .banner-subtext {
         font-size: 16px;
+        text-align: left !important;
     }
 
     .project-wrapper {
@@ -692,6 +694,7 @@ p {
 
 .banner-subtext {
     font-size: 16px;
+    text-align: left !important;
 }
 
 .cancel {

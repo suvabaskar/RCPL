@@ -12,16 +12,20 @@
         font-size: 13px;
     }
 
+    #filter-buttons{
+        width: 370px;
+    }
+
     .banner {
         flex-direction: column !important;
-        height: 800px !important;
+        height: 830px !important;
         object-fit: cover !important;
         background-image: url(../img/Acaciawebsite\ banner2.jpg);
         background-position: left center !important;
     }
 
     .banner-content {
-        width: 320px;
+        width: 300px !important;
         margin: 0px;
         position: absolute;
         top: 3% !important;
