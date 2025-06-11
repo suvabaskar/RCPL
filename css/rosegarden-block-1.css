@@ -476,7 +476,9 @@ table{
     .property-content {
         flex-direction: column;
     }
-
+.rohaan {
+    padding-right: 10px;
+}
     .property-info {
         padding: 20px !important;
     }
@@ -507,7 +509,7 @@ table{
     }
 
     .highlights-item {
-        width: 350px;
+        width: 300px;
     }
 
     .y-us-title h2 {

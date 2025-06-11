@@ -78,6 +78,7 @@
 
     .contact-form {
         top: 63%;
+        right: 1%;
     }
 
     .rohaan {
@@ -127,6 +128,9 @@
     .jv-wrapper p {
         font-size: 0.8rem;
         line-height: 1.3rem;
+    }
+    .box-icon{
+        width: 285px;
     }
 }
 
