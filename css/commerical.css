@@ -160,7 +160,7 @@
     }
 
     .contact-form {
-        right: 12% !important;
+        right: auto !important;
         width: 300px;
     }
 
