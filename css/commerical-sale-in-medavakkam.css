@@ -93,9 +93,9 @@
 
 .rent-container h3 {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
-    font-weight: 600;
+    font-weight: 600; 
     color: rgb(1, 2, 61);
-    text-align: left;
+    text-align: center;
     line-height: 2rem;
 }
 .rent-grid-container{

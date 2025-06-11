@@ -519,9 +519,11 @@ table {
     .image-container-mobile {
         display: block;
     }
-.image-rosegarden-4c{
-    display: none;
-}
+
+    .image-rosegarden-4c {
+        display: none;
+    }
+
     .property-info {
         padding: 20px !important;
     }

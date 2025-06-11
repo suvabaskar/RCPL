@@ -187,9 +187,9 @@ h3 {
     font-size: 20px;
 }
 
-.rent-container h3,
-p {
-    text-align: center !important;
+
+.rent-container p {
+    text-align: center;
 }
 
 .project-name-invest {
