@@ -45,9 +45,20 @@
 .project-units {
     display: flex;
     justify-content: space-around;
-    width: 320px;
+    width: 500px;
     margin: auto;
 }
+
+.project-units .project-info-text,
+.soldOut-commercial {
+    font-size: 18px;
+}
+
+/* .rent-container p,
+h3 {
+    text-align: center;
+    /* align-items: center; 
+}*/
 
 .bg-grey {
     background-color: rgba(177, 177, 177, 0.105);
@@ -75,7 +86,8 @@
     align-items: center;
     border-radius: 10px;
     width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-shadow: rgb(26 81 124 / 79%) 0px 3px 15px -3px, rgb(0 75 184 / 69%) 0px 4px 6px -2px;
+    /* rgba(0, 0, 0, 0.1) 0px 3px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
 }
 
 .commerical-property-img {
@@ -132,7 +144,61 @@
     padding: 82px 0 182px 0 !important;
     width: clamp(425px, 90vw, 1400px) !important;
     margin: auto;
-    background: linear-gradient(135deg, #0D3C55, #1E87C2) !important;
+    background: linear-gradient(135deg, #0D3C55, #1E87C2) ;
+}
+
+.project-name {
+    background-color: #0073e6c9;
+    color: white;
+    padding: 5px;
+    width: 450px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 32px;
+}
+
+.project-info-text {
+    margin-top: 0px;
+    align-items: center;
+}
+
+.soldOut-commercial {
+    color: red;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blue1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-brochure-button {
+    background-color: #0073e6c9;
+}
+
+.invesment-item-box h1 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.invesment-item-box p {
+    font-size: 20px;
+}
+
+.rent-container h3,
+p {
+    text-align: center !important;
+}
+
+.project-name-invest {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.project-location-name {
+    font-size: 22px;
 }
 
 .y-us-title h2 {
@@ -491,6 +557,41 @@
 
     /* .box-grid{
         grid-template-columns: none !important;
+    } */
+
+    .project-name {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .project-location-name {
+        font-size: 18px;
+    }
+
+    .project-units {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .project-units .project-info-text {
+        /* width: 320px; */
+        font-size: 16px;
+    }
+
+    .project-name-invest {
+        font-size: 25px;
+    }
+
+    .blue1 {
+        font-size: 18px;
+    }
+
+    .rent-container {
+        padding: 10px 0 0 0 !important;
+    }
+
+    /*  {
+        font-size: 16px;
     } */
 }
 

@@ -4224,13 +4224,13 @@ option {
 /* 
 banner button container */
 .btn-container {
-    width: clamp(345px, 80%, 600px);
+    /* width: clamp(345px, 80%, 600px); */
     background: linear-gradient(to right, #216281, #36a1d4);
     margin: auto;
     z-index: 5;
     position: absolute;
     top: 90%;
-    left: 30%;
+    left: 40%;
     padding: 20px;
     border-radius: 10px;
     /* width: 600px; */
