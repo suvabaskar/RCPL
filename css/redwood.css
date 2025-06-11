@@ -79,7 +79,7 @@ table {
     .banner-content {
         width: 320px;
         margin: auto;
-        /* top: -210px; */
+        top: -235px !important;
         /* top: -29%; */
     }
 
@@ -91,17 +91,11 @@ table {
     .text-primary {
         font-size: 20px !important;
     }
-<<<<<<< HEAD
 
     .banner-form {
         width: 280px;
     }
 
-=======
-/* .banner-form{
-    width: 280px;
-} */
->>>>>>> ee2389fa51c3c74d49896ba6bf377b20ba71d48e
     .banner-description {
         width: 350px;
         margin: auto;
