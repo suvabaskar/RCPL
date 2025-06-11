@@ -132,7 +132,7 @@
     padding: 82px 0 182px 0 !important;
     width: clamp(425px, 90vw, 1400px) !important;
     margin: auto;
-    background: linear-gradient(135deg, #0D3C55, #1E87C2) !important;
+    background: linear-gradient(135deg, #0D3C55, #1E87C2) ;
 }
 
 .y-us-title h2 {
