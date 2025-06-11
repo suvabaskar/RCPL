@@ -243,7 +243,7 @@
         width: 350px !important;
         margin: auto;
         top: -31%;
-        left: 1%;
+        /* left: 1%; */
     }
 
     .banner-title {
@@ -393,6 +393,7 @@
 
     .description {
         font-size: 14px;
+        width: 320px;
     }
 
     .advantages-container {

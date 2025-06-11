@@ -190,7 +190,7 @@
     }
 
     .box {
-        width: 350px;
+        width: 300px;
     }
 
     .property-content {
@@ -207,7 +207,7 @@
 
     .filter-buttons-wrapper {
         flex-direction: row;
-        width: 430px;
+        width: 370px;
     }
 
     .filter-width {
@@ -252,6 +252,11 @@
         align-items: center;
         justify-content: center;
         width: 100px;
+    }
+
+    .walnut-header{
+        text-align: center;
+        margin-left: auto !important;
     }
 
     .project-card {

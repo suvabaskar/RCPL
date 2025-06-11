@@ -77,9 +77,10 @@ table {
     }
 
     .banner-content {
-        width: 320px;
+        width: 300px !important;
         margin: auto;
         top: -235px !important;
+        left: 0% !important;
         /* top: -29%; */
     }
 
@@ -97,7 +98,7 @@ table {
     }
 
     .banner-description {
-        width: 350px;
+        width: 300px !important;
         margin: auto;
         font-size: 14px;
     }
@@ -266,7 +267,7 @@ table {
     }
 
     .box-icon {
-        width: 320px !important;
+        width: 300px !important;
     }
 
     .box {
