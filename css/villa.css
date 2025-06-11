@@ -25,7 +25,7 @@
         height: 650px;
         max-width: 1400px;
         margin: auto;
-        width: 400px;
+        width: 350px;
     }
 
     .accordian-wrapper h2 {
@@ -60,10 +60,10 @@
     .section-red {
         background-color: #FF0000;
         padding: 20px;
-        width: 380px;
+        width: 340px;
         color: white;
         position: absolute;
-        top: 27%;
+        top: 28%;
         right: 2%;
         border-radius: 10px;
     }
@@ -71,10 +71,10 @@
     .section-blue {
         background-color: #000B87;
         padding: 20px;
-        width: 380px;
+        width: 340px;
         color: white;
         position: absolute;
-        top: 75%;
+        top: 78%;
         right: 2%;
         border-radius: 10px;
     }
@@ -82,10 +82,10 @@
     .section-green {
         background-color: #007E37;
         padding: 20px;
-        width: 380px;
+        width: 340px;
         color: white;
         position: absolute;
-        top: 51%;
+        top: 52%;
         right: 2%;
         border-radius: 10px;
     }
@@ -93,7 +93,7 @@
     .section-light-blue {
         background-color: #52A3FF;
         padding: 20px;
-        width: 380px;
+        width: 340px;
         color: white;
         position: absolute;
         top: 3%;

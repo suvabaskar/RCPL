@@ -108,7 +108,7 @@
     }
 
     .partner-bg-blue {
-        width: 450px;
+        width: 375px;
         height: auto;
         padding: 10px;
         flex-direction: column;
@@ -121,9 +121,9 @@
 
     .partner-content {
         margin: auto;
-        padding: 26px 35px;
-        width: 400px;   
-        padding-top: 20px;
+        /* padding: 26px 35px; */
+        width: 350px;   
+        padding: 20px;
     }
 
     .vector{
