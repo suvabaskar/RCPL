@@ -74,7 +74,11 @@ input[type=email] {
 .filter-buttons-wrapper {
     align-items: center;
 }
-
+/* .banner-new{
+    width: 1500px;
+    height: 400px;
+    background: white;
+} */
 @media (min-width: 320px) and (max-width: 767px) {
     .banner-content {
         width: 350px;
@@ -119,8 +123,8 @@ input[type=email] {
     }
 
     .contact-form {
-        top: 66%;
-        right: 7% !important;
+        top: 60%;
+        right: auto !important;
 
     }
 

@@ -18,6 +18,7 @@
 
 .rohaan {
     color: white;
+    font-size: 40px;
 }
 
 .text-primary {
@@ -39,7 +40,7 @@
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba (0, 0, 0, 0.1);
     max-width: 350px;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     margin: auto;
 }
@@ -354,7 +355,7 @@ a:hover {
     height: 400px;
 }
 
-.y-us-section {
+.y-us-section-rose {
     position: relative;
     padding: 25px 0 25px;
     margin: auto;
@@ -365,7 +366,7 @@ a:hover {
     position: absolute;
     top: 71%;
     height: 29%;
-    left: 33%;
+    left: 29% !important;
     object-fit: contain;
 }
 
@@ -375,7 +376,7 @@ a:hover {
 }
 
 .y-us-title h2 {
-    color: #000;
+    color: #000 !important;
     font-size: 30px;
     letter-spacing: 0;
     line-height: 32px;
@@ -427,7 +428,7 @@ service-3 .service-box .y-us-content h4 {
 }
 
 .service-3 .service-box .y-us-content p {
-    color: #777777;
+    color: #202020;
     font-size: 13px;
     font-weight: 300;
     line-height: 24px;
@@ -454,6 +455,7 @@ service-3 .service-box .y-us-content h4 {
 .y-us-content h4 {
     font-size: 16px;
     font-weight: 600;
+    color: rgb(71, 71, 71) !important;
 }
 
 .project-content-list .prebook-head {
@@ -466,6 +468,7 @@ service-3 .service-box .y-us-content h4 {
 
 .project-sub-heading {
     margin-top: 20px;
+    color: #000;
 }
 
 .table {
@@ -504,11 +507,21 @@ table {
     max-width: 1440px;
 }
 
+.image-container-mobile {
+    display: none;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     .property-content {
         flex-direction: column;
     }
 
+    .image-container-mobile {
+        display: block;
+    }
+.image-rosegarden-4c{
+    display: none;
+}
     .property-info {
         padding: 20px !important;
     }
@@ -533,13 +546,17 @@ table {
         font-size: 20px;
     }
 
+    .unique-features {
+        width: 350px;
+    }
+
     .highlights {
         grid-template-columns: 1fr;
         padding: 0px;
     }
 
     .highlights-item {
-        width: 350px;
+        width: 300px;
     }
 
     .y-us-title h2 {

@@ -7,6 +7,10 @@ iframe {
     zoom: 1;
 }
 
+.contact-form{
+    width: auto !important;
+}
+
 .redwood-h3 {
     text-align: center;
 }
@@ -67,7 +71,7 @@ table {
 @media (min-width: 320px) and (max-width: 767px) {
     .banner {
         flex-direction: column !important;
-        height: 650px ;
+        height: 650px;
         object-fit: cover !important;
 
     }
@@ -75,7 +79,7 @@ table {
     .banner-content {
         width: 320px;
         margin: auto;
-        top: -210px;
+        top: -235px !important;
         /* top: -29%; */
     }
 
@@ -87,17 +91,21 @@ table {
     .text-primary {
         font-size: 20px !important;
     }
-/* .banner-form{
-    width: 280px;
-} */
+
+    .banner-form {
+        width: 280px;
+    }
+
     .banner-description {
-        width: 350px ;
+        width: 350px;
         margin: auto;
         font-size: 14px;
     }
 
     .contact-form {
         top: 66%;
+        width: auto !important;
+        right: auto !important;
     }
 
     .commerical-wrapper h2 {

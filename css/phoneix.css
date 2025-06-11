@@ -32,11 +32,11 @@
 
 .progress-fill {
     width: 98% !important;
-}
-
+} 
+/* 
 #filterable-cards .card {
     width: 25rem !important;
-}
+} */
 
 
 @media (min-width: 320px) and (max-width: 767px) {
